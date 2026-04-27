@@ -93,7 +93,11 @@ Dataset and split:
 - Categories: recovered from `luyu1021/vg-alignseg/category_models_list.txt`
 - Views: 8
 - Resolution: 224
-- Train/test: 2000/187 objects
+- Valid objects: 2187
+- Train/val/test: 2000/0/187 objects
+- Split policy: lexicographic object-directory order, no shuffle. The first
+  2000 valid objects are used for training and the remaining 187 objects are
+  used for testing.
 
 Metrics:
 
@@ -160,4 +164,3 @@ Do not frame the result as a fully automatic source-free SOTA segmentation
 system. The honest and stronger framing is: VG-AlignSeg is a guided multi-view
 part transfer system with a strict target-only evaluation, explicit
 category/granularity analysis, and a transparent source-copy reference.
-

@@ -81,6 +81,8 @@ The test split used by the final evaluation covers 12 categories:
 - Dataset root: `data/vg-alignseg-dataset`
 - Split: continuous 2000/187 train/test split used by the best historical V4
   checkpoint and fixedviz result.
+- Split policy: lexicographic object-directory order, no shuffle.
+- Total valid objects: `2187`
 - Train samples: `2000`
 - Test samples: `187`
 - View count: `8`
@@ -89,6 +91,11 @@ The test split used by the final evaluation covers 12 categories:
 The strict target-only manifest is:
 
 - `evaluations/v4_target_only_top4_best4500/test_manifest.json`
+
+The full dataset-source and split record is:
+
+- `../docs/DATASET_SPLIT.md`
+- `split_summary.json`
 
 ## Training Artifacts
 

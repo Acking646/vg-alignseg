@@ -13,6 +13,8 @@ Expected local files:
   `outputs/v4_result_ddp2_multisource_top2_phase2_random_copy/best.pt`
 
 Checkpoint files and dataset/cache directories are intentionally ignored by git.
+The dataset source and final 2000/187 split are documented in
+`docs/DATASET_SPLIT.md`.
 
 ## Recommended Launch
 

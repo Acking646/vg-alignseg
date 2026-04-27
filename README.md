@@ -94,3 +94,7 @@ and parsed mapping are stored in:
 - `final_results/metadata/category_models_list.txt`
 - `final_results/metadata/object_category_map.json`
 - `final_results/metadata/category_summary.json`
+
+The final V4 result uses a continuous 2000/187 train/test split over 2187 valid
+eight-view objects. The exact source, filtering rule, split policy, object ids,
+and category distribution are documented in `docs/DATASET_SPLIT.md`.
