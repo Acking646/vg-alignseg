@@ -1,0 +1,39 @@
+{
+  "test_split": {
+    "dataset": "VG-AlignSeg",
+    "train_count": 2000,
+    "val_count": 0,
+    "test_count": 187,
+    "shuffle_split": false,
+    "split_seed": 42
+  },
+  "metrics": [
+    {
+      "method": "VG-AlignSeg V4",
+      "protocol": "source-guided top-4, strict target-only",
+      "iou_object_category": 0.5614304639185613,
+      "iou_granularity": 0.5343687080265572,
+      "iou_part": 0.6170851281547065,
+      "cross_view_consistency_acc": 0.9974540452927889,
+      "source": "final_results/evaluations/v4_target_only_top4_best4500/summary.json"
+    },
+    {
+      "method": "PanSt3R",
+      "protocol": "class-agnostic panoptic segments, Hungarian oracle matched to GT actor ids",
+      "iou_object_category": 0.1674222857695685,
+      "iou_granularity": 0.18529531657797904,
+      "iou_part": 0.2043172629989391,
+      "cross_view_consistency_acc": 0.8975117745962021,
+      "source": "final_results/baselines/panst3r/v2_224_oracle_match/summary.json"
+    },
+    {
+      "method": "Cross View Transformers",
+      "protocol": "not directly applicable; BEV map segmentation output",
+      "iou_object_category": null,
+      "iou_granularity": null,
+      "iou_part": null,
+      "cross_view_consistency_acc": null,
+      "source": "final_results/baselines/cross_view_transformers/summary.json"
+    }
+  ]
+}
