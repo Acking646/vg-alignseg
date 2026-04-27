@@ -1,0 +1,3175 @@
+[
+  {
+    "index": 0,
+    "object_id": "47808",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.324486435080568,
+    "pixel_accuracy": 0.9823272082270408,
+    "pixel_errors": 7094,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8440663814544678,
+      "2": 0.11343547701835632,
+      "3": 0.01595744676887989
+    }
+  },
+  {
+    "index": 1,
+    "object_id": "47817",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.6148055046796799,
+    "pixel_accuracy": 0.9810965401785714,
+    "pixel_errors": 7588,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8013365864753723,
+      "2": 0.4282744228839874
+    }
+  },
+  {
+    "index": 2,
+    "object_id": "47853",
+    "category": "StorageFurniture",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2396195326000452,
+    "pixel_accuracy": 0.9826136997767857,
+    "pixel_errors": 6979,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.8474686741828918,
+      "2": 0.11100945621728897,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 3,
+    "object_id": "47926",
+    "category": "StorageFurniture",
+    "actor_count": 7,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.13139441183635167,
+    "pixel_accuracy": 0.9712287747130102,
+    "pixel_errors": 11549,
+    "actors": 7,
+    "per_class_iou": {
+      "1": 0.789975106716156,
+      "2": 0.12978577613830566,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0
+    }
+  },
+  {
+    "index": 4,
+    "object_id": "47944",
+    "category": "StorageFurniture",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2888423427939415,
+    "pixel_accuracy": 0.9703319316007653,
+    "pixel_errors": 11909,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.8528344631195068,
+      "2": 0.30253490805625916,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 5,
+    "object_id": "47954",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.27760905648271245,
+    "pixel_accuracy": 0.9717394770408163,
+    "pixel_errors": 11344,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.6608877778053284,
+      "2": 0.13895386457443237,
+      "3": 0.03298552706837654
+    }
+  },
+  {
+    "index": 6,
+    "object_id": "47963",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.6231224089860916,
+    "pixel_accuracy": 0.9819485411352041,
+    "pixel_errors": 7246,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8061034083366394,
+      "2": 0.4401414096355438
+    }
+  },
+  {
+    "index": 7,
+    "object_id": "47976",
+    "category": "StorageFurniture",
+    "actor_count": 5,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.20579848289489747,
+    "pixel_accuracy": 0.9706084582270408,
+    "pixel_errors": 11798,
+    "actors": 5,
+    "per_class_iou": {
+      "1": 0.8107866048812866,
+      "2": 0.21820580959320068,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0
+    }
+  },
+  {
+    "index": 8,
+    "object_id": "48010",
+    "category": "StorageFurniture",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2857125269511016,
+    "pixel_accuracy": 0.9740339006696429,
+    "pixel_errors": 10423,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.8859360218048096,
+      "2": 0.2565634548664093,
+      "3": 0.00035063113318756223,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 9,
+    "object_id": "48013",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.4225530362067123,
+    "pixel_accuracy": 0.9841707190688775,
+    "pixel_errors": 6354,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8747056722640991,
+      "2": 0.39089423418045044,
+      "3": 0.0020592021755874157
+    }
+  },
+  {
+    "index": 10,
+    "object_id": "48018",
+    "category": "StorageFurniture",
+    "actor_count": 5,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.2047651082277298,
+    "pixel_accuracy": 0.9735506018813775,
+    "pixel_errors": 10617,
+    "actors": 5,
+    "per_class_iou": {
+      "1": 0.8067182898521423,
+      "2": 0.21710725128650665,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0
+    }
+  },
+  {
+    "index": 11,
+    "object_id": "48023",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.5807977765798569,
+    "pixel_accuracy": 0.9834906130420918,
+    "pixel_errors": 6627,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.7667428255081177,
+      "2": 0.39485272765159607
+    }
+  },
+  {
+    "index": 12,
+    "object_id": "48036",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.5490664094686508,
+    "pixel_accuracy": 0.9766372369260204,
+    "pixel_errors": 9378,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.749639093875885,
+      "2": 0.3484937250614166
+    }
+  },
+  {
+    "index": 13,
+    "object_id": "48051",
+    "category": "StorageFurniture",
+    "actor_count": 6,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.16921961158125973,
+    "pixel_accuracy": 0.9674346301020408,
+    "pixel_errors": 13072,
+    "actors": 6,
+    "per_class_iou": {
+      "1": 0.8574445843696594,
+      "2": 0.1574944406747818,
+      "3": 0.0003786444431170821,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0
+    }
+  },
+  {
+    "index": 14,
+    "object_id": "48063",
+    "category": "StorageFurniture",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2922070622444153,
+    "pixel_accuracy": 0.9727907764668368,
+    "pixel_errors": 10922,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.858439028263092,
+      "2": 0.3103892207145691,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 15,
+    "object_id": "48167",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.6152617186307907,
+    "pixel_accuracy": 0.983757174744898,
+    "pixel_errors": 6520,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8184930682182312,
+      "2": 0.4120303690433502
+    }
+  },
+  {
+    "index": 16,
+    "object_id": "48169",
+    "category": "StorageFurniture",
+    "actor_count": 6,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.15227633093794188,
+    "pixel_accuracy": 0.9657505580357143,
+    "pixel_errors": 13748,
+    "actors": 6,
+    "per_class_iou": {
+      "1": 0.8208376169204712,
+      "2": 0.09282036870718002,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0
+    }
+  },
+  {
+    "index": 17,
+    "object_id": "48177",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.4179866697328786,
+    "pixel_accuracy": 0.9787373445471939,
+    "pixel_errors": 8535,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8869357109069824,
+      "2": 0.3629830777645111,
+      "3": 0.004041220527142286
+    }
+  },
+  {
+    "index": 18,
+    "object_id": "48243",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.6050833314657211,
+    "pixel_accuracy": 0.9811413823341837,
+    "pixel_errors": 7570,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.7910754680633545,
+      "2": 0.41909119486808777
+    }
+  },
+  {
+    "index": 19,
+    "object_id": "48253",
+    "category": "StorageFurniture",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2983590215444565,
+    "pixel_accuracy": 0.9757603236607143,
+    "pixel_errors": 9730,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.8978974223136902,
+      "2": 0.29553866386413574,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 20,
+    "object_id": "48258",
+    "category": "StorageFurniture",
+    "actor_count": 5,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.23538653254508973,
+    "pixel_accuracy": 0.9752720424107143,
+    "pixel_errors": 9926,
+    "actors": 5,
+    "per_class_iou": {
+      "1": 0.9055709838867188,
+      "2": 0.27136167883872986,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0
+    }
+  },
+  {
+    "index": 21,
+    "object_id": "48263",
+    "category": "StorageFurniture",
+    "actor_count": 5,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.20651572346687316,
+    "pixel_accuracy": 0.9722800741390306,
+    "pixel_errors": 11127,
+    "actors": 5,
+    "per_class_iou": {
+      "1": 0.8562183976173401,
+      "2": 0.17636021971702576,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0
+    }
+  },
+  {
+    "index": 22,
+    "object_id": "48271",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.7256464064121246,
+    "pixel_accuracy": 0.9882837412308674,
+    "pixel_errors": 4703,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8751481771469116,
+      "2": 0.5761446356773376
+    }
+  },
+  {
+    "index": 23,
+    "object_id": "48356",
+    "category": "StorageFurniture",
+    "actor_count": 5,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.20293332934379577,
+    "pixel_accuracy": 0.9711415816326531,
+    "pixel_errors": 11584,
+    "actors": 5,
+    "per_class_iou": {
+      "1": 0.811328113079071,
+      "2": 0.20333853363990784,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0
+    }
+  },
+  {
+    "index": 24,
+    "object_id": "48379",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.4207505616747464,
+    "pixel_accuracy": 0.9758998325892857,
+    "pixel_errors": 9674,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8900889158248901,
+      "2": 0.37024572491645813,
+      "3": 0.0019170442828908563
+    }
+  },
+  {
+    "index": 25,
+    "object_id": "48381",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.3942045271396637,
+    "pixel_accuracy": 0.9741061463647959,
+    "pixel_errors": 10394,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8370730876922607,
+      "2": 0.33907198905944824,
+      "3": 0.0064685046672821045
+    }
+  },
+  {
+    "index": 26,
+    "object_id": "48413",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.7536989748477936,
+    "pixel_accuracy": 0.9861612125318877,
+    "pixel_errors": 5555,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8800240755081177,
+      "2": 0.6273738741874695
+    }
+  },
+  {
+    "index": 27,
+    "object_id": "48452",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.7193938195705414,
+    "pixel_accuracy": 0.9830322265625,
+    "pixel_errors": 6811,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8474760055541992,
+      "2": 0.5913116335868835
+    }
+  },
+  {
+    "index": 28,
+    "object_id": "48467",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.6103800684213638,
+    "pixel_accuracy": 0.9820182955994898,
+    "pixel_errors": 7218,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8010899424552917,
+      "2": 0.4196701943874359
+    }
+  },
+  {
+    "index": 29,
+    "object_id": "48479",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.34707121054331463,
+    "pixel_accuracy": 0.9748111647002551,
+    "pixel_errors": 10111,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.7877862453460693,
+      "2": 0.2534273862838745,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 30,
+    "object_id": "48490",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.6156328171491623,
+    "pixel_accuracy": 0.9827133490114796,
+    "pixel_errors": 6939,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8084669709205627,
+      "2": 0.42279866337776184
+    }
+  },
+  {
+    "index": 31,
+    "object_id": "48491",
+    "category": "StorageFurniture",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2976362034678459,
+    "pixel_accuracy": 0.9742057955994898,
+    "pixel_errors": 10354,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.8166908025741577,
+      "2": 0.37385401129722595,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 32,
+    "object_id": "48492",
+    "category": "Box",
+    "actor_count": 5,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.11779109239578248,
+    "pixel_accuracy": 0.9526317362882653,
+    "pixel_errors": 19014,
+    "actors": 5,
+    "per_class_iou": {
+      "1": 0.5889554619789124,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0
+    }
+  },
+  {
+    "index": 33,
+    "object_id": "48497",
+    "category": "StorageFurniture",
+    "actor_count": 9,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.081105995302399,
+    "pixel_accuracy": 0.9759621133609694,
+    "pixel_errors": 9649,
+    "actors": 9,
+    "per_class_iou": {
+      "1": 0.7221636772155762,
+      "2": 0.007790280506014824,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0
+    }
+  },
+  {
+    "index": 34,
+    "object_id": "48513",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.3554269620314396,
+    "pixel_accuracy": 0.9750353754783163,
+    "pixel_errors": 10021,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.7982106804847717,
+      "2": 0.26772525906562805,
+      "3": 0.00034494654391892254
+    }
+  },
+  {
+    "index": 35,
+    "object_id": "48517",
+    "category": "StorageFurniture",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2821914739906788,
+    "pixel_accuracy": 0.9730523557079082,
+    "pixel_errors": 10817,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.8789269328117371,
+      "2": 0.2498389631509781,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 36,
+    "object_id": "48519",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.6806750595569611,
+    "pixel_accuracy": 0.9868811782525511,
+    "pixel_errors": 5266,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.832994818687439,
+      "2": 0.5283553004264832
+    }
+  },
+  {
+    "index": 37,
+    "object_id": "4853",
+    "category": "Display",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.2488752380013466,
+    "pixel_accuracy": 0.9598837093431123,
+    "pixel_errors": 16103,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.15269364416599274,
+      "2": 0.34505683183670044
+    }
+  },
+  {
+    "index": 38,
+    "object_id": "48623",
+    "category": "StorageFurniture",
+    "actor_count": 7,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.1277792411191123,
+    "pixel_accuracy": 0.9689044563137755,
+    "pixel_errors": 12482,
+    "actors": 7,
+    "per_class_iou": {
+      "1": 0.804762065410614,
+      "2": 0.089692622423172,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0
+    }
+  },
+  {
+    "index": 39,
+    "object_id": "48686",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.6881365776062012,
+    "pixel_accuracy": 0.9865249322385204,
+    "pixel_errors": 5409,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8515953421592712,
+      "2": 0.5246778130531311
+    }
+  },
+  {
+    "index": 40,
+    "object_id": "48700",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.38893531759579975,
+    "pixel_accuracy": 0.9771404655612245,
+    "pixel_errors": 9176,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8562175035476685,
+      "2": 0.31058844923973083,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 41,
+    "object_id": "48721",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.38746634498238564,
+    "pixel_accuracy": 0.9832115951849489,
+    "pixel_errors": 6739,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.6800619959831238,
+      "2": 0.09487069398164749
+    }
+  },
+  {
+    "index": 42,
+    "object_id": "48740",
+    "category": "StorageFurniture",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.30056481137580704,
+    "pixel_accuracy": 0.9740314094387755,
+    "pixel_errors": 10424,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.9062192440032959,
+      "2": 0.29576459527015686,
+      "3": 0.00027540622977539897,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 43,
+    "object_id": "48746",
+    "category": "StorageFurniture",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.6960452198982239,
+    "pixel_accuracy": 0.9862309669961735,
+    "pixel_errors": 5527,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.863427996635437,
+      "2": 0.5286624431610107
+    }
+  },
+  {
+    "index": 44,
+    "object_id": "48797",
+    "category": "StorageFurniture",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.22296423185616732,
+    "pixel_accuracy": 0.9803367147640306,
+    "pixel_errors": 7893,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.846034824848175,
+      "2": 0.04582210257649422,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 45,
+    "object_id": "48855",
+    "category": "StorageFurniture",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2608199082314968,
+    "pixel_accuracy": 0.9702098612882653,
+    "pixel_errors": 11958,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.842731773853302,
+      "2": 0.20054785907268524,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 46,
+    "object_id": "48859",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.38458203865836066,
+    "pixel_accuracy": 0.9759720782844388,
+    "pixel_errors": 9645,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8085070848464966,
+      "2": 0.33556926250457764,
+      "3": 0.009669768624007702
+    }
+  },
+  {
+    "index": 47,
+    "object_id": "48876",
+    "category": "StorageFurniture",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.30236658453941345,
+    "pixel_accuracy": 0.9755709901147959,
+    "pixel_errors": 9806,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.8955253958702087,
+      "2": 0.31394094228744507,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 48,
+    "object_id": "48878",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.38126761344028637,
+    "pixel_accuracy": 0.9758973413584183,
+    "pixel_errors": 9675,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.9078616499900818,
+      "2": 0.23563861846923828,
+      "3": 0.00030257186153903604
+    }
+  },
+  {
+    "index": 49,
+    "object_id": "49025",
+    "category": "StorageFurniture",
+    "actor_count": 5,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.19571133553981782,
+    "pixel_accuracy": 0.9702397560586735,
+    "pixel_errors": 11946,
+    "actors": 5,
+    "per_class_iou": {
+      "1": 0.8072798848152161,
+      "2": 0.17127679288387299,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0
+    }
+  },
+  {
+    "index": 50,
+    "object_id": "49038",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.3774635995893429,
+    "pixel_accuracy": 0.9813954878826531,
+    "pixel_errors": 7468,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8523820638656616,
+      "2": 0.2789685130119324,
+      "3": 0.0010402218904346228
+    }
+  },
+  {
+    "index": 51,
+    "object_id": "49042",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.4013532504128913,
+    "pixel_accuracy": 0.9749332350127551,
+    "pixel_errors": 10062,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8484763503074646,
+      "2": 0.3485238552093506,
+      "3": 0.00705954572185874
+    }
+  },
+  {
+    "index": 52,
+    "object_id": "49062",
+    "category": "StorageFurniture",
+    "actor_count": 7,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.12556191214493342,
+    "pixel_accuracy": 0.9701525629783163,
+    "pixel_errors": 11981,
+    "actors": 7,
+    "per_class_iou": {
+      "1": 0.8056144714355469,
+      "2": 0.07331891357898712,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0
+    }
+  },
+  {
+    "index": 53,
+    "object_id": "49132",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.3944960633913676,
+    "pixel_accuracy": 0.9766596580038265,
+    "pixel_errors": 9369,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8521708846092224,
+      "2": 0.33131730556488037,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 54,
+    "object_id": "49133",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.4151181976000468,
+    "pixel_accuracy": 0.9758624641262755,
+    "pixel_errors": 9689,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8910746574401855,
+      "2": 0.35427993535995483,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 55,
+    "object_id": "49140",
+    "category": "StorageFurniture",
+    "actor_count": 5,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.20161067545413972,
+    "pixel_accuracy": 0.9660993303571429,
+    "pixel_errors": 13608,
+    "actors": 5,
+    "per_class_iou": {
+      "1": 0.8501549959182739,
+      "2": 0.15789838135242462,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0
+    }
+  },
+  {
+    "index": 56,
+    "object_id": "49182",
+    "category": "StorageFurniture",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.37983009219169617,
+    "pixel_accuracy": 0.9773572026466837,
+    "pixel_errors": 9089,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8033245205879211,
+      "2": 0.33616575598716736,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 57,
+    "object_id": "49188",
+    "category": "StorageFurniture",
+    "actor_count": 7,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.12347570859960147,
+    "pixel_accuracy": 0.9677734375,
+    "pixel_errors": 12936,
+    "actors": 7,
+    "per_class_iou": {
+      "1": 0.805812656879425,
+      "2": 0.05851730331778526,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0
+    }
+  },
+  {
+    "index": 58,
+    "object_id": "5050",
+    "category": "Display",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.383374884724617,
+    "pixel_accuracy": 0.9699557557397959,
+    "pixel_errors": 12060,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.2613002359867096,
+      "2": 0.5054495334625244
+    }
+  },
+  {
+    "index": 59,
+    "object_id": "5088",
+    "category": "Display",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.4403834193944931,
+    "pixel_accuracy": 0.9732018295599489,
+    "pixel_errors": 10757,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.43748342990875244,
+      "2": 0.44328340888023376
+    }
+  },
+  {
+    "index": 60,
+    "object_id": "5103",
+    "category": "Display",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.7128353416919708,
+    "pixel_accuracy": 0.9937495017538265,
+    "pixel_errors": 2509,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.6582670211791992,
+      "2": 0.7674036622047424
+    }
+  },
+  {
+    "index": 61,
+    "object_id": "5306",
+    "category": "Display",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.3402102440595627,
+    "pixel_accuracy": 0.9653619260204082,
+    "pixel_errors": 13904,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.2706069350242615,
+      "2": 0.4098135530948639
+    }
+  },
+  {
+    "index": 62,
+    "object_id": "5452",
+    "category": "Display",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.17774285973791848,
+    "pixel_accuracy": 0.966445611447704,
+    "pixel_errors": 13469,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.7107312083244324,
+      "2": 0.00024023062724154443,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 63,
+    "object_id": "5477",
+    "category": "Display",
+    "actor_count": 8,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.07086067460477352,
+    "pixel_accuracy": 0.9651302415497449,
+    "pixel_errors": 13997,
+    "actors": 8,
+    "per_class_iou": {
+      "1": 0.20068560540676117,
+      "2": 0.366199791431427,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 0.0
+    }
+  },
+  {
+    "index": 64,
+    "object_id": "5601",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.3385997712612152,
+    "pixel_accuracy": 0.9621382732780612,
+    "pixel_errors": 15198,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.3755219578742981,
+      "2": 0.3016775846481323
+    }
+  },
+  {
+    "index": 65,
+    "object_id": "5688",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.42306502908468246,
+    "pixel_accuracy": 0.9764379384566326,
+    "pixel_errors": 9458,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.7299466729164124,
+      "3": 0.11618338525295258
+    }
+  },
+  {
+    "index": 66,
+    "object_id": "5696",
+    "category": "Clock",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.07916981913149357,
+    "pixel_accuracy": 0.9360451211734694,
+    "pixel_errors": 25672,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.22563382983207703,
+      "2": 0.007527801673859358,
+      "3": 0.004347825888544321
+    }
+  },
+  {
+    "index": 67,
+    "object_id": "5850",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.4136674925684929,
+    "pixel_accuracy": 0.9689318598533163,
+    "pixel_errors": 12471,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.6824440360069275,
+      "2": 0.1448909491300583
+    }
+  },
+  {
+    "index": 68,
+    "object_id": "5861",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.5263974890112877,
+    "pixel_accuracy": 0.9837247887436225,
+    "pixel_errors": 6533,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8445107936859131,
+      "3": 0.2082841843366623
+    }
+  },
+  {
+    "index": 69,
+    "object_id": "5902",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.42132484912872314,
+    "pixel_accuracy": 0.9551080197704082,
+    "pixel_errors": 18020,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.6711809039115906,
+      "2": 0.1714687943458557
+    }
+  },
+  {
+    "index": 70,
+    "object_id": "6037",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.34267957881093025,
+    "pixel_accuracy": 0.9467897999043368,
+    "pixel_errors": 21359,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.6130915284156799,
+      "3": 0.07226762920618057
+    }
+  },
+  {
+    "index": 71,
+    "object_id": "6040",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.4218507930636406,
+    "pixel_accuracy": 0.969367825255102,
+    "pixel_errors": 12296,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.6947638988494873,
+      "3": 0.14893768727779388
+    }
+  },
+  {
+    "index": 72,
+    "object_id": "6209",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.4241223484277725,
+    "pixel_accuracy": 0.9627336774553571,
+    "pixel_errors": 14959,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.6976786851882935,
+      "2": 0.1505660116672516
+    }
+  },
+  {
+    "index": 73,
+    "object_id": "6222",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.38533980771899223,
+    "pixel_accuracy": 0.9712711256377551,
+    "pixel_errors": 11532,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.6996781229972839,
+      "3": 0.07100149244070053
+    }
+  },
+  {
+    "index": 74,
+    "object_id": "6263",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.45400918275117874,
+    "pixel_accuracy": 0.9750004982461735,
+    "pixel_errors": 10035,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.7711969017982483,
+      "3": 0.1368214637041092
+    }
+  },
+  {
+    "index": 75,
+    "object_id": "6335",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.4376019388437271,
+    "pixel_accuracy": 0.9656235052614796,
+    "pixel_errors": 13799,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.678596556186676,
+      "2": 0.1966073215007782
+    }
+  },
+  {
+    "index": 76,
+    "object_id": "6430",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.35316861514002085,
+    "pixel_accuracy": 0.9587501992984694,
+    "pixel_errors": 16558,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.6796899437904358,
+      "3": 0.026647286489605904
+    }
+  },
+  {
+    "index": 77,
+    "object_id": "6493",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.37056172080338,
+    "pixel_accuracy": 0.9770781847895408,
+    "pixel_errors": 9201,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.734950602054596,
+      "3": 0.006172839552164078
+    }
+  },
+  {
+    "index": 78,
+    "object_id": "6500",
+    "category": "Clock",
+    "actor_count": 1,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.9784715175628662,
+    "pixel_accuracy": 0.997802734375,
+    "pixel_errors": 882,
+    "actors": 1,
+    "per_class_iou": {
+      "1": 0.9784715175628662
+    }
+  },
+  {
+    "index": 79,
+    "object_id": "6568",
+    "category": "Clock",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2519897863579293,
+    "pixel_accuracy": 0.972412109375,
+    "pixel_errors": 11074,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.7483999729156494,
+      "2": 0.0075693861581385136,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 80,
+    "object_id": "6608",
+    "category": "Clock",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2574107497930527,
+    "pixel_accuracy": 0.9830048230229592,
+    "pixel_errors": 6822,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.7695286870002747,
+      "2": 0.002703562378883362,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 81,
+    "object_id": "6613",
+    "category": "Clock",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.11551777172523241,
+    "pixel_accuracy": 0.9721480389030612,
+    "pixel_errors": 11180,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.3374742567539215,
+      "2": 0.005904455203562975,
+      "3": 0.0031746032182127237
+    }
+  },
+  {
+    "index": 82,
+    "object_id": "6638",
+    "category": "Clock",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.04496297024888918,
+    "pixel_accuracy": 0.96044921875,
+    "pixel_errors": 15876,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.16162800788879395,
+      "2": 0.015748625621199608,
+      "3": 0.002475247485563159,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 83,
+    "object_id": "6641",
+    "category": "Clock",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.37057055960030993,
+    "pixel_accuracy": 0.9761788504464286,
+    "pixel_errors": 9562,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.7409207820892334,
+      "2": 0.0002203371113864705
+    }
+  },
+  {
+    "index": 84,
+    "object_id": "6643",
+    "category": "Clock",
+    "actor_count": 1,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.8259543776512146,
+    "pixel_accuracy": 0.9832240513392857,
+    "pixel_errors": 6734,
+    "actors": 1,
+    "per_class_iou": {
+      "1": 0.8259543776512146
+    }
+  },
+  {
+    "index": 85,
+    "object_id": "6665",
+    "category": "Clock",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.12299374933354557,
+    "pixel_accuracy": 0.9643978196747449,
+    "pixel_errors": 14291,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.35118618607521057,
+      "2": 0.016012530773878098,
+      "3": 0.001782531151548028
+    }
+  },
+  {
+    "index": 86,
+    "object_id": "6728",
+    "category": "Clock",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.3095414340496063,
+    "pixel_accuracy": 0.9614008689413265,
+    "pixel_errors": 15494,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.6190828680992126,
+      "2": 0.0
+    }
+  },
+  {
+    "index": 87,
+    "object_id": "6771",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.4813595227897167,
+    "pixel_accuracy": 0.9966343470982143,
+    "pixel_errors": 1351,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8921000361442566,
+      "3": 0.07061900943517685
+    }
+  },
+  {
+    "index": 88,
+    "object_id": "6797",
+    "category": "Clock",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.19141444563865662,
+    "pixel_accuracy": 0.9709821428571429,
+    "pixel_errors": 11648,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.7508058547973633,
+      "2": 0.014851927757263184,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 89,
+    "object_id": "6808",
+    "category": "Clock",
+    "actor_count": 1,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.9854899644851685,
+    "pixel_accuracy": 0.9985775071747449,
+    "pixel_errors": 571,
+    "actors": 1,
+    "per_class_iou": {
+      "1": 0.9854899644851685
+    }
+  },
+  {
+    "index": 90,
+    "object_id": "6813",
+    "category": "Clock",
+    "actor_count": 1,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.9895315766334534,
+    "pixel_accuracy": 0.998908840880102,
+    "pixel_errors": 438,
+    "actors": 1,
+    "per_class_iou": {
+      "1": 0.9895315766334534
+    }
+  },
+  {
+    "index": 91,
+    "object_id": "6839",
+    "category": "Clock",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.212228257364283,
+    "pixel_accuracy": 0.9738794443558674,
+    "pixel_errors": 10485,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.6330355405807495,
+      "2": 0.0036492315120995045,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 92,
+    "object_id": "6843",
+    "category": "Clock",
+    "actor_count": 5,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.13366088215261698,
+    "pixel_accuracy": 0.9696867028061225,
+    "pixel_errors": 12168,
+    "actors": 5,
+    "per_class_iou": {
+      "1": 0.6580332517623901,
+      "2": 0.010271159000694752,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0
+    }
+  },
+  {
+    "index": 93,
+    "object_id": "6917",
+    "category": "Clock",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.25678339165945846,
+    "pixel_accuracy": 0.9746741470025511,
+    "pixel_errors": 10166,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.7485423684120178,
+      "2": 0.021807806566357613,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 94,
+    "object_id": "6934",
+    "category": "Clock",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.19545566570013762,
+    "pixel_accuracy": 0.9724868463010204,
+    "pixel_errors": 11044,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.7660489082336426,
+      "2": 0.015773754566907883,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 95,
+    "object_id": "693",
+    "category": "Faucet",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2349005031088988,
+    "pixel_accuracy": 0.9760243941326531,
+    "pixel_errors": 9624,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.6875549554824829,
+      "2": 0.0,
+      "3": 0.017146553844213486
+    }
+  },
+  {
+    "index": 96,
+    "object_id": "6953",
+    "category": "Clock",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.1951181268086657,
+    "pixel_accuracy": 0.9755037268813775,
+    "pixel_errors": 9833,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.7733900547027588,
+      "2": 0.007082452531903982,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 97,
+    "object_id": "6963",
+    "category": "Clock",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.19128892221488059,
+    "pixel_accuracy": 0.9732317243303571,
+    "pixel_errors": 10745,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.7571728229522705,
+      "2": 0.007982865907251835,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 98,
+    "object_id": "7004",
+    "category": "Clock",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.13765364536084235,
+    "pixel_accuracy": 0.9496372767857143,
+    "pixel_errors": 20216,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.4107203185558319,
+      "2": 0.0022406175266951323,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 99,
+    "object_id": "7007",
+    "category": "Clock",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.26659582182765007,
+    "pixel_accuracy": 0.9741684271364796,
+    "pixel_errors": 10369,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.7655944228172302,
+      "2": 0.034193042665719986,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 100,
+    "object_id": "7015",
+    "category": "Clock",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.25601015985012054,
+    "pixel_accuracy": 0.9753791653380102,
+    "pixel_errors": 9883,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.7493912577629089,
+      "2": 0.018639221787452698,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 101,
+    "object_id": "7032",
+    "category": "Clock",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.22430538665503263,
+    "pixel_accuracy": 0.9686628069196429,
+    "pixel_errors": 12579,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.6636982560157776,
+      "2": 0.009217903949320316,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 102,
+    "object_id": "7037",
+    "category": "Clock",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2256957913438479,
+    "pixel_accuracy": 0.9662438217474489,
+    "pixel_errors": 13550,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.6640323400497437,
+      "2": 0.01305503398180008,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 103,
+    "object_id": "7054",
+    "category": "Clock",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.18953186529688537,
+    "pixel_accuracy": 0.9753891302614796,
+    "pixel_errors": 9879,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.7510504722595215,
+      "2": 0.0070769889280200005,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 104,
+    "object_id": "7064",
+    "category": "Clock",
+    "actor_count": 1,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.9812711477279663,
+    "pixel_accuracy": 0.9979995416135204,
+    "pixel_errors": 803,
+    "actors": 1,
+    "per_class_iou": {
+      "1": 0.9812711477279663
+    }
+  },
+  {
+    "index": 105,
+    "object_id": "7068",
+    "category": "Clock",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.25416511856019497,
+    "pixel_accuracy": 0.9766945352359694,
+    "pixel_errors": 9355,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.756477415561676,
+      "2": 0.006017940118908882,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 106,
+    "object_id": "7074",
+    "category": "Clock",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.25985717431952554,
+    "pixel_accuracy": 0.9825090680803571,
+    "pixel_errors": 7021,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.7659099102020264,
+      "2": 0.013661612756550312,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 107,
+    "object_id": "7078",
+    "category": "Clock",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.07000458473339677,
+    "pixel_accuracy": 0.9696169483418368,
+    "pixel_errors": 12196,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.2680187523365021,
+      "2": 0.011999586597084999,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 108,
+    "object_id": "7104",
+    "category": "Clock",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2008632947690785,
+    "pixel_accuracy": 0.9775639748086735,
+    "pixel_errors": 9006,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.7858831286430359,
+      "2": 0.017570050433278084,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 109,
+    "object_id": "7111",
+    "category": "Clock",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.17972905770875514,
+    "pixel_accuracy": 0.9815026108099489,
+    "pixel_errors": 7425,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.7155476808547974,
+      "2": 0.003368549980223179,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 110,
+    "object_id": "7119",
+    "category": "Microwave",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.55279940366745,
+    "pixel_accuracy": 0.9793178013392857,
+    "pixel_errors": 8302,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8013278841972351,
+      "2": 0.3042709231376648
+    }
+  },
+  {
+    "index": 111,
+    "object_id": "7120",
+    "category": "Oven",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.3405430366595586,
+    "pixel_accuracy": 0.9767468510841837,
+    "pixel_errors": 9334,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8392261266708374,
+      "3": 0.18240298330783844,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 112,
+    "object_id": "7128",
+    "category": "Microwave",
+    "actor_count": 5,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.2616595923900604,
+    "pixel_accuracy": 0.9847536670918368,
+    "pixel_errors": 6120,
+    "actors": 5,
+    "per_class_iou": {
+      "1": 0.8410801291465759,
+      "2": 0.4672178328037262,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0
+    }
+  },
+  {
+    "index": 113,
+    "object_id": "7167",
+    "category": "Microwave",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.33765771985054016,
+    "pixel_accuracy": 0.9829375597895408,
+    "pixel_errors": 6849,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.8404142260551453,
+      "2": 0.5102166533470154,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 114,
+    "object_id": "7179",
+    "category": "Oven",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.263550341129303,
+    "pixel_accuracy": 0.9765450613839286,
+    "pixel_errors": 9415,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.7906510233879089,
+      "5": 0.0,
+      "6": 0.0
+    }
+  },
+  {
+    "index": 115,
+    "object_id": "7187",
+    "category": "Oven",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.37249735991160077,
+    "pixel_accuracy": 0.9744549186862245,
+    "pixel_errors": 10254,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8686653971672058,
+      "2": 0.24882668256759644,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 116,
+    "object_id": "7201",
+    "category": "Oven",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2651684482892354,
+    "pixel_accuracy": 0.9769511320153061,
+    "pixel_errors": 9252,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.7955053448677063,
+      "5": 0.0,
+      "6": 0.0
+    }
+  },
+  {
+    "index": 117,
+    "object_id": "7220",
+    "category": "Oven",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.418808509906133,
+    "pixel_accuracy": 0.9796964684311225,
+    "pixel_errors": 8150,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8630281090736389,
+      "2": 0.39339742064476013,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 118,
+    "object_id": "7236",
+    "category": "Microwave",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.6893278956413269,
+    "pixel_accuracy": 0.9849305444834183,
+    "pixel_errors": 6049,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8396810293197632,
+      "2": 0.5389747619628906
+    }
+  },
+  {
+    "index": 119,
+    "object_id": "723",
+    "category": "Chair",
+    "actor_count": 12,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.038746379488050785,
+    "pixel_accuracy": 0.9533666493941326,
+    "pixel_errors": 18719,
+    "actors": 12,
+    "per_class_iou": {
+      "1": 0.464579313993454,
+      "2": 0.0003772398631554097,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0,
+      "10": 0.0,
+      "11": 0.0,
+      "13": 0.0
+    }
+  },
+  {
+    "index": 120,
+    "object_id": "7263",
+    "category": "Microwave",
+    "actor_count": 20,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.06554719507694244,
+    "pixel_accuracy": 0.9844024035395408,
+    "pixel_errors": 6261,
+    "actors": 20,
+    "per_class_iou": {
+      "1": 0.833306074142456,
+      "2": 0.4776378273963928,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0,
+      "14": 0.0,
+      "15": 0.0,
+      "16": 0.0,
+      "17": 0.0,
+      "18": 0.0,
+      "19": 0.0,
+      "20": 0.0
+    }
+  },
+  {
+    "index": 121,
+    "object_id": "7265",
+    "category": "Microwave",
+    "actor_count": 21,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.052655864329565136,
+    "pixel_accuracy": 0.9775241151147959,
+    "pixel_errors": 9022,
+    "actors": 21,
+    "per_class_iou": {
+      "1": 0.7685320377349854,
+      "2": 0.33724111318588257,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0,
+      "14": 0.0,
+      "15": 0.0,
+      "16": 0.0,
+      "17": 0.0,
+      "18": 0.0,
+      "19": 0.0,
+      "20": 0.0,
+      "21": 0.0
+    }
+  },
+  {
+    "index": 122,
+    "object_id": "7273",
+    "category": "Microwave",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.31905483454465866,
+    "pixel_accuracy": 0.9816844706632653,
+    "pixel_errors": 7352,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.8209830522537231,
+      "2": 0.4552362859249115,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 123,
+    "object_id": "7290",
+    "category": "Oven",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.5913228988647461,
+    "pixel_accuracy": 0.9781469228316326,
+    "pixel_errors": 8772,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.7947379946708679,
+      "2": 0.38790780305862427
+    }
+  },
+  {
+    "index": 124,
+    "object_id": "7296",
+    "category": "Microwave",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.4219816227753957,
+    "pixel_accuracy": 0.9869434590242347,
+    "pixel_errors": 5241,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8869635462760925,
+      "3": 0.3789813220500946,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 125,
+    "object_id": "7304",
+    "category": "Microwave",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.5678292512893677,
+    "pixel_accuracy": 0.9785255899234694,
+    "pixel_errors": 8620,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8019173741340637,
+      "2": 0.33374112844467163
+    }
+  },
+  {
+    "index": 126,
+    "object_id": "7310",
+    "category": "Microwave",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.6546212583780289,
+    "pixel_accuracy": 0.9828354193239796,
+    "pixel_errors": 6890,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8404670357704163,
+      "2": 0.4687754809856415
+    }
+  },
+  {
+    "index": 127,
+    "object_id": "7332",
+    "category": "Oven",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.263447105884552,
+    "pixel_accuracy": 0.9756556919642857,
+    "pixel_errors": 9772,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.790341317653656,
+      "5": 0.0,
+      "6": 0.0
+    }
+  },
+  {
+    "index": 128,
+    "object_id": "7349",
+    "category": "Microwave",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.21866414695978165,
+    "pixel_accuracy": 0.9780946069834183,
+    "pixel_errors": 8793,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.7847012281417847,
+      "3": 0.08995535969734192,
+      "4": 0.0,
+      "5": 0.0
+    }
+  },
+  {
+    "index": 129,
+    "object_id": "7366",
+    "category": "Microwave",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.40695278843243915,
+    "pixel_accuracy": 0.9858672472895408,
+    "pixel_errors": 5673,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.8598577380180359,
+      "3": 0.3610006272792816,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 130,
+    "object_id": "7619",
+    "category": "Keyboard",
+    "actor_count": 116,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.003186343968364185,
+    "pixel_accuracy": 0.9667545240752551,
+    "pixel_errors": 13345,
+    "actors": 116,
+    "per_class_iou": {
+      "1": 0.3672283887863159,
+      "2": 0.002387511543929577,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0,
+      "14": 0.0,
+      "15": 0.0,
+      "16": 0.0,
+      "17": 0.0,
+      "18": 0.0,
+      "19": 0.0,
+      "20": 0.0,
+      "21": 0.0,
+      "22": 0.0,
+      "23": 0.0,
+      "24": 0.0,
+      "25": 0.0,
+      "26": 0.0,
+      "27": 0.0,
+      "28": 0.0,
+      "29": 0.0,
+      "30": 0.0,
+      "31": 0.0,
+      "32": 0.0,
+      "33": 0.0,
+      "34": 0.0,
+      "35": 0.0,
+      "36": 0.0,
+      "37": 0.0,
+      "38": 0.0,
+      "39": 0.0,
+      "40": 0.0,
+      "41": 0.0,
+      "42": 0.0,
+      "43": 0.0,
+      "44": 0.0,
+      "45": 0.0,
+      "46": 0.0,
+      "47": 0.0,
+      "48": 0.0,
+      "49": 0.0,
+      "50": 0.0,
+      "51": 0.0,
+      "52": 0.0,
+      "53": 0.0,
+      "54": 0.0,
+      "55": 0.0,
+      "56": 0.0,
+      "57": 0.0,
+      "58": 0.0,
+      "59": 0.0,
+      "60": 0.0,
+      "61": 0.0,
+      "62": 0.0,
+      "63": 0.0,
+      "64": 0.0,
+      "65": 0.0,
+      "66": 0.0,
+      "67": 0.0,
+      "68": 0.0,
+      "69": 0.0,
+      "70": 0.0,
+      "71": 0.0,
+      "72": 0.0,
+      "73": 0.0,
+      "74": 0.0,
+      "75": 0.0,
+      "76": 0.0,
+      "77": 0.0,
+      "78": 0.0,
+      "79": 0.0,
+      "80": 0.0,
+      "81": 0.0,
+      "82": 0.0,
+      "83": 0.0,
+      "84": 0.0,
+      "85": 0.0,
+      "86": 0.0,
+      "87": 0.0,
+      "88": 0.0,
+      "89": 0.0,
+      "90": 0.0,
+      "91": 0.0,
+      "92": 0.0,
+      "93": 0.0,
+      "94": 0.0,
+      "95": 0.0,
+      "96": 0.0,
+      "97": 0.0,
+      "98": 0.0,
+      "99": 0.0,
+      "100": 0.0,
+      "101": 0.0,
+      "102": 0.0,
+      "103": 0.0,
+      "104": 0.0,
+      "105": 0.0,
+      "106": 0.0,
+      "107": 0.0,
+      "108": 0.0,
+      "109": 0.0,
+      "110": 0.0,
+      "111": 0.0,
+      "112": 0.0,
+      "113": 0.0,
+      "114": 0.0,
+      "115": 0.0,
+      "116": 0.0
+    }
+  },
+  {
+    "index": 131,
+    "object_id": "762",
+    "category": "Chair",
+    "actor_count": 17,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.017472787814981797,
+    "pixel_accuracy": 0.9635358537946429,
+    "pixel_errors": 14637,
+    "actors": 17,
+    "per_class_iou": {
+      "1": 0.29703739285469055,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0,
+      "14": 0.0,
+      "15": 0.0,
+      "16": 0.0,
+      "18": 0.0
+    }
+  },
+  {
+    "index": 132,
+    "object_id": "811",
+    "category": "Faucet",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.19325906379769245,
+    "pixel_accuracy": 0.9839041573660714,
+    "pixel_errors": 6461,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.4661908447742462,
+      "2": 0.10274890810251236,
+      "3": 0.010837438516318798
+    }
+  },
+  {
+    "index": 133,
+    "object_id": "822",
+    "category": "Faucet",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.40190526843070984,
+    "pixel_accuracy": 0.9904037786989796,
+    "pixel_errors": 3852,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.553168773651123,
+      "2": 0.25064176321029663
+    }
+  },
+  {
+    "index": 134,
+    "object_id": "857",
+    "category": "Faucet",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.28264591842889786,
+    "pixel_accuracy": 0.9918088329081632,
+    "pixel_errors": 3288,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.40561622381210327,
+      "2": 0.15967561304569244
+    }
+  },
+  {
+    "index": 135,
+    "object_id": "862",
+    "category": "Faucet",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.17552970947387317,
+    "pixel_accuracy": 0.9927953603316326,
+    "pixel_errors": 2892,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.45728981494903564,
+      "2": 0.06776557117700577,
+      "3": 0.0015337422955781221
+    }
+  },
+  {
+    "index": 136,
+    "object_id": "866",
+    "category": "Faucet",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.16985898852969208,
+    "pixel_accuracy": 0.9846340880102041,
+    "pixel_errors": 6168,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.44930499792099,
+      "2": 0.05749032646417618,
+      "3": 0.0027816412039101124
+    }
+  },
+  {
+    "index": 137,
+    "object_id": "8736",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.3632955178618431,
+    "pixel_accuracy": 0.9751076211734694,
+    "pixel_errors": 9992,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.6439911723136902,
+      "2": 0.08259986340999603
+    }
+  },
+  {
+    "index": 138,
+    "object_id": "8848",
+    "category": "Bottle",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.4465619847178459,
+    "pixel_accuracy": 0.9709945990114796,
+    "pixel_errors": 11643,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.6757326722145081,
+      "2": 0.21739129722118378
+    }
+  },
+  {
+    "index": 139,
+    "object_id": "885",
+    "category": "Faucet",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.1461308660606543,
+    "pixel_accuracy": 0.9862832828443877,
+    "pixel_errors": 5506,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.32414206862449646,
+      "2": 0.09183673560619354,
+      "3": 0.022413793951272964
+    }
+  },
+  {
+    "index": 140,
+    "object_id": "8867",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.22957428296407065,
+    "pixel_accuracy": 0.9810641541772959,
+    "pixel_errors": 7601,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.40929272770881653,
+      "2": 0.2794301211833954,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 141,
+    "object_id": "8877",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.17822990690668425,
+    "pixel_accuracy": 0.9747588488520408,
+    "pixel_errors": 10132,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.4773995876312256,
+      "2": 0.05729013308882713,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 142,
+    "object_id": "8893",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.15834086139996847,
+    "pixel_accuracy": 0.9679876833545918,
+    "pixel_errors": 12850,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.24307948350906372,
+      "2": 0.23194310069084167,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 143,
+    "object_id": "8897",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.15796164174874625,
+    "pixel_accuracy": 0.9690937898596939,
+    "pixel_errors": 12406,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.2914566993713379,
+      "2": 0.18242822587490082,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 144,
+    "object_id": "8903",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.17166816194852194,
+    "pixel_accuracy": 0.9675741390306123,
+    "pixel_errors": 13016,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.30276787281036377,
+      "2": 0.21223661303520203,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 145,
+    "object_id": "8919",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.07484253744284312,
+    "pixel_accuracy": 0.9335190130739796,
+    "pixel_errors": 26686,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.03227837383747101,
+      "2": 0.19224923849105835,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 146,
+    "object_id": "8930",
+    "category": "Door",
+    "actor_count": 5,
+    "granularity": "fine_5plus_parts",
+    "mean_iou": 0.12253973186016083,
+    "pixel_accuracy": 0.9631472217793368,
+    "pixel_errors": 14793,
+    "actors": 5,
+    "per_class_iou": {
+      "1": 0.41491809487342834,
+      "2": 0.1977805644273758,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0
+    }
+  },
+  {
+    "index": 147,
+    "object_id": "8936",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.260866641998291,
+    "pixel_accuracy": 0.9886175661670918,
+    "pixel_errors": 4569,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.782599925994873,
+      "2": 0.0,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 148,
+    "object_id": "8961",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.14594663679599762,
+    "pixel_accuracy": 0.9550806162308674,
+    "pixel_errors": 18031,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.2764177918434143,
+      "2": 0.16142211854457855,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 149,
+    "object_id": "8983",
+    "category": "Door",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.2510455995798111,
+    "pixel_accuracy": 0.9668491908482143,
+    "pixel_errors": 13307,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.3189200460910797,
+      "2": 0.18317115306854248
+    }
+  },
+  {
+    "index": 150,
+    "object_id": "8994",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.20779918630917868,
+    "pixel_accuracy": 0.9732142857142857,
+    "pixel_errors": 10752,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.3746235966682434,
+      "2": 0.2487739622592926,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 151,
+    "object_id": "8997",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.06252738150457542,
+    "pixel_accuracy": 0.9363390864158163,
+    "pixel_errors": 25554,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.03076518513262272,
+      "2": 0.15681695938110352,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 152,
+    "object_id": "9003",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.1345730870962143,
+    "pixel_accuracy": 0.9682343152104592,
+    "pixel_errors": 12751,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.24112047255039215,
+      "2": 0.16259878873825073,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 153,
+    "object_id": "9016",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.11382966954261065,
+    "pixel_accuracy": 0.9504718391262755,
+    "pixel_errors": 19881,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.16379742324352264,
+      "2": 0.1760142296552658,
+      "3": 0.0016773557290434837
+    }
+  },
+  {
+    "index": 154,
+    "object_id": "9032",
+    "category": "Door",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.2621191367506981,
+    "pixel_accuracy": 0.9684186662946429,
+    "pixel_errors": 12677,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.34066474437713623,
+      "2": 0.18357352912425995
+    }
+  },
+  {
+    "index": 155,
+    "object_id": "9035",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.10043101757764816,
+    "pixel_accuracy": 0.9652896803252551,
+    "pixel_errors": 13933,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.23200492560863495,
+      "2": 0.06928812712430954,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 156,
+    "object_id": "9041",
+    "category": "Door",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.15387945994734764,
+    "pixel_accuracy": 0.9617895009566326,
+    "pixel_errors": 15338,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.21759651601314545,
+      "2": 0.09016240388154984
+    }
+  },
+  {
+    "index": 157,
+    "object_id": "9065",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.14673393964767456,
+    "pixel_accuracy": 0.9605214644451531,
+    "pixel_errors": 15847,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.2149047702550888,
+      "2": 0.22529704868793488,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 158,
+    "object_id": "9070",
+    "category": "Door",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.30195578560233116,
+    "pixel_accuracy": 0.9708401426977041,
+    "pixel_errors": 11705,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.48235565423965454,
+      "2": 0.12155591696500778
+    }
+  },
+  {
+    "index": 159,
+    "object_id": "908",
+    "category": "Faucet",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.15883674379438162,
+    "pixel_accuracy": 0.9826087173150511,
+    "pixel_errors": 6981,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.46226561069488525,
+      "2": 0.006831984035670757,
+      "3": 0.007412636652588844
+    }
+  },
+  {
+    "index": 160,
+    "object_id": "9107",
+    "category": "Door",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.41081464290618896,
+    "pixel_accuracy": 0.9739890585140306,
+    "pixel_errors": 10441,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.4209280014038086,
+      "2": 0.40070128440856934
+    }
+  },
+  {
+    "index": 161,
+    "object_id": "9117",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2093733251094818,
+    "pixel_accuracy": 0.9752969547193877,
+    "pixel_errors": 9916,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.3581669330596924,
+      "2": 0.26995304226875305,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 162,
+    "object_id": "9127",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.1735678712526957,
+    "pixel_accuracy": 0.9634386957908163,
+    "pixel_errors": 14676,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.31062382459640503,
+      "2": 0.21007978916168213,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 163,
+    "object_id": "9128",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.15319528803229332,
+    "pixel_accuracy": 0.9775216238839286,
+    "pixel_errors": 9023,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.09557894617319107,
+      "2": 0.31926774978637695,
+      "3": 0.044739168137311935
+    }
+  },
+  {
+    "index": 164,
+    "object_id": "912",
+    "category": "Faucet",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.4307233989238739,
+    "pixel_accuracy": 0.9802071707589286,
+    "pixel_errors": 7945,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.6026944518089294,
+      "2": 0.25875234603881836
+    }
+  },
+  {
+    "index": 165,
+    "object_id": "9148",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.15341431802759567,
+    "pixel_accuracy": 0.9757976921237245,
+    "pixel_errors": 9715,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.11319788545370102,
+      "2": 0.33797401189804077,
+      "3": 0.009071056731045246
+    }
+  },
+  {
+    "index": 166,
+    "object_id": "9164",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.15883738795916238,
+    "pixel_accuracy": 0.969108737244898,
+    "pixel_errors": 12400,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.2707679271697998,
+      "2": 0.20574423670768738,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 167,
+    "object_id": "9168",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.1901095238669465,
+    "pixel_accuracy": 0.9695422114158163,
+    "pixel_errors": 12226,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.4705824851989746,
+      "2": 0.09929400682449341,
+      "3": 0.0004520795773714781
+    }
+  },
+  {
+    "index": 168,
+    "object_id": "920",
+    "category": "Faucet",
+    "actor_count": 4,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.16180152911692858,
+    "pixel_accuracy": 0.9829001913265306,
+    "pixel_errors": 6864,
+    "actors": 4,
+    "per_class_iou": {
+      "1": 0.6312078237533569,
+      "2": 0.015998292714357376,
+      "3": 0.0,
+      "4": 0.0
+    }
+  },
+  {
+    "index": 169,
+    "object_id": "9263",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.20950681467851004,
+    "pixel_accuracy": 0.9755734813456632,
+    "pixel_errors": 9805,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.40343979001045227,
+      "2": 0.22508065402507782,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 170,
+    "object_id": "9277",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2354788283507029,
+    "pixel_accuracy": 0.9713458625637755,
+    "pixel_errors": 11502,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.41591328382492065,
+      "2": 0.2905232012271881,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 171,
+    "object_id": "9280",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.19541693230470022,
+    "pixel_accuracy": 0.9684659996811225,
+    "pixel_errors": 12658,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.35113513469696045,
+      "2": 0.2351156622171402,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 172,
+    "object_id": "9281",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.1544020821650823,
+    "pixel_accuracy": 0.9677161391900511,
+    "pixel_errors": 12959,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.29635944962501526,
+      "2": 0.16684679687023163,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 173,
+    "object_id": "9288",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.14642305175463358,
+    "pixel_accuracy": 0.9676812619579082,
+    "pixel_errors": 12973,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.2747928202152252,
+      "2": 0.16447633504867554,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 174,
+    "object_id": "929",
+    "category": "Faucet",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.21440273181845745,
+    "pixel_accuracy": 0.9882687938456632,
+    "pixel_errors": 4709,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.5324659943580627,
+      "2": 0.095249243080616,
+      "3": 0.015492958016693592
+    }
+  },
+  {
+    "index": 175,
+    "object_id": "931",
+    "category": "Faucet",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.6543980985879898,
+    "pixel_accuracy": 0.9891207948022959,
+    "pixel_errors": 4367,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.8214852213859558,
+      "2": 0.4873109757900238
+    }
+  },
+  {
+    "index": 176,
+    "object_id": "9386",
+    "category": "Door",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.2410716637969017,
+    "pixel_accuracy": 0.9569365832270408,
+    "pixel_errors": 17286,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.24301190674304962,
+      "2": 0.23913142085075378
+    }
+  },
+  {
+    "index": 177,
+    "object_id": "9388",
+    "category": "Door",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.2888327017426491,
+    "pixel_accuracy": 0.968864596619898,
+    "pixel_errors": 12498,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.5077539682388306,
+      "2": 0.06991143524646759
+    }
+  },
+  {
+    "index": 178,
+    "object_id": "9393",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.24772723515828451,
+    "pixel_accuracy": 0.9751973054846939,
+    "pixel_errors": 9956,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.44673752784729004,
+      "2": 0.2964441776275635,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 179,
+    "object_id": "9410",
+    "category": "Door",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2669563790162404,
+    "pixel_accuracy": 0.9763233418367347,
+    "pixel_errors": 9504,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.587144672870636,
+      "2": 0.21372446417808533,
+      "3": 0.0
+    }
+  },
+  {
+    "index": 180,
+    "object_id": "960",
+    "category": "Faucet",
+    "actor_count": 3,
+    "granularity": "medium_3_4_parts",
+    "mean_iou": 0.2028254565472404,
+    "pixel_accuracy": 0.9780049226721939,
+    "pixel_errors": 8829,
+    "actors": 3,
+    "per_class_iou": {
+      "1": 0.5646471977233887,
+      "2": 0.034808553755283356,
+      "3": 0.009020618163049221
+    }
+  },
+  {
+    "index": 181,
+    "object_id": "9748",
+    "category": "Laptop",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.42315928637981415,
+    "pixel_accuracy": 0.9741410235969388,
+    "pixel_errors": 10380,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.5133187174797058,
+      "2": 0.3329998552799225
+    }
+  },
+  {
+    "index": 182,
+    "object_id": "9912",
+    "category": "Laptop",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.44734610617160797,
+    "pixel_accuracy": 0.9765525350765306,
+    "pixel_errors": 9412,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.4943358600139618,
+      "2": 0.40035635232925415
+    }
+  },
+  {
+    "index": 183,
+    "object_id": "991",
+    "category": "Faucet",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.585633173584938,
+    "pixel_accuracy": 0.9925761320153061,
+    "pixel_errors": 2980,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.7736618518829346,
+      "2": 0.39760449528694153
+    }
+  },
+  {
+    "index": 184,
+    "object_id": "9960",
+    "category": "Laptop",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.37466639280319214,
+    "pixel_accuracy": 0.9704016860650511,
+    "pixel_errors": 11881,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.44827258586883545,
+      "2": 0.30106019973754883
+    }
+  },
+  {
+    "index": 185,
+    "object_id": "9992",
+    "category": "Laptop",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.425702765583992,
+    "pixel_accuracy": 0.9727633729272959,
+    "pixel_errors": 10933,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.4584341049194336,
+      "2": 0.3929714262485504
+    }
+  },
+  {
+    "index": 186,
+    "object_id": "9996",
+    "category": "Laptop",
+    "actor_count": 2,
+    "granularity": "coarse_1_2_parts",
+    "mean_iou": 0.45436765253543854,
+    "pixel_accuracy": 0.9741460060586735,
+    "pixel_errors": 10378,
+    "actors": 2,
+    "per_class_iou": {
+      "1": 0.4755535125732422,
+      "2": 0.4331817924976349
+    }
+  }
+]

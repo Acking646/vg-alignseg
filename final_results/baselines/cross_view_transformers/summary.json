@@ -2,7 +2,7 @@
   "baseline": "Cross View Transformers",
   "repository": "https://github.com/bradyz/cross_view_transformers",
   "local_repository": "/home/lyx/curriculum/computer_vision/cross_view_transformers",
-  "status": "not_applicable",
+  "status": "original_model_not_applicable_adapter_evaluated",
   "reason": "The method is a nuScenes/Argoverse map-view semantic segmentation model. It expects calibrated vehicle-camera inputs, ego geometry, and BEV labels, then outputs pred[\"bev\"]. VG-AlignSeg is object-centric 8-view image-space part segmentation with actor-id masks. There is no direct output to compare against VG-AlignSeg part masks without redefining and retraining the model.",
   "test_split": {
     "dataset": "VG-AlignSeg",
@@ -17,5 +17,18 @@
     "iou_granularity": null,
     "iou_part": null,
     "cross_view_consistency_acc": null
+  },
+  "adapter": {
+    "name": "CVT image-space adapter",
+    "source": "final_results/baselines/cross_view_transformers/image_space_adapter/summary.json",
+    "status": "evaluated",
+    "protocol": "Task-compatible modification: per-view CNN encoder, cross-view Transformer token exchange, U-Net image-space decoder.",
+    "best_checkpoint_step": 900,
+    "table_metrics": {
+      "iou_object_category": 0.26978463714777595,
+      "iou_granularity": 0.2951445111893412,
+      "iou_part": 0.3206612980382416,
+      "cross_view_consistency_acc": 0.9743302239219551
+    }
   }
 }

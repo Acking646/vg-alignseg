@@ -1,0 +1,50 @@
+{
+  "Bottle": {
+    "objects": 16,
+    "mean_iou": 0.4127253526239656
+  },
+  "Box": {
+    "objects": 1,
+    "mean_iou": 0.11779109239578248
+  },
+  "Chair": {
+    "objects": 2,
+    "mean_iou": 0.028109583651516293
+  },
+  "Clock": {
+    "objects": 31,
+    "mean_iou": 0.32107216181499215
+  },
+  "Display": {
+    "objects": 7,
+    "mean_iou": 0.33918323745924034
+  },
+  "Door": {
+    "objects": 35,
+    "mean_iou": 0.1905712203641555
+  },
+  "Faucet": {
+    "objects": 14,
+    "mean_iou": 0.28663224644315916
+  },
+  "Keyboard": {
+    "objects": 1,
+    "mean_iou": 0.003186343968364185
+  },
+  "Laptop": {
+    "objects": 5,
+    "mean_iou": 0.42504844069480896
+  },
+  "Microwave": {
+    "objects": 12,
+    "mean_iou": 0.3790626311112964
+  },
+  "Oven": {
+    "objects": 7,
+    "mean_iou": 0.3593339572350184
+  },
+  "StorageFurniture": {
+    "objects": 56,
+    "mean_iou": 0.3746993780110123
+  }
+}

@@ -18,6 +18,15 @@
       "source": "final_results/evaluations/v4_target_only_top4_best4500/summary.json"
     },
     {
+      "method": "CVT image-space adapter",
+      "protocol": "task-compatible modification of Cross View Transformers trained on VG-AlignSeg",
+      "iou_object_category": 0.26978463714777595,
+      "iou_granularity": 0.2951445111893412,
+      "iou_part": 0.3206612980382416,
+      "cross_view_consistency_acc": 0.9743302239219551,
+      "source": "final_results/baselines/cross_view_transformers/image_space_adapter/summary.json"
+    },
+    {
       "method": "PanSt3R",
       "protocol": "class-agnostic panoptic segments, Hungarian oracle matched to GT actor ids",
       "iou_object_category": 0.1674222857695685,
@@ -27,7 +36,7 @@
       "source": "final_results/baselines/panst3r/v2_224_oracle_match/summary.json"
     },
     {
-      "method": "Cross View Transformers",
+      "method": "Original Cross View Transformers",
       "protocol": "not directly applicable; BEV map segmentation output",
       "iou_object_category": null,
       "iou_granularity": null,

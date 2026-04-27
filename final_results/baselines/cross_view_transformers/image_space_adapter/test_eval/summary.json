@@ -1,0 +1,14 @@
+{
+  "eval_mean_iou": 0.3206612980382416,
+  "eval_pixel_accuracy": 0.9743302239219551,
+  "eval_pixel_errors": 1926858,
+  "eval_pixel_count": 75063296,
+  "eval_actor_instances": 742,
+  "eval_batches": 187,
+  "table_metrics": {
+    "iou_object_category": 0.26978463714777595,
+    "iou_granularity": 0.2951445111893412,
+    "iou_part": 0.3206612980382416,
+    "cross_view_consistency_acc": 0.9743302239219551
+  }
+}

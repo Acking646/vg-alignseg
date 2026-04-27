@@ -35,8 +35,18 @@ Output:
 
 ## Cross View Transformers Protocol
 
-Cross View Transformers is not directly applicable to this benchmark. Its model
-expects vehicle-camera datasets with calibration and BEV map labels, and it
-returns BEV semantic maps. VG-AlignSeg requires object-centric image-space
-part/actor masks. The result is therefore marked `not_applicable` instead of
-reporting invalid numbers.
+Cross View Transformers is not directly applicable to this benchmark in its
+original form. Its model expects vehicle-camera datasets with calibration and
+BEV map labels, and it returns BEV semantic maps. VG-AlignSeg requires
+object-centric image-space part/actor masks.
+
+For a reasonable task-compatible comparison, this project adds a small
+image-space adapter inspired by CVT:
+
+- shared per-view CNN encoder
+- cross-view Transformer token exchange
+- U-Net-style image decoder
+
+The adapter is trained on the VG-AlignSeg train split and evaluated on the same
+187-object test split. See
+`final_results/baselines/cross_view_transformers/image_space_adapter/`.
