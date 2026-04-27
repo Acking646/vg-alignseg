@@ -1,0 +1,76 @@
+{
+  "checkpoint": "final_results/runs/v4_random2000_top4_independent_seed42/best.pt",
+  "split": "test",
+  "shuffle_split": true,
+  "split_seed": 42,
+  "train_count": 2000,
+  "test_count": 187,
+  "source_topk": 4,
+  "logit_merge": "max",
+  "metric": "actor-wise IoU on non-source target views only",
+  "best_threshold": -0.5,
+  "eval_mean_iou": 0.4601959649045315,
+  "eval_pixel_accuracy": 0.9936769514111118,
+  "eval_pixel_errors": 643414,
+  "eval_pixel_count": 101756928,
+  "eval_actor_instances": 506,
+  "eval_batches": 187,
+  "threshold_metrics": {
+    "-4.0": {
+      "eval_mean_iou": 0.4416664113180827,
+      "eval_pixel_accuracy": 0.9931132100663816,
+      "eval_pixel_errors": 703543,
+      "eval_pixel_count": 102158336,
+      "eval_actor_instances": 508,
+      "eval_batches": 187
+    },
+    "-3.0": {
+      "eval_mean_iou": 0.4476669052524624,
+      "eval_pixel_accuracy": 0.9933169789584756,
+      "eval_pixel_errors": 681385,
+      "eval_pixel_count": 101957632,
+      "eval_actor_instances": 507,
+      "eval_batches": 187
+    },
+    "-2.0": {
+      "eval_mean_iou": 0.4527206311818019,
+      "eval_pixel_accuracy": 0.9934960925730405,
+      "eval_pixel_errors": 663123,
+      "eval_pixel_count": 101957632,
+      "eval_actor_instances": 507,
+      "eval_batches": 187
+    },
+    "-1.5": {
+      "eval_mean_iou": 0.45535573145234604,
+      "eval_pixel_accuracy": 0.9935811475103697,
+      "eval_pixel_errors": 654451,
+      "eval_pixel_count": 101957632,
+      "eval_actor_instances": 507,
+      "eval_batches": 187
+    },
+    "-1.0": {
+      "eval_mean_iou": 0.4590653301386707,
+      "eval_pixel_accuracy": 0.993637101544575,
+      "eval_pixel_errors": 647469,
+      "eval_pixel_count": 101756928,
+      "eval_actor_instances": 506,
+      "eval_batches": 187
+    },
+    "-0.5": {
+      "eval_mean_iou": 0.4601959649045315,
+      "eval_pixel_accuracy": 0.9936769514111118,
+      "eval_pixel_errors": 643414,
+      "eval_pixel_count": 101756928,
+      "eval_actor_instances": 506,
+      "eval_batches": 187
+    },
+    "0.0": {
+      "eval_mean_iou": 0.45969130518703827,
+      "eval_pixel_accuracy": 0.993649005697573,
+      "eval_pixel_errors": 644983,
+      "eval_pixel_count": 101556224,
+      "eval_actor_instances": 505,
+      "eval_batches": 187
+    }
+  }
+}

@@ -7,23 +7,13 @@ import torch.nn.functional as F
 from .coarse_head import CoarseHead
 from .frozen_vggt import FrozenVGGTBackbone
 from .geometry_pruner import GeometryPruner
-from .highres_prompt_head import CrossViewPrototypePrompt, PromptedHighResRefineHead
 from .propagator import LogitPropagator
 from .sparse_align import SparseAlign
+from .v3_prompt_head import DeepLabUNetRefineHead, ObjectAwarePrototypePrompt
 
 
-class VGAlignSegV2(nn.Module):
-    """VG-AlignSeg V2: prompt-prototype guided multi-view part segmentation.
-
-    Compared with V1, V2 keeps the frozen VGGT geometry backbone and sparse
-    cross-view propagation, then adds two paper-style ingredients inspired by
-    VGGT-Segmentor:
-
-    1. cross-view part prototype prompts, which act as mask-prompt memory
-       without requiring external query masks at inference time;
-    2. high-resolution RGB-conditioned refinement, which removes the 16x16
-       bottleneck that made thin parts impossible to overfit.
-    """
+class VGAlignSegV3(nn.Module):
+    """VG-AlignSeg V3 with object-aware prototypes and a stronger high-res decoder."""
 
     def __init__(
         self,
@@ -48,8 +38,11 @@ class VGAlignSegV2(nn.Module):
         self.geometry_pruner = GeometryPruner(topk=topk, min_confidence=min_confidence)
         self.sparse_align = SparseAlign()
         self.propagator = LogitPropagator()
-        self.prototype_prompt = CrossViewPrototypePrompt()
-        self.refine_head = PromptedHighResRefineHead(
+        self.prototype_prompt = ObjectAwarePrototypePrompt(
+            token_dim=self.backbone.token_dim,
+            num_classes=num_classes,
+        )
+        self.refine_head = DeepLabUNetRefineHead(
             token_dim=self.backbone.token_dim,
             num_classes=num_classes,
             hidden_dim=refine_hidden_dim,
@@ -89,7 +82,7 @@ class VGAlignSegV2(nn.Module):
         prototype_logits = None
         if self.use_prototypes:
             prototype_logits = self.prototype_prompt(token_grid, coarse_logits)
-        final_logits = self.refine_head(
+        final_logits, boundary_logits = self.refine_head(
             token_grid=token_grid,
             coarse_logits=coarse_logits,
             propagated_logits=propagated_logits,
@@ -106,6 +99,7 @@ class VGAlignSegV2(nn.Module):
             "propagated_logits": propagated_logits_fullres,
             "prototype_logits_lowres": prototype_logits,
             "prototype_logits": None if prototype_logits is None else self._upsample_lowres_logits(prototype_logits, output_size),
+            "boundary_logits": boundary_logits,
             "final_logits": final_logits,
         }
 

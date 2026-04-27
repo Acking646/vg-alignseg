@@ -1,3 +1,8 @@
 **/outputs/
 **/data/
 **/weight/
+**/__pycache__/
+*.py[cod]
+*.pt
+*.pid
+vggt/weights/

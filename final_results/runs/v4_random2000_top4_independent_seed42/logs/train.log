@@ -1,0 +1,538 @@
+W0427 19:57:11.831000 3724900 /mnt/16T_2/home_user/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/run.py:852] 
+W0427 19:57:11.831000 3724900 /mnt/16T_2/home_user/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/run.py:852] *****************************************
+W0427 19:57:11.831000 3724900 /mnt/16T_2/home_user/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/run.py:852] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0427 19:57:11.831000 3724900 /mnt/16T_2/home_user/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/run.py:852] *****************************************
+/home/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[rank0]:[W427 19:57:15.545342076 ProcessGroupNCCL.cpp:5138] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+Training VG-AlignSeg V4 part transfer: train=2000 test=187 classes=117 cache=data/vggt_cache_result_224 world_size=2
+step=000001 epoch=001 loss=3.1796 actor=2 src=[6, 0, 2, 4] biou=0.0127 bacc=0.8519
+step=000010 epoch=001 loss=1.9144 actor=3 src=[6, 4, 0, 2] biou=0.0235 bacc=0.9610
+step=000020 epoch=001 loss=2.0828 actor=3 src=[0, 2, 4, 6] biou=0.0247 bacc=0.9464
+step=000030 epoch=001 loss=1.6790 actor=3 src=[0, 1, 2, 3] biou=0.0229 bacc=0.9962
+step=000040 epoch=001 loss=1.2789 actor=3 src=[4, 6, 5, 7] biou=0.5263 bacc=0.9644
+step=000050 epoch=001 loss=1.8261 actor=4 src=[5, 6, 4, 7] biou=0.1084 bacc=0.9356
+step=000060 epoch=001 loss=1.4266 actor=3 src=[6, 4, 2, 0] biou=0.2575 bacc=0.9598
+step=000070 epoch=001 loss=1.7758 actor=3 src=[5, 7, 1, 3] biou=0.0304 bacc=0.9845
+step=000080 epoch=001 loss=0.9378 actor=2 src=[5, 1, 3, 7] biou=0.6477 bacc=0.9718
+step=000090 epoch=001 loss=1.5225 actor=2 src=[3, 1, 2, 0] biou=0.2104 bacc=0.9642
+step=000100 epoch=001 loss=1.8617 actor=4 src=[5, 1, 2, 6] biou=0.2214 bacc=0.9899
+step=000110 epoch=001 loss=1.2976 actor=3 src=[4, 6, 0, 2] biou=0.3389 bacc=0.9905
+step=000120 epoch=001 loss=1.7025 actor=4 src=[4, 6, 5, 7] biou=0.0983 bacc=0.9845
+step=000130 epoch=001 loss=1.5333 actor=6 src=[6, 2, 1, 0] biou=0.1613 bacc=0.9916
+step=000140 epoch=001 loss=1.2569 actor=5 src=[0, 0, 0, 0] biou=0.4370 bacc=0.9957
+step=000150 epoch=001 loss=1.5821 actor=3 src=[3, 7, 2, 6] biou=0.0842 bacc=0.9976
+step=000160 epoch=001 loss=1.0930 actor=3 src=[2, 0, 6, 3] biou=0.4144 bacc=0.9817
+step=000170 epoch=001 loss=1.6295 actor=4 src=[4, 6, 5, 7] biou=0.0770 bacc=0.9983
+step=000180 epoch=001 loss=1.3986 actor=3 src=[6, 4, 7, 5] biou=0.2606 bacc=0.9912
+step=000190 epoch=001 loss=1.5467 actor=2 src=[2, 3, 0, 1] biou=0.2486 bacc=0.9705
+step=000200 epoch=001 loss=1.6336 actor=3 src=[6, 7, 4, 5] biou=0.0686 bacc=0.9946
+step=000210 epoch=001 loss=0.9582 actor=2 src=[0, 2, 3, 4] biou=0.5107 bacc=0.9911
+step=000220 epoch=001 loss=1.1795 actor=3 src=[5, 4, 7, 6] biou=0.4413 bacc=0.9868
+step=000230 epoch=001 loss=1.4081 actor=4 src=[4, 6, 5, 7] biou=0.2600 bacc=0.9832
+step=000240 epoch=001 loss=1.7311 actor=3 src=[6, 4, 7, 5] biou=0.1394 bacc=0.9882
+step=000250 epoch=001 loss=1.4754 actor=2 src=[7, 5, 3, 1] biou=0.1734 bacc=0.9941
+step=000260 epoch=001 loss=1.4750 actor=3 src=[5, 7, 4, 6] biou=0.2126 bacc=0.9842
+step=000270 epoch=001 loss=1.7429 actor=4 src=[4, 0, 6, 2] biou=0.0632 bacc=0.9822
+step=000280 epoch=001 loss=1.6147 actor=4 src=[7, 6, 5, 4] biou=0.1083 bacc=0.9977
+step=000290 epoch=001 loss=0.9986 actor=3 src=[6, 4, 7, 5] biou=0.5193 bacc=0.9887
+step=000300 epoch=001 loss=1.7321 actor=4 src=[0, 3, 1, 7] biou=0.0401 bacc=0.9969
+step=000310 epoch=001 loss=1.4834 actor=4 src=[4, 0, 2, 6] biou=0.1845 bacc=0.9924
+step=000320 epoch=001 loss=1.2147 actor=2 src=[0, 4, 6, 2] biou=0.4327 bacc=0.9914
+step=000330 epoch=001 loss=1.3892 actor=3 src=[0, 2, 4, 6] biou=0.4327 bacc=0.9819
+step=000340 epoch=001 loss=1.4216 actor=10 src=[4, 6, 0, 2] biou=0.2018 bacc=0.9874
+step=000350 epoch=001 loss=1.2669 actor=4 src=[3, 7, 2, 1] biou=0.3428 bacc=0.9864
+step=000360 epoch=001 loss=1.3772 actor=6 src=[4, 6, 2, 0] biou=0.1631 bacc=0.9967
+step=000370 epoch=001 loss=1.4521 actor=6 src=[5, 4, 7, 6] biou=0.1973 bacc=0.9888
+step=000380 epoch=001 loss=0.9065 actor=2 src=[3, 1, 5, 7] biou=0.6410 bacc=0.9889
+step=000390 epoch=001 loss=1.5061 actor=4 src=[3, 0, 2, 7] biou=0.0186 bacc=0.9994
+step=000400 epoch=001 loss=1.8644 actor=3 src=[5, 7, 6, 4] biou=0.0855 bacc=0.9615
+step=000410 epoch=001 loss=2.1608 actor=2 src=[1, 0, 3, 2] biou=0.4367 bacc=0.9676
+step=000420 epoch=001 loss=1.4550 actor=2 src=[3, 1, 7, 5] biou=0.2677 bacc=0.9843
+step=000430 epoch=001 loss=1.1462 actor=3 src=[6, 4, 7, 5] biou=0.3599 bacc=0.9803
+step=000440 epoch=001 loss=1.9333 actor=2 src=[2, 3, 1, 0] biou=0.3079 bacc=0.9743
+step=000450 epoch=001 loss=1.6796 actor=18 src=[5, 4, 6, 7] biou=0.0200 bacc=0.9992
+step=000460 epoch=001 loss=1.4395 actor=3 src=[6, 4, 7, 5] biou=0.1640 bacc=0.9888
+step=000470 epoch=001 loss=1.2367 actor=17 src=[5, 7, 4, 1] biou=0.2242 bacc=0.9967
+step=000480 epoch=001 loss=0.5451 actor=4 src=[4, 6, 2, 0] biou=0.6829 bacc=0.9939
+step=000490 epoch=001 loss=0.9872 actor=3 src=[0, 3, 4, 2] biou=0.4806 bacc=0.9980
+step=000500 epoch=001 loss=1.5865 actor=2 src=[1, 3, 2, 0] biou=0.5812 bacc=0.9751
+step=000510 epoch=001 loss=1.5343 actor=6 src=[0, 6, 2, 4] biou=0.1934 bacc=0.9927
+step=000520 epoch=001 loss=1.7813 actor=3 src=[7, 6, 5, 4] biou=0.1692 bacc=0.9855
+step=000530 epoch=001 loss=0.7967 actor=3 src=[5, 7, 1, 3] biou=0.5524 bacc=0.9887
+step=000540 epoch=001 loss=1.3421 actor=2 src=[4, 7, 6, 5] biou=0.3802 bacc=0.9811
+step=000550 epoch=001 loss=1.4544 actor=13 src=[0, 0, 0, 0] biou=0.1433 bacc=0.9927
+step=000560 epoch=001 loss=1.4125 actor=4 src=[4, 6, 5, 7] biou=0.2494 bacc=0.9921
+step=000570 epoch=001 loss=1.6207 actor=3 src=[0, 2, 7, 4] biou=0.0627 bacc=0.9859
+step=000580 epoch=001 loss=0.9903 actor=3 src=[5, 4, 0, 6] biou=0.4973 bacc=0.9850
+step=000590 epoch=001 loss=1.5950 actor=3 src=[6, 4, 5, 7] biou=0.0497 bacc=0.9986
+step=000600 epoch=001 loss=1.7560 actor=4 src=[5, 4, 1, 7] biou=0.3544 bacc=0.9874
+step=000610 epoch=001 loss=1.1936 actor=5 src=[7, 5, 6, 1] biou=0.3141 bacc=0.9945
+step=000620 epoch=001 loss=3.4001 actor=5 src=[6, 4, 0, 2] biou=0.1929 bacc=0.9734
+step=000630 epoch=001 loss=1.4572 actor=3 src=[6, 2, 3, 7] biou=0.4609 bacc=0.9812
+step=000640 epoch=001 loss=1.3468 actor=4 src=[4, 5, 6, 7] biou=0.3783 bacc=0.9936
+step=000650 epoch=001 loss=1.6322 actor=3 src=[5, 7, 7, 7] biou=0.0000 bacc=0.9999
+step=000660 epoch=001 loss=1.2514 actor=3 src=[7, 6, 4, 5] biou=0.3300 bacc=0.9918
+step=000670 epoch=001 loss=0.6333 actor=4 src=[4, 0, 2, 6] biou=0.6027 bacc=0.9893
+step=000680 epoch=001 loss=2.1289 actor=2 src=[3, 1, 5, 7] biou=0.3186 bacc=0.9861
+step=000690 epoch=001 loss=1.0338 actor=3 src=[5, 7, 4, 6] biou=0.4583 bacc=0.9873
+step=000700 epoch=001 loss=1.4009 actor=3 src=[7, 5, 6, 4] biou=0.2225 bacc=0.9904
+step=000710 epoch=001 loss=1.2083 actor=2 src=[0, 4, 6, 2] biou=0.2246 bacc=0.9963
+step=000720 epoch=001 loss=0.7228 actor=5 src=[2, 0, 4, 7] biou=0.5309 bacc=0.9981
+step=000730 epoch=001 loss=1.8448 actor=2 src=[3, 1, 2, 0] biou=0.1415 bacc=0.9659
+step=000740 epoch=001 loss=1.3447 actor=3 src=[6, 4, 2, 0] biou=0.2838 bacc=0.9939
+step=000750 epoch=001 loss=1.1983 actor=2 src=[7, 5, 3, 1] biou=0.3239 bacc=0.9922
+step=000760 epoch=001 loss=1.6328 actor=3 src=[7, 4, 6, 5] biou=0.0323 bacc=0.9968
+step=000770 epoch=001 loss=1.3139 actor=4 src=[0, 4, 2, 6] biou=0.2375 bacc=0.9906
+step=000780 epoch=001 loss=1.5433 actor=2 src=[3, 1, 2, 0] biou=0.2655 bacc=0.9753
+step=000790 epoch=001 loss=1.0317 actor=2 src=[3, 1, 2, 0] biou=0.4369 bacc=0.9813
+step=000800 epoch=001 loss=1.5417 actor=3 src=[6, 7, 4, 5] biou=0.2693 bacc=0.9897
+step=000810 epoch=001 loss=1.5239 actor=3 src=[6, 7, 4, 5] biou=0.2851 bacc=0.9787
+step=000820 epoch=001 loss=1.2453 actor=3 src=[0, 2, 1, 3] biou=0.3868 bacc=0.9819
+step=000830 epoch=001 loss=1.3762 actor=3 src=[6, 7, 4, 5] biou=0.1856 bacc=0.9893
+step=000840 epoch=001 loss=1.2726 actor=4 src=[0, 1, 2, 3] biou=0.3874 bacc=0.9866
+step=000850 epoch=001 loss=1.5937 actor=8 src=[4, 6, 5, 7] biou=0.1030 bacc=0.9868
+step=000860 epoch=001 loss=1.7025 actor=5 src=[6, 4, 4, 4] biou=0.2398 bacc=0.9893
+step=000870 epoch=001 loss=0.9291 actor=4 src=[6, 4, 2, 0] biou=0.4419 bacc=0.9934
+step=000880 epoch=001 loss=1.3194 actor=2 src=[0, 6, 4, 2] biou=0.1224 bacc=0.9952
+step=000890 epoch=001 loss=1.1737 actor=2 src=[2, 3, 1, 0] biou=0.4010 bacc=0.9955
+step=000900 epoch=001 loss=1.8223 actor=4 src=[5, 1, 7, 3] biou=0.1015 bacc=0.9686
+step=000910 epoch=001 loss=1.3290 actor=12 src=[7, 6, 5, 4] biou=0.2118 bacc=0.9906
+step=000920 epoch=001 loss=1.8849 actor=2 src=[7, 5, 1, 3] biou=0.3602 bacc=0.9646
+step=000930 epoch=001 loss=2.0082 actor=3 src=[0, 2, 5, 1] biou=0.0065 bacc=0.9937
+step=000940 epoch=001 loss=1.3149 actor=3 src=[7, 6, 5, 4] biou=0.2669 bacc=0.9979
+step=000950 epoch=001 loss=1.0714 actor=5 src=[6, 4, 7, 5] biou=0.4613 bacc=0.9895
+step=000960 epoch=001 loss=1.3442 actor=5 src=[4, 6, 0, 2] biou=0.5882 bacc=0.9823
+step=000970 epoch=001 loss=1.7112 actor=28 src=[5, 7, 4, 6] biou=0.1665 bacc=0.9919
+step=000980 epoch=001 loss=2.3966 actor=6 src=[1, 3, 5, 7] biou=0.1698 bacc=0.9914
+step=000990 epoch=001 loss=1.2675 actor=3 src=[4, 6, 0, 2] biou=0.6697 bacc=0.9726
+step=001000 epoch=001 loss=0.9259 actor=3 src=[6, 4, 3, 1] biou=0.5747 bacc=0.9941
+/home/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+eval progress: object 1/187
+eval progress: object 10/187
+eval progress: object 20/187
+eval progress: object 30/187
+test@1000: miou=0.7191 thr=0.000 acc=0.9901
+step=001010 epoch=002 loss=1.5223 actor=4 src=[7, 5, 6, 4] biou=0.1825 bacc=0.9761
+step=001020 epoch=002 loss=1.5520 actor=2 src=[7, 5, 1, 3] biou=0.4119 bacc=0.9687
+step=001030 epoch=002 loss=1.4730 actor=2 src=[6, 4, 5, 7] biou=0.3478 bacc=0.9635
+step=001040 epoch=002 loss=1.2556 actor=3 src=[0, 5, 2, 4] biou=0.1918 bacc=0.9982
+step=001050 epoch=002 loss=1.2123 actor=5 src=[5, 7, 6, 4] biou=0.4521 bacc=0.9935
+step=001060 epoch=002 loss=1.3238 actor=4 src=[4, 0, 2, 6] biou=0.1832 bacc=0.9923
+step=001070 epoch=002 loss=1.4394 actor=4 src=[7, 6, 3, 2] biou=0.1951 bacc=0.9984
+step=001080 epoch=002 loss=1.2969 actor=3 src=[4, 5, 6, 7] biou=0.2351 bacc=0.9871
+step=001090 epoch=002 loss=1.0715 actor=4 src=[6, 4, 5, 7] biou=0.3820 bacc=0.9916
+step=001100 epoch=002 loss=0.9152 actor=2 src=[6, 7, 4, 5] biou=0.6276 bacc=0.9765
+step=001110 epoch=002 loss=1.0500 actor=4 src=[4, 5, 6, 7] biou=0.4592 bacc=0.9891
+step=001120 epoch=002 loss=1.2844 actor=3 src=[4, 1, 0, 5] biou=0.1477 bacc=0.9988
+step=001130 epoch=002 loss=3.0701 actor=3 src=[1, 4, 5, 0] biou=0.1455 bacc=0.9812
+step=001140 epoch=002 loss=1.6239 actor=9 src=[3, 7, 1, 5] biou=0.0153 bacc=0.9977
+step=001150 epoch=002 loss=1.5434 actor=4 src=[0, 2, 3, 1] biou=0.0582 bacc=0.9973
+step=001160 epoch=002 loss=1.2871 actor=3 src=[4, 5, 6, 7] biou=0.5848 bacc=0.9827
+step=001170 epoch=002 loss=2.2170 actor=2 src=[3, 1, 0, 2] biou=0.3482 bacc=0.9748
+step=001180 epoch=002 loss=1.3676 actor=2 src=[5, 7, 1, 3] biou=0.2730 bacc=0.9991
+step=001190 epoch=002 loss=1.4383 actor=3 src=[6, 7, 3, 2] biou=0.1280 bacc=0.9951
+step=001200 epoch=002 loss=1.2226 actor=3 src=[4, 6, 5, 7] biou=0.2492 bacc=0.9957
+step=001210 epoch=002 loss=1.4607 actor=15 src=[4, 6, 0, 5] biou=0.0835 bacc=0.9983
+step=001220 epoch=002 loss=0.9807 actor=3 src=[6, 4, 0, 2] biou=0.3943 bacc=0.9862
+step=001230 epoch=002 loss=1.0724 actor=3 src=[5, 4, 6, 7] biou=0.5302 bacc=0.9916
+step=001240 epoch=002 loss=1.8760 actor=4 src=[4, 5, 6, 7] biou=0.6226 bacc=0.9828
+step=001250 epoch=002 loss=1.4244 actor=16 src=[7, 5, 3, 6] biou=0.1280 bacc=0.9894
+step=001260 epoch=002 loss=1.1820 actor=3 src=[2, 0, 6, 4] biou=0.2450 bacc=0.9954
+step=001270 epoch=002 loss=1.5485 actor=5 src=[6, 4, 2, 0] biou=0.4122 bacc=0.9828
+step=001280 epoch=002 loss=1.6788 actor=5 src=[6, 5, 7, 4] biou=0.0000 bacc=0.9998
+step=001290 epoch=002 loss=1.3409 actor=4 src=[6, 4, 0, 2] biou=0.1667 bacc=0.9849
+step=001300 epoch=002 loss=1.2275 actor=4 src=[5, 4, 6, 7] biou=0.4809 bacc=0.9901
+step=001310 epoch=002 loss=1.4896 actor=4 src=[4, 5, 6, 7] biou=0.2399 bacc=0.9791
+step=001320 epoch=002 loss=1.6839 actor=5 src=[1, 0, 3, 2] biou=0.0409 bacc=0.9919
+step=001330 epoch=002 loss=1.4474 actor=3 src=[4, 6, 5, 7] biou=0.1525 bacc=0.9920
+step=001340 epoch=002 loss=1.2527 actor=3 src=[6, 7, 4, 5] biou=0.2692 bacc=0.9931
+step=001350 epoch=002 loss=1.5336 actor=5 src=[6, 4, 7, 5] biou=0.0239 bacc=0.9980
+step=001360 epoch=002 loss=2.3077 actor=5 src=[0, 1, 4, 5] biou=0.1712 bacc=0.9826
+step=001370 epoch=002 loss=1.5918 actor=3 src=[7, 5, 3, 1] biou=0.1655 bacc=0.9801
+step=001380 epoch=002 loss=1.5267 actor=3 src=[7, 5, 1, 3] biou=0.3849 bacc=0.9600
+step=001390 epoch=002 loss=1.0244 actor=2 src=[0, 6, 2, 1] biou=0.4286 bacc=0.9860
+step=001400 epoch=002 loss=0.9693 actor=2 src=[7, 5, 3, 1] biou=0.5792 bacc=0.9907
+step=001410 epoch=002 loss=1.0166 actor=3 src=[0, 2, 4, 6] biou=0.3330 bacc=0.9986
+step=001420 epoch=002 loss=1.5833 actor=3 src=[0, 2, 4, 6] biou=0.0762 bacc=0.9943
+step=001430 epoch=002 loss=1.1597 actor=6 src=[6, 4, 2, 0] biou=0.5155 bacc=0.9850
+step=001440 epoch=002 loss=2.0059 actor=3 src=[7, 5, 6, 4] biou=0.4237 bacc=0.9653
+step=001450 epoch=002 loss=1.0008 actor=4 src=[4, 5, 6, 7] biou=0.4509 bacc=0.9861
+step=001460 epoch=002 loss=1.4090 actor=12 src=[7, 5, 6, 4] biou=0.1351 bacc=0.9857
+step=001470 epoch=002 loss=1.5055 actor=3 src=[6, 4, 2, 0] biou=0.2539 bacc=0.9727
+step=001480 epoch=002 loss=1.4147 actor=4 src=[2, 0, 4, 6] biou=0.2036 bacc=0.9939
+step=001490 epoch=002 loss=1.5339 actor=4 src=[1, 3, 5, 0] biou=0.2150 bacc=0.9976
+step=001500 epoch=002 loss=1.7294 actor=4 src=[1, 3, 5, 0] biou=0.3345 bacc=0.9929
+step=001510 epoch=002 loss=1.2940 actor=4 src=[5, 1, 7, 3] biou=0.3473 bacc=0.9959
+step=001520 epoch=002 loss=1.1898 actor=10 src=[5, 3, 1, 7] biou=0.3441 bacc=0.9976
+step=001530 epoch=002 loss=0.8724 actor=2 src=[3, 1, 7, 5] biou=0.4110 bacc=0.9976
+step=001540 epoch=002 loss=1.6567 actor=13 src=[6, 4, 7, 5] biou=0.0000 bacc=0.9999
+step=001550 epoch=002 loss=0.9934 actor=2 src=[5, 4, 6, 7] biou=0.4180 bacc=0.9988
+step=001560 epoch=002 loss=1.4863 actor=4 src=[5, 7, 6, 4] biou=0.1671 bacc=0.9996
+step=001570 epoch=002 loss=1.5539 actor=3 src=[4, 6, 5, 7] biou=0.0598 bacc=0.9983
+step=001580 epoch=002 loss=1.5286 actor=2 src=[7, 5, 3, 1] biou=0.1659 bacc=0.9770
+step=001590 epoch=002 loss=1.2436 actor=3 src=[7, 5, 1, 3] biou=0.2784 bacc=0.9933
+step=001600 epoch=002 loss=1.8718 actor=2 src=[2, 3, 1, 0] biou=0.1789 bacc=0.9900
+step=001610 epoch=002 loss=1.2538 actor=4 src=[0, 4, 2, 6] biou=0.2959 bacc=0.9967
+step=001620 epoch=002 loss=1.1683 actor=4 src=[4, 6, 0, 2] biou=0.1794 bacc=0.9902
+step=001630 epoch=002 loss=1.4745 actor=3 src=[0, 4, 2, 6] biou=0.0918 bacc=0.9976
+step=001640 epoch=002 loss=1.7024 actor=2 src=[7, 5, 1, 3] biou=0.7476 bacc=0.9892
+step=001650 epoch=002 loss=1.1880 actor=3 src=[0, 2, 6, 4] biou=0.2212 bacc=0.9968
+step=001660 epoch=002 loss=1.3245 actor=3 src=[4, 6, 7, 5] biou=0.2370 bacc=0.9948
+step=001670 epoch=002 loss=2.1789 actor=3 src=[5, 4, 7, 6] biou=0.0676 bacc=0.9896
+step=001680 epoch=002 loss=1.3273 actor=2 src=[4, 5, 6, 7] biou=0.2865 bacc=0.9806
+step=001690 epoch=002 loss=1.6259 actor=4 src=[1, 5, 3, 7] biou=0.0764 bacc=0.9936
+step=001700 epoch=002 loss=2.5518 actor=4 src=[1, 3, 5, 7] biou=0.1787 bacc=0.9819
+step=001710 epoch=002 loss=1.3948 actor=3 src=[4, 7, 6, 5] biou=0.2427 bacc=0.9814
+step=001720 epoch=002 loss=0.6722 actor=3 src=[6, 4, 0, 2] biou=0.5703 bacc=0.9907
+step=001730 epoch=002 loss=1.5686 actor=4 src=[7, 5, 6, 4] biou=0.2673 bacc=0.9770
+step=001740 epoch=002 loss=1.3549 actor=4 src=[2, 0, 4, 6] biou=0.3227 bacc=0.9786
+step=001750 epoch=002 loss=1.3319 actor=3 src=[6, 5, 7, 4] biou=0.1175 bacc=0.9980
+step=001760 epoch=002 loss=1.4303 actor=4 src=[4, 6, 5, 0] biou=0.1478 bacc=0.9911
+step=001770 epoch=002 loss=1.3784 actor=2 src=[3, 1, 5, 7] biou=0.1790 bacc=0.9884
+step=001780 epoch=002 loss=1.4277 actor=7 src=[1, 0, 5, 4] biou=0.2387 bacc=0.9925
+step=001790 epoch=002 loss=1.5735 actor=3 src=[3, 7, 1, 6] biou=0.0646 bacc=0.9961
+step=001800 epoch=002 loss=1.3879 actor=12 src=[7, 3, 1, 5] biou=0.1882 bacc=0.9912
+step=001810 epoch=002 loss=1.4590 actor=88 src=[6, 4, 0, 2] biou=0.0000 bacc=1.0000
+step=001820 epoch=002 loss=1.7596 actor=3 src=[6, 4, 0, 2] biou=0.5141 bacc=0.9821
+step=001830 epoch=002 loss=1.6402 actor=74 src=[4, 0, 6, 2] biou=0.0000 bacc=0.9999
+step=001840 epoch=002 loss=1.8651 actor=2 src=[1, 3, 2, 0] biou=0.3340 bacc=0.9716
+step=001850 epoch=002 loss=1.2467 actor=3 src=[2, 0, 7, 5] biou=0.3630 bacc=0.9829
+step=001860 epoch=002 loss=1.4095 actor=3 src=[6, 4, 7, 5] biou=0.2859 bacc=0.9930
+step=001870 epoch=002 loss=1.0752 actor=3 src=[5, 1, 4, 3] biou=0.6255 bacc=0.9760
+step=001880 epoch=002 loss=1.0911 actor=3 src=[0, 2, 4, 6] biou=0.3832 bacc=0.9968
+step=001890 epoch=002 loss=1.2238 actor=3 src=[1, 3, 5, 7] biou=0.2678 bacc=0.9947
+step=001900 epoch=002 loss=1.7097 actor=3 src=[4, 5, 1, 0] biou=0.1633 bacc=0.9881
+step=001910 epoch=002 loss=1.6189 actor=3 src=[7, 6, 5, 4] biou=0.1789 bacc=0.9851
+step=001920 epoch=002 loss=1.0506 actor=3 src=[1, 0, 5, 4] biou=0.3651 bacc=0.9931
+step=001930 epoch=002 loss=1.2935 actor=2 src=[1, 3, 4, 6] biou=0.3329 bacc=0.9655
+step=001940 epoch=002 loss=1.2191 actor=3 src=[6, 4, 7, 5] biou=0.2813 bacc=0.9921
+step=001950 epoch=002 loss=1.1302 actor=3 src=[2, 0, 4, 6] biou=0.3135 bacc=0.9839
+step=001960 epoch=002 loss=0.9607 actor=2 src=[6, 4, 3, 1] biou=0.4217 bacc=0.9957
+step=001970 epoch=002 loss=1.2207 actor=4 src=[5, 7, 4, 1] biou=0.2414 bacc=0.9958
+step=001980 epoch=002 loss=1.7822 actor=3 src=[4, 6, 5, 7] biou=0.1890 bacc=0.9547
+step=001990 epoch=002 loss=1.1776 actor=3 src=[7, 5, 6, 4] biou=0.4129 bacc=0.9608
+step=002000 epoch=002 loss=1.3640 actor=3 src=[2, 0, 6, 4] biou=0.1159 bacc=0.9870
+eval progress: object 1/187
+eval progress: object 10/187
+eval progress: object 20/187
+eval progress: object 30/187
+test@2000: miou=0.7200 thr=0.000 acc=0.9906
+step=002010 epoch=003 loss=1.5561 actor=8 src=[4, 0, 1, 5] biou=0.3816 bacc=0.9924
+step=002020 epoch=003 loss=0.9979 actor=3 src=[0, 2, 4, 6] biou=0.4233 bacc=0.9971
+step=002030 epoch=003 loss=1.6018 actor=3 src=[2, 0, 3, 1] biou=0.0461 bacc=0.9940
+step=002040 epoch=003 loss=1.2095 actor=2 src=[1, 3, 0, 2] biou=0.2082 bacc=0.9848
+step=002050 epoch=003 loss=1.0451 actor=77 src=[0, 4, 6, 2] biou=0.3341 bacc=0.9993
+step=002060 epoch=003 loss=1.5006 actor=11 src=[7, 5, 6, 4] biou=0.0750 bacc=0.9947
+step=002070 epoch=003 loss=0.7733 actor=2 src=[0, 1, 2, 3] biou=0.6934 bacc=0.9833
+step=002080 epoch=003 loss=0.8892 actor=3 src=[6, 4, 7, 5] biou=0.5835 bacc=0.9839
+step=002090 epoch=003 loss=1.2880 actor=2 src=[7, 6, 1, 0] biou=0.5310 bacc=0.9904
+step=002100 epoch=003 loss=1.2362 actor=4 src=[0, 4, 2, 6] biou=0.2493 bacc=0.9942
+step=002110 epoch=003 loss=1.2196 actor=5 src=[4, 5, 7, 6] biou=0.3895 bacc=0.9767
+step=002120 epoch=003 loss=0.7761 actor=3 src=[4, 6, 0, 2] biou=0.6020 bacc=0.9941
+step=002130 epoch=003 loss=1.2948 actor=3 src=[4, 6, 1, 3] biou=0.3817 bacc=0.9846
+step=002140 epoch=003 loss=0.9343 actor=2 src=[1, 3, 7, 5] biou=0.5016 bacc=0.9766
+step=002150 epoch=003 loss=0.8395 actor=2 src=[1, 3, 0, 6] biou=0.7859 bacc=0.9923
+step=002160 epoch=003 loss=1.2243 actor=3 src=[5, 7, 4, 6] biou=0.2351 bacc=0.9981
+step=002170 epoch=003 loss=1.4082 actor=3 src=[1, 5, 0, 4] biou=0.2361 bacc=0.9690
+step=002180 epoch=003 loss=1.5092 actor=3 src=[6, 4, 0, 2] biou=0.2173 bacc=0.9774
+step=002190 epoch=003 loss=1.4550 actor=4 src=[6, 2, 0, 4] biou=0.2083 bacc=0.9899
+step=002200 epoch=003 loss=1.6050 actor=3 src=[0, 2, 4, 6] biou=0.0261 bacc=0.9975
+step=002210 epoch=003 loss=0.7336 actor=3 src=[7, 5, 6, 4] biou=0.5377 bacc=0.9886
+step=002220 epoch=003 loss=1.5332 actor=4 src=[1, 4, 0, 5] biou=0.1962 bacc=0.9744
+step=002230 epoch=003 loss=1.6272 actor=3 src=[4, 6, 0, 2] biou=0.4165 bacc=0.9755
+step=002240 epoch=003 loss=1.3277 actor=3 src=[7, 5, 4, 6] biou=0.3250 bacc=0.9875
+step=002250 epoch=003 loss=1.1813 actor=2 src=[0, 1, 2, 3] biou=0.5925 bacc=0.9855
+step=002260 epoch=003 loss=1.4785 actor=2 src=[3, 1, 2, 0] biou=0.3330 bacc=0.9672
+step=002270 epoch=003 loss=1.4738 actor=3 src=[1, 5, 4, 0] biou=0.2570 bacc=0.9956
+step=002280 epoch=003 loss=1.0436 actor=3 src=[3, 7, 2, 6] biou=0.3699 bacc=0.9975
+step=002290 epoch=003 loss=0.6874 actor=2 src=[2, 0, 1, 3] biou=0.7093 bacc=0.9909
+step=002300 epoch=003 loss=2.1035 actor=4 src=[6, 4, 2, 0] biou=0.3034 bacc=0.9689
+step=002310 epoch=003 loss=1.4038 actor=5 src=[0, 4, 2, 6] biou=0.4251 bacc=0.9909
+step=002320 epoch=003 loss=1.5433 actor=3 src=[6, 4, 7, 5] biou=0.1240 bacc=0.9966
+step=002330 epoch=003 loss=1.1936 actor=5 src=[4, 5, 6, 7] biou=0.3602 bacc=0.9843
+step=002340 epoch=003 loss=1.2947 actor=3 src=[7, 5, 6, 4] biou=0.2282 bacc=0.9929
+step=002350 epoch=003 loss=0.9164 actor=5 src=[7, 4, 6, 5] biou=0.4267 bacc=0.9997
+step=002360 epoch=003 loss=1.0400 actor=3 src=[3, 1, 4, 6] biou=0.2911 bacc=0.9922
+step=002370 epoch=003 loss=1.2036 actor=4 src=[4, 6, 0, 2] biou=0.2497 bacc=0.9951
+step=002380 epoch=003 loss=1.2914 actor=3 src=[4, 5, 1, 0] biou=0.2868 bacc=0.9902
+step=002390 epoch=003 loss=1.6550 actor=3 src=[7, 6, 5, 4] biou=0.1539 bacc=0.9762
+step=002400 epoch=003 loss=2.5513 actor=3 src=[4, 6, 5, 7] biou=0.2393 bacc=0.9902
+step=002410 epoch=003 loss=1.0070 actor=4 src=[2, 0, 4, 6] biou=0.3218 bacc=0.9968
+step=002420 epoch=003 loss=0.8377 actor=2 src=[5, 7, 0, 2] biou=0.5640 bacc=0.9970
+step=002430 epoch=003 loss=0.9793 actor=3 src=[0, 2, 4, 6] biou=0.3600 bacc=0.9988
+step=002440 epoch=003 loss=1.2713 actor=3 src=[5, 7, 4, 6] biou=0.2440 bacc=0.9926
+step=002450 epoch=003 loss=1.4908 actor=15 src=[4, 6, 5, 7] biou=0.0230 bacc=0.9958
+step=002460 epoch=003 loss=0.5051 actor=2 src=[1, 0, 4, 5] biou=0.8052 bacc=0.9940
+step=002470 epoch=003 loss=1.5658 actor=13 src=[7, 6, 5, 3] biou=0.0350 bacc=0.9994
+step=002480 epoch=003 loss=1.4336 actor=2 src=[2, 7, 3, 5] biou=0.1377 bacc=0.9965
+step=002490 epoch=003 loss=0.6880 actor=2 src=[3, 1, 2, 0] biou=0.7094 bacc=0.9841
+step=002500 epoch=003 loss=0.8212 actor=2 src=[7, 5, 3, 1] biou=0.4487 bacc=0.9876
+step=002510 epoch=003 loss=0.9055 actor=3 src=[6, 4, 0, 2] biou=0.4481 bacc=0.9955
+step=002520 epoch=003 loss=0.4748 actor=3 src=[7, 5, 6, 4] biou=0.7540 bacc=0.9963
+step=002530 epoch=003 loss=0.7203 actor=3 src=[0, 2, 4, 6] biou=0.4819 bacc=0.9971
+step=002540 epoch=003 loss=2.4722 actor=3 src=[1, 0, 4, 5] biou=0.2342 bacc=0.9518
+step=002550 epoch=003 loss=1.0243 actor=2 src=[0, 2, 6, 4] biou=0.4477 bacc=0.9847
+step=002560 epoch=003 loss=1.2810 actor=4 src=[5, 4, 7, 6] biou=0.2677 bacc=0.9965
+step=002570 epoch=003 loss=1.3423 actor=8 src=[1, 3, 0, 2] biou=0.2658 bacc=0.9881
+step=002580 epoch=003 loss=1.1847 actor=4 src=[2, 0, 4, 6] biou=0.3874 bacc=0.9849
+step=002590 epoch=003 loss=1.3467 actor=5 src=[4, 6, 0, 2] biou=0.2595 bacc=0.9952
+step=002600 epoch=003 loss=0.5941 actor=3 src=[7, 5, 6, 4] biou=0.6437 bacc=0.9993
+step=002610 epoch=003 loss=1.2639 actor=3 src=[0, 1, 2, 3] biou=0.2429 bacc=0.9957
+step=002620 epoch=003 loss=1.1956 actor=3 src=[2, 1, 0, 3] biou=0.3282 bacc=0.9905
+step=002630 epoch=003 loss=1.2187 actor=4 src=[6, 4, 2, 0] biou=0.6333 bacc=0.9752
+step=002640 epoch=003 loss=1.7879 actor=3 src=[2, 0, 6, 4] biou=0.3014 bacc=0.9791
+step=002650 epoch=003 loss=1.4560 actor=2 src=[5, 7, 1, 3] biou=0.3434 bacc=0.9761
+step=002660 epoch=003 loss=1.0680 actor=5 src=[0, 2, 4, 6] biou=0.2928 bacc=0.9950
+step=002670 epoch=003 loss=1.2537 actor=2 src=[2, 0, 3, 1] biou=0.5354 bacc=0.9901
+step=002680 epoch=003 loss=0.9167 actor=2 src=[0, 2, 4, 6] biou=0.4933 bacc=0.9894
+step=002690 epoch=003 loss=1.6841 actor=4 src=[5, 7, 6, 4] biou=0.1271 bacc=0.9854
+step=002700 epoch=003 loss=1.3347 actor=4 src=[2, 3, 1, 0] biou=0.1459 bacc=0.9989
+step=002710 epoch=003 loss=1.5811 actor=4 src=[6, 4, 0, 2] biou=0.1219 bacc=0.9876
+step=002720 epoch=003 loss=1.2461 actor=6 src=[4, 6, 2, 0] biou=0.2074 bacc=0.9972
+step=002730 epoch=003 loss=0.9720 actor=2 src=[3, 2, 1, 0] biou=0.7144 bacc=0.9891
+step=002740 epoch=003 loss=0.9772 actor=2 src=[6, 7, 0, 1] biou=0.4962 bacc=0.9996
+step=002750 epoch=003 loss=1.0346 actor=5 src=[4, 6, 5, 7] biou=0.3954 bacc=0.9928
+step=002760 epoch=003 loss=1.1383 actor=4 src=[3, 2, 1, 0] biou=0.5544 bacc=0.9909
+step=002770 epoch=003 loss=1.4124 actor=10 src=[7, 6, 4, 5] biou=0.0000 bacc=1.0000
+step=002780 epoch=003 loss=1.2135 actor=4 src=[6, 4, 7, 5] biou=0.3255 bacc=0.9919
+step=002790 epoch=003 loss=1.2288 actor=3 src=[4, 2, 0, 6] biou=0.2692 bacc=0.9970
+step=002800 epoch=003 loss=2.2913 actor=2 src=[3, 1, 7, 0] biou=0.5545 bacc=0.9840
+step=002810 epoch=003 loss=1.2727 actor=3 src=[0, 2, 1, 3] biou=0.2974 bacc=0.9854
+step=002820 epoch=003 loss=1.3144 actor=3 src=[4, 6, 5, 7] biou=0.2321 bacc=0.9991
+step=002830 epoch=003 loss=1.4396 actor=3 src=[6, 4, 5, 7] biou=0.3890 bacc=0.9955
+step=002840 epoch=003 loss=1.5988 actor=4 src=[6, 4, 5, 7] biou=0.0493 bacc=0.9974
+step=002850 epoch=003 loss=1.1320 actor=3 src=[5, 7, 4, 6] biou=0.4391 bacc=0.9893
+step=002860 epoch=003 loss=0.6922 actor=4 src=[6, 0, 4, 2] biou=0.5872 bacc=0.9961
+step=002870 epoch=003 loss=1.0387 actor=3 src=[0, 4, 2, 6] biou=0.5166 bacc=0.9834
+step=002880 epoch=003 loss=1.4071 actor=3 src=[6, 4, 7, 5] biou=0.1681 bacc=0.9959
+step=002890 epoch=003 loss=1.6339 actor=3 src=[5, 7, 6, 4] biou=0.1769 bacc=0.9793
+step=002900 epoch=003 loss=1.7030 actor=4 src=[6, 4, 7, 5] biou=0.0172 bacc=0.9994
+step=002910 epoch=003 loss=1.4208 actor=3 src=[2, 6, 0, 4] biou=0.1733 bacc=0.9814
+step=002920 epoch=003 loss=1.2685 actor=3 src=[0, 4, 1, 5] biou=0.1935 bacc=0.9874
+step=002930 epoch=003 loss=1.6132 actor=6 src=[3, 1, 2, 0] biou=0.2863 bacc=0.9798
+step=002940 epoch=003 loss=1.1529 actor=3 src=[0, 1, 2, 3] biou=0.2918 bacc=0.9875
+step=002950 epoch=003 loss=1.0829 actor=4 src=[4, 2, 0, 6] biou=0.2894 bacc=0.9954
+step=002960 epoch=003 loss=1.9914 actor=3 src=[0, 6, 1, 4] biou=0.3557 bacc=0.9827
+step=002970 epoch=003 loss=1.5776 actor=5 src=[6, 4, 2, 0] biou=0.0214 bacc=0.9983
+step=002980 epoch=003 loss=1.3670 actor=4 src=[7, 5, 4, 6] biou=0.1032 bacc=0.9986
+step=002990 epoch=003 loss=1.5244 actor=3 src=[4, 7, 6, 5] biou=0.0471 bacc=0.9933
+step=003000 epoch=003 loss=0.6639 actor=5 src=[4, 6, 0, 2] biou=0.7097 bacc=0.9948
+eval progress: object 1/187
+eval progress: object 10/187
+eval progress: object 20/187
+eval progress: object 30/187
+test@3000: miou=0.7206 thr=0.000 acc=0.9905
+step=003010 epoch=004 loss=0.7460 actor=2 src=[2, 1, 3, 0] biou=0.6907 bacc=0.9957
+step=003020 epoch=004 loss=0.7877 actor=2 src=[0, 2, 4, 6] biou=0.4628 bacc=0.9911
+step=003030 epoch=004 loss=1.0845 actor=2 src=[7, 6, 5, 4] biou=0.4834 bacc=0.9804
+step=003040 epoch=004 loss=1.3429 actor=3 src=[7, 3, 5, 1] biou=0.3601 bacc=0.9766
+step=003050 epoch=004 loss=1.1765 actor=4 src=[2, 3, 7, 0] biou=0.3953 bacc=0.9765
+step=003060 epoch=004 loss=1.2787 actor=3 src=[7, 5, 6, 4] biou=0.2970 bacc=0.9733
+step=003070 epoch=004 loss=1.4575 actor=3 src=[6, 4, 2, 0] biou=0.0885 bacc=0.9885
+step=003080 epoch=004 loss=1.5480 actor=4 src=[6, 4, 7, 5] biou=0.0192 bacc=0.9989
+step=003090 epoch=004 loss=1.0126 actor=2 src=[2, 6, 3, 7] biou=0.4796 bacc=0.9978
+step=003100 epoch=004 loss=0.8872 actor=3 src=[0, 2, 6, 4] biou=0.4814 bacc=0.9831
+step=003110 epoch=004 loss=2.1378 actor=5 src=[1, 0, 3, 2] biou=0.0498 bacc=0.9859
+step=003120 epoch=004 loss=1.1685 actor=3 src=[7, 5, 6, 4] biou=0.2838 bacc=0.9963
+step=003130 epoch=004 loss=1.1866 actor=8 src=[6, 6, 6, 6] biou=0.0422 bacc=0.9924
+step=003140 epoch=004 loss=0.9301 actor=4 src=[4, 5, 6, 7] biou=0.5491 bacc=0.9915
+step=003150 epoch=004 loss=0.9818 actor=3 src=[4, 6, 5, 7] biou=0.4627 bacc=0.9944
+step=003160 epoch=004 loss=1.1792 actor=2 src=[3, 1, 0, 2] biou=0.3878 bacc=0.9650
+step=003170 epoch=004 loss=1.4187 actor=3 src=[7, 5, 6, 4] biou=0.4996 bacc=0.9822
+step=003180 epoch=004 loss=0.9822 actor=3 src=[4, 6, 1, 1] biou=0.3208 bacc=0.9964
+step=003190 epoch=004 loss=1.5063 actor=4 src=[0, 4, 2, 6] biou=0.2086 bacc=0.9961
+step=003200 epoch=004 loss=0.9242 actor=6 src=[6, 6, 6, 6] biou=0.1155 bacc=0.9959
+step=003210 epoch=004 loss=0.7212 actor=4 src=[6, 2, 4, 0] biou=0.7059 bacc=0.9953
+step=003220 epoch=004 loss=1.2338 actor=4 src=[2, 0, 4, 6] biou=0.2532 bacc=0.9876
+step=003230 epoch=004 loss=1.7330 actor=3 src=[5, 7, 4, 6] biou=0.6314 bacc=0.9718
+step=003240 epoch=004 loss=1.1156 actor=2 src=[5, 7, 4, 6] biou=0.6705 bacc=0.9884
+step=003250 epoch=004 loss=1.1376 actor=3 src=[0, 4, 2, 6] biou=0.3713 bacc=0.9786
+step=003260 epoch=004 loss=1.2034 actor=3 src=[7, 5, 6, 4] biou=0.2390 bacc=0.9934
+step=003270 epoch=004 loss=1.5822 actor=4 src=[0, 2, 6, 4] biou=0.0991 bacc=0.9945
+step=003280 epoch=004 loss=1.1975 actor=11 src=[3, 1, 2, 7] biou=0.2219 bacc=0.9969
+step=003290 epoch=004 loss=1.0971 actor=9 src=[5, 1, 7, 3] biou=0.3025 bacc=0.9936
+step=003300 epoch=004 loss=1.0387 actor=2 src=[3, 1, 0, 2] biou=0.4333 bacc=0.9795
+step=003310 epoch=004 loss=1.1279 actor=4 src=[6, 2, 7, 3] biou=0.2663 bacc=0.9887
+step=003320 epoch=004 loss=0.8957 actor=2 src=[2, 3, 0, 1] biou=0.5948 bacc=0.9863
+step=003330 epoch=004 loss=1.1266 actor=4 src=[4, 5, 6, 7] biou=0.3810 bacc=0.9792
+step=003340 epoch=004 loss=1.3297 actor=4 src=[4, 6, 5, 7] biou=0.2115 bacc=0.9957
+step=003350 epoch=004 loss=0.7226 actor=2 src=[3, 1, 7, 5] biou=0.5844 bacc=0.9888
+step=003360 epoch=004 loss=0.6321 actor=2 src=[1, 3, 0, 2] biou=0.7738 bacc=0.9925
+step=003370 epoch=004 loss=1.1122 actor=2 src=[1, 3, 4, 6] biou=0.3750 bacc=0.9859
+step=003380 epoch=004 loss=1.2008 actor=3 src=[0, 2, 7, 5] biou=0.3712 bacc=0.9892
+step=003390 epoch=004 loss=1.7025 actor=2 src=[1, 0, 3, 2] biou=0.1693 bacc=0.9751
+step=003400 epoch=004 loss=1.4882 actor=7 src=[6, 4, 5, 5] biou=0.0000 bacc=0.9999
+step=003410 epoch=004 loss=0.9037 actor=2 src=[6, 2, 0, 4] biou=0.4572 bacc=0.9981
+step=003420 epoch=004 loss=1.3360 actor=3 src=[7, 6, 5, 4] biou=0.2410 bacc=0.9915
+step=003430 epoch=004 loss=1.4498 actor=3 src=[5, 7, 4, 6] biou=0.2647 bacc=0.9669
+step=003440 epoch=004 loss=0.8696 actor=3 src=[4, 5, 6, 7] biou=0.4113 bacc=0.9930
+step=003450 epoch=004 loss=0.8775 actor=3 src=[4, 5, 6, 7] biou=0.5275 bacc=0.9900
+step=003460 epoch=004 loss=1.6689 actor=3 src=[3, 7, 2, 6] biou=0.0578 bacc=0.9898
+step=003470 epoch=004 loss=1.2974 actor=4 src=[6, 4, 4, 4] biou=0.0000 bacc=1.0000
+step=003480 epoch=004 loss=1.3433 actor=3 src=[0, 2, 6, 4] biou=0.1645 bacc=0.9939
+step=003490 epoch=004 loss=1.2736 actor=3 src=[7, 3, 2, 6] biou=0.2303 bacc=0.9864
+step=003500 epoch=004 loss=0.4479 actor=3 src=[6, 7, 4, 5] biou=0.7951 bacc=0.9965
+step=003510 epoch=004 loss=1.7117 actor=3 src=[4, 5, 6, 1] biou=0.1134 bacc=0.9783
+step=003520 epoch=004 loss=0.5954 actor=3 src=[1, 7, 3, 5] biou=0.7061 bacc=0.9930
+step=003530 epoch=004 loss=1.3636 actor=4 src=[0, 2, 3, 1] biou=0.0604 bacc=0.9996
+step=003540 epoch=004 loss=1.1212 actor=2 src=[2, 0, 3, 1] biou=0.3938 bacc=0.9888
+step=003550 epoch=004 loss=1.5547 actor=4 src=[5, 6, 4, 7] biou=0.0993 bacc=0.9918
+step=003560 epoch=004 loss=2.5777 actor=4 src=[5, 4, 6, 7] biou=0.1778 bacc=0.9771
+step=003570 epoch=004 loss=1.4852 actor=2 src=[1, 7, 5, 3] biou=0.2414 bacc=0.9742
+step=003580 epoch=004 loss=0.6566 actor=2 src=[3, 1, 0, 2] biou=0.6463 bacc=0.9846
+step=003590 epoch=004 loss=0.7899 actor=4 src=[2, 0, 6, 4] biou=0.5281 bacc=0.9938
+step=003600 epoch=004 loss=1.2963 actor=3 src=[7, 5, 6, 4] biou=0.3103 bacc=0.9897
+step=003610 epoch=004 loss=1.0989 actor=3 src=[2, 0, 4, 5] biou=0.3794 bacc=0.9811
+step=003620 epoch=004 loss=2.9181 actor=3 src=[3, 2, 1, 0] biou=0.2450 bacc=0.9505
+step=003630 epoch=004 loss=1.3795 actor=3 src=[5, 7, 4, 6] biou=0.0000 bacc=0.9999
+step=003640 epoch=004 loss=1.1861 actor=4 src=[0, 2, 4, 6] biou=0.2856 bacc=0.9979
+step=003650 epoch=004 loss=0.6582 actor=3 src=[6, 4, 7, 5] biou=0.5719 bacc=0.9898
+step=003660 epoch=004 loss=0.8898 actor=2 src=[5, 7, 3, 1] biou=0.4773 bacc=0.9875
+step=003670 epoch=004 loss=0.9642 actor=2 src=[3, 1, 7, 5] biou=0.4458 bacc=0.9896
+step=003680 epoch=004 loss=1.3466 actor=9 src=[6, 7, 4, 4] biou=0.0428 bacc=0.9987
+step=003690 epoch=004 loss=1.9121 actor=3 src=[6, 4, 7, 5] biou=0.6426 bacc=0.9870
+step=003700 epoch=004 loss=1.2781 actor=4 src=[0, 2, 6, 4] biou=0.3005 bacc=0.9918
+step=003710 epoch=004 loss=0.6503 actor=3 src=[4, 6, 0, 5] biou=0.6902 bacc=0.9859
+step=003720 epoch=004 loss=0.9379 actor=3 src=[6, 4, 7, 5] biou=0.6029 bacc=0.9839
+step=003730 epoch=004 loss=1.0484 actor=3 src=[7, 5, 6, 4] biou=0.6098 bacc=0.9920
+step=003740 epoch=004 loss=1.6336 actor=4 src=[1, 0, 4, 5] biou=0.0000 bacc=0.9997
+step=003750 epoch=004 loss=1.3112 actor=3 src=[4, 0, 6, 2] biou=0.0831 bacc=0.9931
+step=003760 epoch=004 loss=1.3495 actor=3 src=[7, 6, 5, 4] biou=0.2288 bacc=0.9879
+step=003770 epoch=004 loss=1.3400 actor=2 src=[1, 3, 0, 2] biou=0.4032 bacc=0.9790
+step=003780 epoch=004 loss=0.6285 actor=4 src=[6, 2, 4, 0] biou=0.6411 bacc=0.9966
+step=003790 epoch=004 loss=0.4205 actor=4 src=[6, 4, 0, 2] biou=0.8032 bacc=0.9972
+step=003800 epoch=004 loss=1.4670 actor=3 src=[5, 4, 6, 7] biou=0.2493 bacc=0.9738
+step=003810 epoch=004 loss=0.8032 actor=2 src=[6, 5, 7, 4] biou=0.4433 bacc=0.9869
+step=003820 epoch=004 loss=0.9420 actor=4 src=[0, 3, 2, 7] biou=0.2789 bacc=0.9953
+step=003830 epoch=004 loss=1.1259 actor=3 src=[4, 5, 6, 1] biou=0.4076 bacc=0.9964
+step=003840 epoch=004 loss=1.4018 actor=2 src=[1, 5, 3, 7] biou=0.1446 bacc=0.9967
+W0427 21:00:28.624000 3724900 /mnt/16T_2/home_user/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/elastic/agent/server/api.py:739] Received 2 death signal, shutting down workers
+W0427 21:00:28.625000 3724900 /mnt/16T_2/home_user/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 3724910 closing signal SIGINT
+W0427 21:00:28.626000 3724900 /mnt/16T_2/home_user/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/api.py:1010] Sending process 3724911 closing signal SIGINT
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/scripts/train_v4_part_transfer.py", line 986, in <module>
+[rank1]:     main()
+[rank1]:     ~~~~^^
+[rank1]:   File "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/scripts/train_v4_part_transfer.py", line 835, in main
+[rank1]:     outputs = train_model(images, source_mask, source_view, cached, images.shape[-2:])
+[rank1]:   File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+[rank1]:     return self._call_impl(*args, **kwargs)
+[rank1]:            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+[rank1]:     return forward_call(*args, **kwargs)
+[rank1]:   File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/nn/parallel/distributed.py", line 1666, in forward
+[rank1]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank1]:          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/nn/parallel/distributed.py", line 1492, in _run_ddp_forward
+[rank1]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank1]:            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+[rank1]:     return self._call_impl(*args, **kwargs)
+[rank1]:            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+[rank1]:     return forward_call(*args, **kwargs)
+[rank1]:   File "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/models/vg_alignseg_v4.py", line 90, in forward
+[rank1]:     return self.forward_from_backbone_outputs(
+[rank1]:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank1]:         images=images,
+[rank1]:         ^^^^^^^^^^^^^^
+[rank1]:     ...<3 lines>...
+[rank1]:         output_size=output_size or images.shape[-2:],
+[rank1]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:     )
+[rank1]:     ^
+[rank1]:   File "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/models/vg_alignseg_v4.py", line 127, in forward_from_backbone_outputs
+[rank1]:     logits, boundary_logits = self._decode(
+[rank1]:                               ~~~~~~~~~~~~^
+[rank1]:         token_grid=token_grid,
+[rank1]:         ^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:     ...<7 lines>...
+[rank1]:         output_size=output_size,
+[rank1]:         ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:     )
+[rank1]:     ^
+[rank1]:   File "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/models/vg_alignseg_v4.py", line 291, in _decode
+[rank1]:     view_idx = int(source_indicator_low[batch_idx].reshape(n_views, -1).sum(dim=1).argmax().item())
+[rank1]:                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+[rank1]: KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/scripts/train_v4_part_transfer.py", line 986, in <module>
+[rank0]:     main()
+[rank0]:     ~~~~^^
+[rank0]:   File "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/scripts/train_v4_part_transfer.py", line 835, in main
+[rank0]:     outputs = train_model(images, source_mask, source_view, cached, images.shape[-2:])
+[rank0]:   File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/nn/parallel/distributed.py", line 1666, in forward
+[rank0]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank0]:          ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/nn/parallel/distributed.py", line 1492, in _run_ddp_forward
+[rank0]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank0]:            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/models/vg_alignseg_v4.py", line 90, in forward
+[rank0]:     return self.forward_from_backbone_outputs(
+[rank0]:            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[rank0]:         images=images,
+[rank0]:         ^^^^^^^^^^^^^^
+[rank0]:     ...<3 lines>...
+[rank0]:         output_size=output_size or images.shape[-2:],
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     )
+[rank0]:     ^
+[rank0]:   File "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/models/vg_alignseg_v4.py", line 127, in forward_from_backbone_outputs
+[rank0]:     logits, boundary_logits = self._decode(
+[rank0]:                               ~~~~~~~~~~~~^
+[rank0]:         token_grid=token_grid,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     ...<7 lines>...
+[rank0]:         output_size=output_size,
+[rank0]:         ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:     )
+[rank0]:     ^
+[rank0]:   File "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/models/vg_alignseg_v4.py", line 291, in _decode
+[rank0]:     view_idx = int(source_indicator_low[batch_idx].reshape(n_views, -1).sum(dim=1).argmax().item())
+[rank0]:                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+[rank0]: KeyboardInterrupt
+[rank0]:[W427 21:00:29.415058411 ProcessGroupNCCL.cpp:1553] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+Traceback (most recent call last):
+  File "/home/lyx/miniconda3/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+  File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/run.py", line 991, in main
+    run(args)
+    ~~~^^^^^^
+  File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/run.py", line 982, in run
+    elastic_launch(
+    ~~~~~~~~~~~~~~~
+        config=config,
+        ~~~~~~~~~~~~~~
+        entrypoint=cmd,
+        ~~~~~~~~~~~~~~~
+    )(*cmd_args)
+    ~^^^^^^^^^^^
+  File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/launcher/api.py", line 308, in launch_agent
+    result = agent.run()
+  File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/elastic/metrics/api.py", line 134, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/elastic/agent/server/api.py", line 731, in run
+    result = self._invoke_run(role)
+  File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/elastic/agent/server/api.py", line 908, in _invoke_run
+    time.sleep(monitor_interval)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/lyx/miniconda3/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 86, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 3724900 got signal: 2

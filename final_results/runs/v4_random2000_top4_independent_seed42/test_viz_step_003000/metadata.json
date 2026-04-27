@@ -1,0 +1,49 @@
+{
+  "best_threshold": 0.0,
+  "eval_mean_iou": 0.7205655558079127,
+  "eval_pixel_accuracy": 0.9905375577965562,
+  "threshold_metrics": {
+    "-4.0": {
+      "eval_pixel_accuracy": 0.986443635071216,
+      "eval_mean_iou": 0.695911195271959,
+      "eval_pixel_errors": 163249,
+      "eval_batches": 30
+    },
+    "-3.0": {
+      "eval_pixel_accuracy": 0.9882673821481718,
+      "eval_mean_iou": 0.7064354143028578,
+      "eval_pixel_errors": 141287,
+      "eval_batches": 30
+    },
+    "-2.0": {
+      "eval_pixel_accuracy": 0.9894081998033588,
+      "eval_mean_iou": 0.7131572754116404,
+      "eval_pixel_errors": 127549,
+      "eval_batches": 30
+    },
+    "-1.5": {
+      "eval_pixel_accuracy": 0.98984375,
+      "eval_mean_iou": 0.7157611147323181,
+      "eval_pixel_errors": 122304,
+      "eval_batches": 30
+    },
+    "-1.0": {
+      "eval_pixel_accuracy": 0.9901905293367347,
+      "eval_mean_iou": 0.7178769755922259,
+      "eval_pixel_errors": 118128,
+      "eval_batches": 30
+    },
+    "-0.5": {
+      "eval_pixel_accuracy": 0.9904127471301021,
+      "eval_mean_iou": 0.7194186947621879,
+      "eval_pixel_errors": 115452,
+      "eval_batches": 30
+    },
+    "0.0": {
+      "eval_pixel_accuracy": 0.9905375577965562,
+      "eval_mean_iou": 0.7205655558079127,
+      "eval_pixel_errors": 113949,
+      "eval_batches": 30
+    }
+  }
+}
