@@ -1,0 +1,1992 @@
+{
+  "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset",
+  "views": 8,
+  "image_size": 224,
+  "num_samples": 187,
+  "num_classes": 117,
+  "classes": {
+    "0": "background",
+    "1": "actor_2",
+    "2": "actor_3",
+    "3": "actor_4",
+    "4": "actor_5",
+    "5": "actor_6",
+    "6": "actor_7",
+    "7": "actor_8",
+    "8": "actor_9",
+    "9": "actor_10",
+    "10": "actor_11",
+    "11": "actor_12",
+    "12": "actor_13",
+    "13": "actor_14",
+    "14": "actor_15",
+    "15": "actor_16",
+    "16": "actor_17",
+    "17": "actor_18",
+    "18": "actor_19",
+    "19": "actor_20",
+    "20": "actor_21",
+    "21": "actor_22",
+    "22": "actor_23",
+    "23": "actor_24",
+    "24": "actor_25",
+    "25": "actor_26",
+    "26": "actor_27",
+    "27": "actor_28",
+    "28": "actor_29",
+    "29": "actor_30",
+    "30": "actor_31",
+    "31": "actor_32",
+    "32": "actor_33",
+    "33": "actor_34",
+    "34": "actor_35",
+    "35": "actor_36",
+    "36": "actor_37",
+    "37": "actor_38",
+    "38": "actor_39",
+    "39": "actor_40",
+    "40": "actor_41",
+    "41": "actor_42",
+    "42": "actor_43",
+    "43": "actor_44",
+    "44": "actor_45",
+    "45": "actor_46",
+    "46": "actor_47",
+    "47": "actor_48",
+    "48": "actor_49",
+    "49": "actor_50",
+    "50": "actor_51",
+    "51": "actor_52",
+    "52": "actor_53",
+    "53": "actor_54",
+    "54": "actor_55",
+    "55": "actor_56",
+    "56": "actor_57",
+    "57": "actor_58",
+    "58": "actor_59",
+    "59": "actor_60",
+    "60": "actor_61",
+    "61": "actor_62",
+    "62": "actor_63",
+    "63": "actor_64",
+    "64": "actor_65",
+    "65": "actor_66",
+    "66": "actor_67",
+    "67": "actor_68",
+    "68": "actor_69",
+    "69": "actor_70",
+    "70": "actor_71",
+    "71": "actor_72",
+    "72": "actor_73",
+    "73": "actor_74",
+    "74": "actor_75",
+    "75": "actor_76",
+    "76": "actor_77",
+    "77": "actor_78",
+    "78": "actor_79",
+    "79": "actor_80",
+    "80": "actor_81",
+    "81": "actor_82",
+    "82": "actor_83",
+    "83": "actor_84",
+    "84": "actor_85",
+    "85": "actor_86",
+    "86": "actor_87",
+    "87": "actor_88",
+    "88": "actor_89",
+    "89": "actor_90",
+    "90": "actor_91",
+    "91": "actor_92",
+    "92": "actor_93",
+    "93": "actor_94",
+    "94": "actor_95",
+    "95": "actor_96",
+    "96": "actor_97",
+    "97": "actor_98",
+    "98": "actor_99",
+    "99": "actor_100",
+    "100": "actor_101",
+    "101": "actor_102",
+    "102": "actor_103",
+    "103": "actor_104",
+    "104": "actor_105",
+    "105": "actor_106",
+    "106": "actor_107",
+    "107": "actor_108",
+    "108": "actor_109",
+    "109": "actor_110",
+    "110": "actor_111",
+    "111": "actor_112",
+    "112": "actor_113",
+    "113": "actor_114",
+    "114": "actor_115",
+    "115": "actor_116",
+    "116": "actor_117"
+  },
+  "objects": [
+    {
+      "object_id": "47808",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/47808_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "47817",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/47817_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "47853",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/47853_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "47926",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/47926_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "object_id": "47944",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/47944_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "47954",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/47954_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "47963",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/47963_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "47976",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/47976_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "object_id": "48010",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48010_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "48013",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48013_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "48018",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48018_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "object_id": "48023",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48023_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "48036",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48036_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "48051",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48051_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "object_id": "48063",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48063_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "48167",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48167_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "48169",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48169_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "object_id": "48177",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48177_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "48243",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48243_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "48253",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48253_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "48258",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48258_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "object_id": "48263",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48263_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "object_id": "48271",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48271_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "48356",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48356_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "object_id": "48379",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48379_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "48381",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48381_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "48413",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48413_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "48452",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48452_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "48467",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48467_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "48479",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48479_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "48490",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48490_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "48491",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48491_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "48492",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48492_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "object_id": "48497",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48497_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "object_id": "48513",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48513_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "48517",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48517_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "48519",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48519_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "4853",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/4853_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "48623",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48623_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "object_id": "48686",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48686_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "48700",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48700_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "48721",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48721_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "48740",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48740_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "48746",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48746_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "48797",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48797_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "48855",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48855_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "48859",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48859_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "48876",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48876_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "48878",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/48878_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "49025",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/49025_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "object_id": "49038",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/49038_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "49042",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/49042_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "49062",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/49062_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "object_id": "49132",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/49132_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "49133",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/49133_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "49140",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/49140_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "object_id": "49182",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/49182_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "49188",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/49188_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "object_id": "5050",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/5050_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "5088",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/5088_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "5103",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/5103_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "5306",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/5306_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "5452",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/5452_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "5477",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/5477_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "object_id": "5601",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/5601_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "5688",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/5688_views",
+      "actor_ids": [
+        2,
+        4
+      ]
+    },
+    {
+      "object_id": "5696",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/5696_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "5850",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/5850_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "5861",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/5861_views",
+      "actor_ids": [
+        2,
+        4
+      ]
+    },
+    {
+      "object_id": "5902",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/5902_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "6037",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6037_views",
+      "actor_ids": [
+        2,
+        4
+      ]
+    },
+    {
+      "object_id": "6040",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6040_views",
+      "actor_ids": [
+        2,
+        4
+      ]
+    },
+    {
+      "object_id": "6209",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6209_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "6222",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6222_views",
+      "actor_ids": [
+        2,
+        4
+      ]
+    },
+    {
+      "object_id": "6263",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6263_views",
+      "actor_ids": [
+        2,
+        4
+      ]
+    },
+    {
+      "object_id": "6335",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6335_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "6430",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6430_views",
+      "actor_ids": [
+        2,
+        4
+      ]
+    },
+    {
+      "object_id": "6493",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6493_views",
+      "actor_ids": [
+        2,
+        4
+      ]
+    },
+    {
+      "object_id": "6500",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6500_views",
+      "actor_ids": [
+        2
+      ]
+    },
+    {
+      "object_id": "6568",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6568_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "6608",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6608_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "6613",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6613_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "6638",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6638_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "6641",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6641_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "6643",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6643_views",
+      "actor_ids": [
+        2
+      ]
+    },
+    {
+      "object_id": "6665",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6665_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "6728",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6728_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "6771",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6771_views",
+      "actor_ids": [
+        2,
+        4
+      ]
+    },
+    {
+      "object_id": "6797",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6797_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "6808",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6808_views",
+      "actor_ids": [
+        2
+      ]
+    },
+    {
+      "object_id": "6813",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6813_views",
+      "actor_ids": [
+        2
+      ]
+    },
+    {
+      "object_id": "6839",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6839_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "6843",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6843_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "object_id": "6917",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6917_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "6934",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6934_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "693",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/693_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "6953",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6953_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "6963",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/6963_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "7004",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7004_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "7007",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7007_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "7015",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7015_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "7032",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7032_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "7037",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7037_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "7054",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7054_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "7064",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7064_views",
+      "actor_ids": [
+        2
+      ]
+    },
+    {
+      "object_id": "7068",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7068_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "7074",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7074_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "7078",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7078_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "7104",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7104_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "7111",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7111_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "7119",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7119_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "7120",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7120_views",
+      "actor_ids": [
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "7128",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7128_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "object_id": "7167",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7167_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "7179",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7179_views",
+      "actor_ids": [
+        2,
+        6,
+        7
+      ]
+    },
+    {
+      "object_id": "7187",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7187_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "7201",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7201_views",
+      "actor_ids": [
+        2,
+        6,
+        7
+      ]
+    },
+    {
+      "object_id": "7220",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7220_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "7236",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7236_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "723",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/723_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ]
+    },
+    {
+      "object_id": "7263",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7263_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "object_id": "7265",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7265_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "object_id": "7273",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7273_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "7290",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7290_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "7296",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7296_views",
+      "actor_ids": [
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "7304",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7304_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "7310",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7310_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "7332",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7332_views",
+      "actor_ids": [
+        2,
+        6,
+        7
+      ]
+    },
+    {
+      "object_id": "7349",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7349_views",
+      "actor_ids": [
+        2,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "object_id": "7366",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7366_views",
+      "actor_ids": [
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "7619",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/7619_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117
+      ]
+    },
+    {
+      "object_id": "762",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/762_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19
+      ]
+    },
+    {
+      "object_id": "811",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/811_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "822",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/822_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "857",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/857_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "862",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/862_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "866",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/866_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "8736",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/8736_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "8848",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/8848_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "885",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/885_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "8867",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/8867_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "8877",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/8877_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "8893",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/8893_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "8897",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/8897_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "8903",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/8903_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "8919",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/8919_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "8930",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/8930_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "object_id": "8936",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/8936_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "8961",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/8961_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "8983",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/8983_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "8994",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/8994_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "8997",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/8997_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9003",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9003_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9016",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9016_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9032",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9032_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "9035",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9035_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9041",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9041_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "9065",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9065_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9070",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9070_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "908",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/908_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9107",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9107_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "9117",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9117_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9127",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9127_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9128",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9128_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "912",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/912_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "9148",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9148_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9164",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9164_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9168",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9168_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "920",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/920_views",
+      "actor_ids": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "object_id": "9263",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9263_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9277",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9277_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9280",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9280_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9281",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9281_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9288",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9288_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "929",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/929_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "931",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/931_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "9386",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9386_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "9388",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9388_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "9393",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9393_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9410",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9410_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "960",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/960_views",
+      "actor_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "object_id": "9748",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9748_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "9912",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9912_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "991",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/991_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "9960",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9960_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "9992",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9992_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "object_id": "9996",
+      "root": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/VG-AlignSeg/data/vg-alignseg-dataset/9996_views",
+      "actor_ids": [
+        2,
+        3
+      ]
+    }
+  ]
+}

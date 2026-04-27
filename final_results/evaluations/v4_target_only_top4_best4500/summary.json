@@ -1,0 +1,124 @@
+{
+  "checkpoint": "outputs/v4_result_ddp2_multisource_top2_phase2_random_copy/best.pt",
+  "split": "test",
+  "shuffle_split": false,
+  "split_seed": 42,
+  "train_count": 2000,
+  "test_count": 187,
+  "source_topk": 4,
+  "logit_merge": "max",
+  "metric": "strict target-only actor-wise IoU on non-source target views; source masks are prompts only and are not copied into evaluated views",
+  "best_threshold": -0.5,
+  "eval_mean_iou": 0.6170851281547065,
+  "eval_pixel_accuracy": 0.9974540452927889,
+  "eval_pixel_errors": 321153,
+  "eval_pixel_count": 126142464,
+  "eval_actor_instances": 628,
+  "eval_batches": 187,
+  "threshold_metrics": {
+    "-4.0": {
+      "eval_mean_iou": 0.5986154651465058,
+      "eval_pixel_accuracy": 0.9969328647330054,
+      "eval_pixel_errors": 386896,
+      "eval_pixel_count": 126142464,
+      "eval_actor_instances": 628,
+      "eval_batches": 187
+    },
+    "-3.5": {
+      "eval_mean_iou": 0.6032218565243908,
+      "eval_pixel_accuracy": 0.9970689331072524,
+      "eval_pixel_errors": 369732,
+      "eval_pixel_count": 126142464,
+      "eval_actor_instances": 628,
+      "eval_batches": 187
+    },
+    "-3.0": {
+      "eval_mean_iou": 0.6070681624831131,
+      "eval_pixel_accuracy": 0.9971797601797282,
+      "eval_pixel_errors": 355752,
+      "eval_pixel_count": 126142464,
+      "eval_actor_instances": 628,
+      "eval_batches": 187
+    },
+    "-2.5": {
+      "eval_mean_iou": 0.6103740098910233,
+      "eval_pixel_accuracy": 0.9972700628394258,
+      "eval_pixel_errors": 344361,
+      "eval_pixel_count": 126142464,
+      "eval_actor_instances": 628,
+      "eval_batches": 187
+    },
+    "-2.0": {
+      "eval_mean_iou": 0.6131274463675457,
+      "eval_pixel_accuracy": 0.9973434164089263,
+      "eval_pixel_errors": 335108,
+      "eval_pixel_count": 126142464,
+      "eval_actor_instances": 628,
+      "eval_batches": 187
+    },
+    "-1.75": {
+      "eval_mean_iou": 0.6141432266249542,
+      "eval_pixel_accuracy": 0.9973738185421842,
+      "eval_pixel_errors": 331273,
+      "eval_pixel_count": 126142464,
+      "eval_actor_instances": 628,
+      "eval_batches": 187
+    },
+    "-1.5": {
+      "eval_mean_iou": 0.6150868186709909,
+      "eval_pixel_accuracy": 0.9974000507870212,
+      "eval_pixel_errors": 327964,
+      "eval_pixel_count": 126142464,
+      "eval_actor_instances": 628,
+      "eval_batches": 187
+    },
+    "-1.25": {
+      "eval_mean_iou": 0.6158908669642515,
+      "eval_pixel_accuracy": 0.9974220100853587,
+      "eval_pixel_errors": 325194,
+      "eval_pixel_count": 126142464,
+      "eval_actor_instances": 628,
+      "eval_batches": 187
+    },
+    "-1.0": {
+      "eval_mean_iou": 0.6165572804395063,
+      "eval_pixel_accuracy": 0.997438935392922,
+      "eval_pixel_errors": 323059,
+      "eval_pixel_count": 126142464,
+      "eval_actor_instances": 628,
+      "eval_batches": 187
+    },
+    "-0.75": {
+      "eval_mean_iou": 0.6169332954849023,
+      "eval_pixel_accuracy": 0.997450295564228,
+      "eval_pixel_errors": 321626,
+      "eval_pixel_count": 126142464,
+      "eval_actor_instances": 628,
+      "eval_batches": 187
+    },
+    "-0.5": {
+      "eval_mean_iou": 0.6170851281547065,
+      "eval_pixel_accuracy": 0.9974540452927889,
+      "eval_pixel_errors": 321153,
+      "eval_pixel_count": 126142464,
+      "eval_actor_instances": 628,
+      "eval_batches": 187
+    },
+    "0.0": {
+      "eval_mean_iou": 0.6166595696769065,
+      "eval_pixel_accuracy": 0.9974368266660781,
+      "eval_pixel_errors": 323325,
+      "eval_pixel_count": 126142464,
+      "eval_actor_instances": 628,
+      "eval_batches": 187
+    }
+  },
+  "table_metrics": {
+    "iou_object_category": 0.5614304639185613,
+    "iou_granularity": 0.5343687080265572,
+    "iou_part": 0.6170851281547065,
+    "cross_view_consistency_acc": 0.9974540452927889
+  },
+  "category_map": "final_results/metadata/object_category_map.json",
+  "metric_note": "Strict target-only top-k source-guided transfer; source GT is not copied into metrics."
+}

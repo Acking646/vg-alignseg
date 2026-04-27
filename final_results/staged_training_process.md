@@ -1,19 +1,19 @@
 # Progressive Training Process
 
-This project reached the final top4 result through a staged route rather than a
-single end-to-end run.
+The final result was reached through a staged route rather than a single
+end-to-end run.
 
 ## Stage 1: Direct Multi-Class Segmentation
 
-We first tried direct actor-id segmentation with VGGT features and high-resolution
-decoders. This validated data loading, mask rendering, and overfit capacity, but
-dataset-level generalization was limited because actor ids are local to each
-object and do not define stable semantic categories.
+We first tried direct actor-id segmentation with VGGT features and
+high-resolution decoders. This validated the data pipeline, mask rendering, and
+overfit capacity, but dataset-level generalization was limited because actor ids
+are local to each object and do not define stable semantic categories.
 
 ## Stage 2: Source-Guided Binary Part Transfer
 
 V4 reformulated segmentation as binary transfer. For one actor at a time, the
-model receives a source-view actor mask and predicts that same actor in all
+model receives source-view actor masks and predicts that same actor on target
 views. The final multi-part segmentation is produced by composing actor logits.
 
 Key modules:
@@ -28,29 +28,33 @@ Key modules:
 ## Stage 3: Multi-Source Aggregation
 
 Single-source transfer was unstable for occluded or tiny parts. We therefore
-aggregated top-k visible source views per actor. Top2 improved the full-view copy
-metric to the low 80s. Top4 produced the best staged/oracle result.
+aggregated top-k visible source views per actor. Top2 gave the strongest
+historical checkpoint, and top4 source prompting at evaluation improved target
+coverage.
 
-## Stage 4: Final Staged/Oracle Evaluation
+## Stage 4: Strict Target-Only Evaluation
 
-The final presentation protocol uses:
+The final main protocol uses:
 
-- Checkpoint: `outputs/v4_result_ddp2_multisource_top2_phase2_random_copy/best.pt`
-- Evaluation: `scripts/evaluate_v4_staged_oracle.py`
+- Checkpoint:
+  `outputs/v4_result_ddp2_multisource_top2_phase2_random_copy/best.pt`
+- Evaluation: `scripts/evaluate_v4_dynamic_target_only.py`
 - Source selection: top4 visible source views per actor.
-- Source handling: source-view masks are copied into source views.
-- Metric views: all eight views.
+- Source handling: source masks are prompts only.
+- Metric views: non-source target views only.
+- No source GT copy in the metric.
 
 Final table:
 
 | iou-object-category | iou-granularity | iou-part | cross-view consistency acc |
 | ---: | ---: | ---: | ---: |
-| 92.42 | 95.88 | 95.78 | 99.84 |
+| 56.14 | 53.44 | 61.71 | 99.75 |
 
-## Strict Diagnostic
+## Source-Copy Reference
 
-The strict target-only protocol does not copy source GT into the metric and only
-evaluates non-source target views. It reaches 46.02 actor mIoU. This gap explains
-why the final staged/oracle visualization is much stronger than the strict
-diagnostic visualization.
+The old fixedviz result is preserved as an auxiliary reference in
+`evaluations/v4_staged_oracle_top4_best4500_fixedviz/`. It copies source GT into
+source views and evaluates all eight views, reaching 95.78 part mIoU. This
+explains why those visualizations look much stronger, but it is not the strict
+target-only metric.
 

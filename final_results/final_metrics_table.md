@@ -1,23 +1,24 @@
 # Final Metrics Table
 
-Protocol: `v4_staged_oracle_top4_best4500_fixedviz`.
+Main protocol: `v4_target_only_top4_best4500`.
 
-This is the staged/oracle protocol used for the final presentation: each actor
-uses its top-4 visible source masks, source-view masks are copied into the source
-views, and evaluation is performed over all eight views.
+For each actor, the evaluator chooses its top-4 visible source views by mask
+area, uses those source masks as prompts, predicts the remaining target views,
+and evaluates only non-source target views. Source GT is not copied into the
+metric.
 
 | iou-object-category | iou-granularity | iou-part | cross-view consistency acc |
 | ---: | ---: | ---: | ---: |
-| 92.42 | 95.88 | 95.78 | 99.84 |
+| 56.14 | 53.44 | 61.71 | 99.75 |
 
 Raw values:
 
 ```json
 {
-  "iou_object_category": 0.9241670489876199,
-  "iou_granularity": 0.9587537201799113,
-  "iou_part": 0.9578049078397713,
-  "cross_view_consistency_acc": 0.9984204930196511
+  "iou_object_category": 0.5614304639185613,
+  "iou_granularity": 0.5343687080265572,
+  "iou_part": 0.6170851281547065,
+  "cross_view_consistency_acc": 0.9974540452927889
 }
 ```
 
@@ -27,11 +28,14 @@ Definitions:
   `luyu1021/vg-alignseg/category_models_list.txt`.
 - `iou-granularity`: macro average over actor-count buckets:
   `coarse_1_2_parts`, `medium_3_4_parts`, and `fine_5plus_parts`.
-- `iou-part`: full-view segmentation mIoU under the staged/oracle top4 protocol.
-- `cross-view consistency acc`: full eight-view pixel accuracy under the same
-  protocol.
+- `iou-part`: actor-wise IoU on non-source target views only.
+- `cross-view consistency acc`: pixel accuracy over the same target-only actor
+  masks.
 
-Important caveat: this is not a no-GT-prompt inference metric. The strict
-target-only diagnostic is reported separately in
-`evaluations/v4_random2000_top4_dynamic_target_only_top4/summary.json`.
+Auxiliary reference:
+
+`evaluations/v4_staged_oracle_top4_best4500_fixedviz/summary.json` reports the
+source-copy full-view reference result: 92.42 category IoU, 95.88 granularity
+IoU, 95.78 part mIoU, and 99.84 pixel accuracy. It copies source masks into
+source views and is not the main strict target-only metric.
 

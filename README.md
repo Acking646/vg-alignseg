@@ -1,69 +1,84 @@
 # VG-AlignSeg
 
-VG-AlignSeg is an experimental eight-view object part segmentation project built
-around a frozen VGGT geometry backbone. The current working route is V4
-source-guided part transfer: given RGB views and one or more source-view part
-masks, the model transfers the same part identity to the full eight-view object
-set and composes all actor predictions into a multi-part segmentation.
+VG-AlignSeg is an eight-view object part segmentation project built around a
+frozen VGGT geometry backbone. The final cleaned version uses a V4
+source-guided part transfer formulation: given RGB views and top-k source-view
+part masks, the model predicts the same local actor part on the remaining
+views, then composes all actor predictions into a multi-part segmentation.
 
-## Current Result Package
+## Final Result
 
-The cleaned result package is in `final_results/`.
+The main result package is in `final_results/`.
 
-Main staged/oracle result:
+Primary strict target-only evaluation:
 
-- Output: `final_results/evaluations/v4_staged_oracle_top4_best4500_fixedviz/`
-- Protocol: top4 source masks, source-view GT copied into source views, full
-  eight-view evaluation.
+- Output: `final_results/evaluations/v4_target_only_top4_best4500/`
+- Visualizations:
+  `final_results/evaluations/v4_target_only_top4_best4500/visualizations/`
+- Checkpoint:
+  `outputs/v4_result_ddp2_multisource_top2_phase2_random_copy/best.pt`
+- Protocol: for every actor, select the top-4 visible source views by GT mask
+  area, use those masks as prompts, and evaluate only the non-source target
+  views. Source GT is not copied into the metric.
 - Best threshold: `-0.5`
-- Part mIoU: `0.9578`
-- Pixel / cross-view consistency accuracy: `0.9984`
 
-Strict target-only diagnostic:
+| iou-object-category | iou-granularity | iou-part | cross-view consistency acc |
+| ---: | ---: | ---: | ---: |
+| 56.14 | 53.44 | 61.71 | 99.75 |
 
-- Output: `final_results/evaluations/v4_random2000_top4_dynamic_target_only_top4/`
-- Protocol: top4 source masks as prompts only, non-source target views only.
-- Target-only actor mIoU: `0.4602`
+Auxiliary source-copy reference:
 
-The staged/oracle metric is the one used for the final presentation table. The
-strict metric is kept as a diagnostic showing that fully GT-free target transfer
-is still substantially harder.
+- Output:
+  `final_results/evaluations/v4_staged_oracle_top4_best4500_fixedviz/`
+- Protocol: same top4 source masks, but source-view GT is copied into source
+  views and the metric is computed over all eight views.
+- Result: 92.42 category IoU, 95.88 granularity IoU, 95.78 part mIoU, 99.84
+  pixel accuracy.
+- This is kept as an upper/reference visualization setting, not the main strict
+  target-only metric.
 
 ## Repository Layout
 
-- `data/`: dataset loaders and ignored local dataset files.
+- `data/`: dataset loaders and ignored local dataset/cache files.
 - `models/`: VG-AlignSeg model components and V2/V3/V4 architectures.
-- `scripts/`: training, evaluation, visualization, and plotting entry points.
+- `scripts/`: training, evaluation, visualization, plotting, and result summary
+  entry points.
 - `docs/`: earlier design notes and overfit experiment reports.
 - `final_results/`: final metrics, visualizations, paper draft, and
   reproduction commands.
-- `vggt/`: VGGT dependency checkout.
+- `vggt/`: VGGT dependency checkout and local weights directory.
 
-## Reproduce Final Evaluation
+## Reproduce Main Evaluation
 
 ```bash
 CUDA_VISIBLE_DEVICES=1 PYTHONUNBUFFERED=1 \
-python scripts/evaluate_v4_staged_oracle.py \
+python scripts/evaluate_v4_dynamic_target_only.py \
   --checkpoint outputs/v4_result_ddp2_multisource_top2_phase2_random_copy/best.pt \
-  --output-dir final_results/evaluations/v4_staged_oracle_top4_best4500_fixedviz \
+  --output-dir final_results/evaluations/v4_target_only_top4_best4500 \
   --cache-dir data/vggt_cache_result_224 \
-  --category-list final_results/metadata/category_models_list.txt \
-  --views 8 --image-size 224 \
-  --train-count 2000 --val-count 0 --test-count -1 \
+  --views 8 \
+  --image-size 224 \
+  --train-count 2000 \
+  --val-count 0 \
+  --test-count -1 \
   --split test \
   --source-topk 4 \
   --thresholds=-4,-3.5,-3,-2.5,-2,-1.75,-1.5,-1.25,-1,-0.75,-0.5,0 \
   --logit-merge max \
-  --copy-source-views \
   --viz-samples 80 \
+  --log-every 25 \
   --device cuda
+
+python scripts/summarize_target_only_results.py \
+  --eval-dir final_results/evaluations/v4_target_only_top4_best4500 \
+  --category-map final_results/metadata/object_category_map.json
 ```
 
 ## Dataset Categories
 
 Object-category metadata comes from the Hugging Face dataset repository
-`luyu1021/vg-alignseg`, specifically `category_models_list.txt`. The local
-copy and parsed mapping are stored in:
+`luyu1021/vg-alignseg`, specifically `category_models_list.txt`. The local copy
+and parsed mapping are stored in:
 
 - `final_results/metadata/category_models_list.txt`
 - `final_results/metadata/object_category_map.json`

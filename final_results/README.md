@@ -1,54 +1,65 @@
 # VG-AlignSeg Final Results
 
 This directory contains the cleaned result package for the V4 source-guided part
-transfer route. The final presentation result is the staged/oracle top4 protocol
-from `v4_result_eval_top4_best4500_fixedviz`, regenerated here with category,
-granularity, per-object metrics, and visualizations.
+transfer route. The main reported result is the strict target-only top4
+evaluation generated from the stronger historical V4 checkpoint.
 
-## Why V4 Source-Guided
+## Method Summary
 
-The V4 idea is not copied directly from VGGT-S. VGGT-S motivates the use of a
-frozen VGGT encoder, source masks, geometry-aware feature alignment, point cues,
-and iterative mask refinement for cross-view segmentation. Our dataset, however,
-uses local actor ids and contains eight object-centric views. A global actor-id
-classifier is therefore ill-posed: the same numeric actor id is not a stable
-semantic category across objects.
-
-V4 reformulates the problem as source-guided binary part transfer:
+V4 is source-guided binary part transfer rather than global actor-id
+classification.
 
 - Input: eight RGB views of one object, one actor mask from one or more source
   views, and the source view ids.
-- Output: the same actor's binary mask in all views.
+- Output: the same actor's binary mask on target views.
 - Final segmentation: run the transfer head once per actor and compose actor
   logits into a multi-part mask.
 
-VGGT/VGGT-S provides the backbone idea: multi-view geometric tokens are useful
-for cross-view correspondence. The project contribution is the object-level
-source-mask guided transfer formulation, top-k multi-source aggregation, and
-staged evaluation for eight-view part segmentation.
+VGGT/VGGT-S motivates the frozen multi-view geometric backbone, source-mask
+prompting, point-map cues, and refinement idea. This project adapts those ideas
+to eight-view object-centric local actor labels with top-k multi-source
+aggregation and explicit target-only evaluation.
 
-## Final Presentation Metrics
+## Main Strict Target-Only Result
 
 Primary output:
 
-- `evaluations/v4_staged_oracle_top4_best4500_fixedviz/`
+- `evaluations/v4_target_only_top4_best4500/`
 - Visualizations:
-  `evaluations/v4_staged_oracle_top4_best4500_fixedviz/visualizations/`
-- Metrics:
-  `evaluations/v4_staged_oracle_top4_best4500_fixedviz/summary.json`
+  `evaluations/v4_target_only_top4_best4500/visualizations/`
+- Metrics: `evaluations/v4_target_only_top4_best4500/summary.json`
+- Per-object/category/granularity tables:
+  `evaluations/v4_target_only_top4_best4500/per_object_enriched.json`,
+  `per_category.json`, and `per_granularity.json`
 
 Protocol:
 
 - For every actor, select the top-4 visible source views by GT mask area.
-- Use the source masks as prompts.
-- Copy source-view GT masks into the source views.
-- Evaluate the composed segmentation over all eight views.
+- Use source masks as prompts only.
+- Evaluate only non-source target views.
+- Do not copy source GT into the prediction or metric.
+- Compose actor transfer logits with max merging and threshold `-0.5`.
 
 | iou-object-category | iou-granularity | iou-part | cross-view consistency acc |
 | ---: | ---: | ---: | ---: |
-| 92.42 | 95.88 | 95.78 | 99.84 |
+| 56.14 | 53.44 | 61.71 | 99.75 |
 
-Raw values are stored in `final_metrics_table.md`.
+Raw values are stored in `final_metrics_table.md` and in the evaluation
+`summary.json`.
+
+## Auxiliary Source-Copy Reference
+
+The directory `evaluations/v4_staged_oracle_top4_best4500_fixedviz/` preserves
+the earlier strong fixed visualization setting:
+
+- same checkpoint and top4 source selection;
+- source-view GT masks are copied into source views;
+- the metric is computed over all eight views.
+
+This reference reaches 92.42 category IoU, 95.88 granularity IoU, 95.78 part
+mIoU, and 99.84 pixel accuracy. It is useful for visualizing the upper guided
+composition behavior, but the strict target-only result above is the main
+evaluation.
 
 ## Dataset Categories
 
@@ -60,7 +71,7 @@ Object-category metadata is taken from the Hugging Face dataset repository
 - `metadata/object_category_map.json`
 - `metadata/category_summary.json`
 
-The staged/oracle test split covers 12 categories:
+The test split used by the final evaluation covers 12 categories:
 
 - Bottle, Box, Chair, Clock, Display, Door, Faucet, Keyboard, Laptop,
   Microwave, Oven, StorageFurniture.
@@ -68,93 +79,35 @@ The staged/oracle test split covers 12 categories:
 ## Final Split
 
 - Dataset root: `data/vg-alignseg-dataset`
-- Split: continuous test split matching `v4_result_eval_top4_best4500_fixedviz`
+- Split: continuous 2000/187 train/test split used by the best historical V4
+  checkpoint and fixedviz result.
 - Train samples: `2000`
 - Test samples: `187`
 - View count: `8`
 - Image size: `224`
 
-The staged/oracle manifest is:
+The strict target-only manifest is:
 
-- `evaluations/v4_staged_oracle_top4_best4500_fixedviz/test_manifest.json`
+- `evaluations/v4_target_only_top4_best4500/test_manifest.json`
 
-The random split diagnostic run is still kept under
-`runs/v4_random2000_top4_independent_seed42/`.
+## Training Artifacts
 
-## Progressive Training
+The final package keeps lightweight artifacts from the strong run in:
 
-See `staged_training_process.md` for the final story:
+- `training/v4_top2_phase2_random_copy/metrics.jsonl`
+- `training/v4_top2_phase2_random_copy/run_config.json`
+- `training/v4_top2_phase2_random_copy/curves/training_loss.png`
+- `training/v4_top2_phase2_random_copy/curves/miou_accuracy.png`
+- `training/v4_top2_phase2_random_copy/curves/pixel_errors.png`
 
-1. Direct multi-class actor segmentation validated capacity but struggled because
-   actor ids are local.
-2. V4 converted the task to source-guided binary part transfer.
-3. Multi-source aggregation moved from single source to top2 and top4.
-4. The final staged/oracle top4 evaluation copies source masks into source views
-   and scores the full eight-view segmentation.
-
-## Main Training Artifacts
-
-Training output:
-
-- `runs/v4_random2000_top4_independent_seed42/`
-- Training metrics: `runs/v4_random2000_top4_independent_seed42/metrics.jsonl`
-- Training curves:
-  - `runs/v4_random2000_top4_independent_seed42/curves/training_loss.png`
-  - `runs/v4_random2000_top4_independent_seed42/curves/miou_accuracy.png`
-  - `runs/v4_random2000_top4_independent_seed42/curves/pixel_errors.png`
-- Training/test snapshots:
-  - `runs/v4_random2000_top4_independent_seed42/train_transfer_step_*.png`
-  - `runs/v4_random2000_top4_independent_seed42/test_viz_step_003000/`
-
-The final staged/oracle result uses the stronger historical checkpoint:
+Checkpoint files are intentionally ignored by git. The strict evaluation expects
+the checkpoint at:
 
 - `outputs/v4_result_ddp2_multisource_top2_phase2_random_copy/best.pt`
 
-Checkpoint files are intentionally ignored by git.
-
-## Strict Diagnostic Evaluation
-
-Strict target-only evaluation output:
-
-- `evaluations/v4_random2000_top4_dynamic_target_only_top4/summary.json`
-- `evaluations/v4_random2000_top4_dynamic_target_only_top4/per_object.json`
-- `evaluations/v4_random2000_top4_dynamic_target_only_top4/visualizations/`
-
-Protocol:
-
-- For every actor, choose its top-4 visible source views by GT source-mask area.
-- Use those source masks only as prompts.
-- Predict the remaining non-source target views.
-- Do not copy source GT into the prediction metric.
-- Report actor-wise IoU on target views only.
-
-Result:
-
-- Best threshold: `-0.5`
-- Target-only actor mIoU: `0.4602`
-- Pixel accuracy: `0.9937`
-- Actor instances: `506`
-- Test objects: `187`
-
-This strict score is much lower because it does not copy source GT into the
-metric and only evaluates non-source target views. It is useful as a diagnostic,
-but it is not the final presentation table.
-
-## Why The Old Fixedviz Looks Better
-
-The old fixed visualization run at `outputs/v4_result_eval_top4_best4500_fixedviz`
-used the same staged/oracle protocol:
-
-- mIoU: `0.9578`
-- Pixel accuracy: `0.9984`
-- Test objects: `187`
-- `eval_copy_source_views=true`
-
-The visualizations are therefore stronger than strict target-only visualizations.
-This is now documented explicitly and reproduced under `final_results`.
-
 ## Reproduction
 
-See `reproduce_finalresults.sh` for the exact training, curve, staged/oracle
-evaluation, and strict diagnostic commands.
+See `reproduce_finalresults.sh` for the exact target-only evaluation,
+category/granularity summary, optional source-copy reference evaluation, and
+curve plotting commands.
 

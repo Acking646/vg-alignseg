@@ -1,0 +1,14 @@
+{
+  "coarse_1_2_parts": {
+    "objects": 94,
+    "mean_iou": 0.7774621047713655
+  },
+  "fine_5plus_parts": {
+    "objects": 16,
+    "mean_iou": 0.3485427601691456
+  },
+  "medium_3_4_parts": {
+    "objects": 77,
+    "mean_iou": 0.47710125913916085
+  }
+}
