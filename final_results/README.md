@@ -111,3 +111,5 @@ See `reproduce_finalresults.sh` for the exact target-only evaluation,
 category/granularity summary, optional source-copy reference evaluation, and
 curve plotting commands.
 
+Training commands are documented in `../docs/TRAINING.md`. The convenience
+launcher is `../scripts/train_v4_final.sh`.

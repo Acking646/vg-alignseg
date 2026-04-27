@@ -48,6 +48,17 @@ Auxiliary source-copy reference:
   reproduction commands.
 - `vggt/`: VGGT dependency checkout and local weights directory.
 
+## Train V4
+
+The shortest training entry point is:
+
+```bash
+CUDA_VISIBLE_DEVICES=0,1 ./scripts/train_v4_final.sh outputs/v4_result_ddp2_new_train
+```
+
+For a tmux workflow, resume/fine-tune options, curve plotting, and final
+target-only evaluation commands, see `docs/TRAINING.md`.
+
 ## Reproduce Main Evaluation
 
 ```bash
@@ -83,4 +94,3 @@ and parsed mapping are stored in:
 - `final_results/metadata/category_models_list.txt`
 - `final_results/metadata/object_category_map.json`
 - `final_results/metadata/category_summary.json`
-
