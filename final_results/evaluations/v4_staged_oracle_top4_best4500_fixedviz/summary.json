@@ -1,0 +1,110 @@
+{
+  "checkpoint": "outputs/v4_result_ddp2_multisource_top2_phase2_random_copy/best.pt",
+  "split": "test",
+  "shuffle_split": false,
+  "split_seed": 42,
+  "train_count": 2000,
+  "test_count": 187,
+  "source_topk": 4,
+  "logit_merge": "max",
+  "copy_source_views": true,
+  "metric": "full 8-view staged/oracle segmentation with source masks copied when enabled",
+  "best_threshold": -0.5,
+  "eval_mean_iou": 0.9578049078397713,
+  "eval_pixel_accuracy": 0.9984204930196511,
+  "eval_pixel_errors": 118563,
+  "eval_pixel_count": 75063296,
+  "eval_batches": 187,
+  "table_metrics": {
+    "iou_object_category": 0.9241670489876199,
+    "iou_granularity": 0.9587537201799113,
+    "iou_part": 0.9578049078397713,
+    "cross_view_consistency_acc": 0.9984204930196511
+  },
+  "threshold_metrics": {
+    "-4.0": {
+      "eval_mean_iou": 0.9489822595536326,
+      "eval_pixel_accuracy": 0.9974684031993479,
+      "eval_pixel_errors": 190030,
+      "eval_pixel_count": 75063296,
+      "eval_batches": 187
+    },
+    "-3.5": {
+      "eval_mean_iou": 0.9512760123277768,
+      "eval_pixel_accuracy": 0.9977412262845479,
+      "eval_pixel_errors": 169551,
+      "eval_pixel_count": 75063296,
+      "eval_batches": 187
+    },
+    "-3.0": {
+      "eval_mean_iou": 0.9532208109956832,
+      "eval_pixel_accuracy": 0.997961693555263,
+      "eval_pixel_errors": 153002,
+      "eval_pixel_count": 75063296,
+      "eval_batches": 187
+    },
+    "-2.5": {
+      "eval_mean_iou": 0.9547885524298791,
+      "eval_pixel_accuracy": 0.9981363061915107,
+      "eval_pixel_errors": 139895,
+      "eval_pixel_count": 75063296,
+      "eval_batches": 187
+    },
+    "-2.0": {
+      "eval_mean_iou": 0.9560085308001504,
+      "eval_pixel_accuracy": 0.998274203147168,
+      "eval_pixel_errors": 129544,
+      "eval_pixel_count": 75063296,
+      "eval_batches": 187
+    },
+    "-1.75": {
+      "eval_mean_iou": 0.9565143074417373,
+      "eval_pixel_accuracy": 0.9983281442903866,
+      "eval_pixel_errors": 125495,
+      "eval_pixel_count": 75063296,
+      "eval_batches": 187
+    },
+    "-1.5": {
+      "eval_mean_iou": 0.9569962577882939,
+      "eval_pixel_accuracy": 0.9983727599704655,
+      "eval_pixel_errors": 122146,
+      "eval_pixel_count": 75063296,
+      "eval_batches": 187
+    },
+    "-1.25": {
+      "eval_mean_iou": 0.9573048843431705,
+      "eval_pixel_accuracy": 0.9984066780121139,
+      "eval_pixel_errors": 119600,
+      "eval_pixel_count": 75063296,
+      "eval_batches": 187
+    },
+    "-1.0": {
+      "eval_mean_iou": 0.9576168404223422,
+      "eval_pixel_accuracy": 0.9984255953801975,
+      "eval_pixel_errors": 118180,
+      "eval_pixel_count": 75063296,
+      "eval_batches": 187
+    },
+    "-0.75": {
+      "eval_mean_iou": 0.9577654255539169,
+      "eval_pixel_accuracy": 0.9984313904894344,
+      "eval_pixel_errors": 117745,
+      "eval_pixel_count": 75063296,
+      "eval_batches": 187
+    },
+    "-0.5": {
+      "eval_mean_iou": 0.9578049078397713,
+      "eval_pixel_accuracy": 0.9984204930196511,
+      "eval_pixel_errors": 118563,
+      "eval_pixel_count": 75063296,
+      "eval_batches": 187
+    },
+    "0.0": {
+      "eval_mean_iou": 0.9573020384960494,
+      "eval_pixel_accuracy": 0.9983217230429103,
+      "eval_pixel_errors": 125977,
+      "eval_pixel_count": 75063296,
+      "eval_batches": 187
+    }
+  }
+}

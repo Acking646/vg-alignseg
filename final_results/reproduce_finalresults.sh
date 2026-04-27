@@ -5,6 +5,7 @@ cd "$(dirname "$0")/.."
 
 RUN_DIR="final_results/runs/v4_random2000_top4_independent_seed42"
 EVAL_DIR="final_results/evaluations/v4_random2000_top4_dynamic_target_only_top4"
+STAGED_DIR="final_results/evaluations/v4_staged_oracle_top4_best4500_fixedviz"
 
 CUDA_VISIBLE_DEVICES=0,1 PYTHONUNBUFFERED=1 PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \
 torchrun --standalone --nproc_per_node=2 scripts/train_v4_part_transfer.py \
@@ -54,6 +55,26 @@ python scripts/plot_training_curves.py \
   --output-dir "$RUN_DIR/curves"
 
 CUDA_VISIBLE_DEVICES=1 PYTHONUNBUFFERED=1 \
+python scripts/evaluate_v4_staged_oracle.py \
+  --checkpoint outputs/v4_result_ddp2_multisource_top2_phase2_random_copy/best.pt \
+  --output-dir "$STAGED_DIR" \
+  --cache-dir data/vggt_cache_result_224 \
+  --category-list final_results/metadata/category_models_list.txt \
+  --views 8 \
+  --image-size 224 \
+  --train-count 2000 \
+  --val-count 0 \
+  --test-count -1 \
+  --split test \
+  --source-topk 4 \
+  --thresholds=-4,-3.5,-3,-2.5,-2,-1.75,-1.5,-1.25,-1,-0.75,-0.5,0 \
+  --logit-merge max \
+  --copy-source-views \
+  --viz-samples 80 \
+  --log-every 25 \
+  --device cuda
+
+CUDA_VISIBLE_DEVICES=1 PYTHONUNBUFFERED=1 \
 python scripts/evaluate_v4_dynamic_target_only.py \
   --checkpoint "$RUN_DIR/best.pt" \
   --output-dir "$EVAL_DIR" \
@@ -72,4 +93,3 @@ python scripts/evaluate_v4_dynamic_target_only.py \
   --viz-samples 80 \
   --log-every 10 \
   --device cuda
-

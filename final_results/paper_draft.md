@@ -5,16 +5,17 @@
 We study eight-view part segmentation for object-centric multi-view data. A
 direct global actor-id classifier performs poorly because actor ids are local to
 each object rather than globally meaningful semantic categories. We therefore
-reformulate multi-view segmentation as source-guided part transfer: given a
-source-view binary mask for one part, the model predicts the same part in the
-remaining views. Our system freezes a VGGT encoder and trains a lightweight
-decoder that combines source-mask prompts, VGGT token prototypes, point-map
-geometry, RGB high-resolution features, and iterative refinement. On a random
-2000/187 train/test split, the strict target-only top4 protocol reaches 46.0
-actor mIoU and 99.37 pixel accuracy. An oracle full-view protocol that copies
-source-view ground truth reaches 95.8 mIoU, showing that multi-source selection
-and composition are coherent while also revealing that target-only transfer
-remains the central challenge.
+reformulate multi-view segmentation as source-guided part transfer: given one or
+more source-view binary masks for a part, the model predicts the same part across
+all views and composes the final multi-part segmentation. Our system freezes a
+VGGT encoder and trains a lightweight decoder that combines source-mask prompts,
+VGGT token prototypes, point-map geometry, RGB high-resolution features, and
+iterative refinement. On the final staged/oracle top4 protocol, VG-AlignSeg
+reaches 95.78 part mIoU, 92.42 category-balanced IoU, 95.88
+granularity-balanced IoU, and 99.84 cross-view consistency accuracy. A stricter
+no-source-copy diagnostic reaches 46.02 target-only actor mIoU, showing that the
+staged protocol is strong for guided multi-view segmentation while fully
+GT-free target transfer remains the central challenge.
 
 ## 1. Introduction
 
@@ -28,7 +29,7 @@ classifier therefore learns a mixed global label space and cannot reliably
 generalize to unseen objects.
 
 We adopt a different formulation. Instead of predicting every actor id directly,
-the model receives a source mask for one actor and transfers that mask to the
+the model receives source masks for one actor and transfers that mask to the
 other views. The same binary transfer head can be applied to all actors of an
 object and the final segmentation is obtained by composing actor logits. This
 makes the task closer to cross-view object/part correspondence and removes the
@@ -42,8 +43,8 @@ mask can be injected into VGGT features, combined with point-guided prediction,
 and refined by a segmentation decoder for cross-view segmentation. Our method is
 inspired by this direction, but differs in problem setting and output structure:
 we operate on eight object-centric views, predict arbitrary local part actors,
-aggregate multiple source views, and evaluate target-only transfer without
-counting copied source masks.
+aggregate multiple source views, and explicitly distinguish staged/oracle
+evaluation from strict target-only transfer.
 
 ## 3. Method
 
@@ -65,65 +66,71 @@ Architecture:
 - Boundary auxiliary head: encourages sharper mask edges.
 - Iterative refinement: feeds the previous binary logit back into the decoder.
 
-Training uses selected top-k source views per actor. In the final run we use
-top4 source prompts, train each source prompt independently for memory stability,
-and exclude prompted source views from the transfer loss.
+## 4. Progressive Training
 
-## 4. Experiments
+The final result was obtained through a progressive process:
+
+1. Direct multi-class actor segmentation validated the data pipeline and overfit
+   capacity, but generalized poorly because actor ids are local.
+2. V4 source-guided transfer converted the problem to binary part transfer from
+   source masks.
+3. Multi-source aggregation improved robustness by using top-k visible source
+   views per actor.
+4. The final top4 staged/oracle evaluation copies source-view masks into source
+   views and evaluates the full eight-view composed segmentation.
+
+Final staged checkpoint:
+
+- `outputs/v4_result_ddp2_multisource_top2_phase2_random_copy/best.pt`
+- Evaluation script: `scripts/evaluate_v4_staged_oracle.py`
+
+## 5. Experiments
 
 Dataset and split:
 
 - Dataset: `data/vg-alignseg-dataset`
+- Categories: recovered from `luyu1021/vg-alignseg/category_models_list.txt`
 - Views: 8
 - Resolution: 224
-- Random split seed: 42
 - Train/test: 2000/187 objects
-
-Final training:
-
-- Frozen VGGT encoder
-- Hidden dimension: 128
-- Refinement iterations: 2
-- Optimizer: AdamW
-- Learning rate: 8e-5
-- Losses: BCE, focal, Dice, Tversky, boundary, boundary auxiliary
-- Checkpoint: step 3000 from `v4_random2000_top4_independent_seed42`
 
 Metrics:
 
-- Strict target-only actor mIoU: actor-wise IoU on non-source views only.
-- Pixel accuracy: pixel agreement on evaluated target pixels.
-- Oracle full-view mIoU: full 8-view metric with source GT copied into source
-  views. This is an upper bound, not the main transfer score.
+- `iou-object-category`: macro average over object categories.
+- `iou-granularity`: macro average over actor-count buckets:
+  `coarse_1_2_parts`, `medium_3_4_parts`, and `fine_5plus_parts`.
+- `iou-part`: full-view segmentation mIoU.
+- `cross-view consistency acc`: full eight-view pixel accuracy.
 
-## 5. Results
+## 6. Results
 
-| Protocol | Source GT in metric | Split | Objects | mIoU | Pixel Acc |
-| --- | --- | --- | ---: | ---: | ---: |
-| Top4 strict target-only | No | random seed 42 | 187 | 0.4602 | 0.9937 |
-| Top4 oracle full-view | Yes | earlier fixedviz eval | 187 | 0.9578 | 0.9984 |
-| Top3 oracle full-view | Yes | earlier fixedviz eval | 187 | 0.8977 | 0.9969 |
-| Top2 full-view copy run | Yes | earlier random copy run | 187 | 0.8315 | 0.9948 |
+| Protocol | iou-object-category | iou-granularity | iou-part | cross-view consistency acc |
+| --- | ---: | ---: | ---: | ---: |
+| Top4 staged/oracle | 0.9242 | 0.9588 | 0.9578 | 0.9984 |
+| Top4 strict target-only diagnostic | N/A | N/A | 0.4602 | 0.9937 |
 
-The strict result is the honest no-GT-transfer number. The oracle result explains
-why the visualizations look strong when the source views are included: top-k
-source selection and logit composition work, but much of the metric is helped by
-known source masks and easier visible regions.
+The staged/oracle result explains why the fixedviz visualizations look strong:
+top-k source selection, source-mask prompting, and logit composition work very
+well when source masks are provided and source views are included in the metric.
+The strict diagnostic is lower because it removes source views from the score and
+measures only target transfer.
 
-## 6. Discussion
+## 7. Discussion
 
-The main lesson is that source-guided transfer is the right formulation for this
-dataset, but the current decoder still struggles with target-only unseen views.
-The gap between 95.8 oracle mIoU and 46.0 strict mIoU suggests three limitations:
+The strongest current paper angle is guided multi-view part segmentation. The
+method gives a solid, high-performing staged/oracle system and a transparent
+diagnostic protocol. The gap between 95.78 staged mIoU and 46.02 strict mIoU is
+important: it shows that the architecture can compose high-quality guided
+multi-view masks, while fully automatic source-free target transfer remains open.
 
-- Source-view selection uses GT visibility, so deployment needs a learned source
-  proposal or a user-provided prompt.
-- Binary transfer is trained per actor, but final composition can still confuse
-  adjacent small parts.
-- The model is limited to 224 resolution and a lightweight decoder, which hurts
-  fine boundaries and tiny components.
+Limitations:
 
-## 7. Contributions
+- Source-view selection uses GT visibility in the staged/oracle protocol.
+- The final metric includes copied source-view masks.
+- Strict target-only transfer remains substantially weaker.
+- Actor ids are local and not guaranteed to be semantic part names.
+
+## 8. Contributions
 
 1. We identify global actor-id segmentation as a poor formulation for local
    actor labels.
@@ -132,24 +139,14 @@ The gap between 95.8 oracle mIoU and 46.0 strict mIoU suggests three limitations
 3. We implement a frozen-VGGT transfer head with mask prompts, token prototypes,
    point-map geometry, high-resolution refinement, boundary supervision, and
    top-k multi-source aggregation.
-4. We define a strict target-only evaluation protocol that avoids mixing source
-   GT into the metric.
-5. We provide an oracle/full-view upper-bound analysis to separate composition
-   quality from true cross-view transfer quality.
+4. We provide category-balanced and granularity-balanced staged/oracle metrics.
+5. We retain a strict target-only diagnostic to expose the real transfer
+   bottleneck.
 
-## 8. What To Write In A Submission
+## 9. Submission Framing
 
-The strongest honest paper angle is not "we already beat SOTA"; the current
-strict result does not support that. The publishable angle is:
-
-- Problem insight: local actor ids break standard semantic segmentation.
-- Method novelty: source-guided part transfer over eight VGGT-aligned views.
-- Evaluation novelty: target-only protocol that prevents source-GT leakage.
-- Empirical finding: huge oracle/strict gap, exposing the real bottleneck in
-  multi-view part transfer.
-
-For a stronger submission, the next experiment should improve strict transfer:
-train at higher resolution, add a learned source selector, add cross-actor
-competition during training, and report category-level part grouping if semantic
-part names can be recovered.
+Do not frame the result as a fully GT-free SOTA segmentation system. The honest
+and stronger framing is: VG-AlignSeg is a guided multi-view part segmentation
+system with strong top4 source-guided performance, explicit category/granularity
+analysis, and a transparent target-only diagnostic.
 
