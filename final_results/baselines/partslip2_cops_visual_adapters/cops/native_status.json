@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/marco-garosi/COPS",
+  "local_path": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/COPS",
+  "commit": "749c595",
+  "native_status": "not_directly_runnable_on_vg_alignseg_2d_only",
+  "reason": "COPS expects 3D point clouds/meshes plus point-cloud feature aggregation. VG-AlignSeg final test data provides 2D rendered views and masks, not raw 3D point clouds.",
+  "reported_adapter": "COPS 2D cross-view clustering adapter; not a native COPS result."
+}

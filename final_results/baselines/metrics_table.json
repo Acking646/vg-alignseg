@@ -42,6 +42,24 @@
       "source": "final_results/baselines/panst3r/v2_224_oracle_match/summary.json"
     },
     {
+      "method": "PartSLIP2 2D adapter",
+      "protocol": "per-view foreground RGB+XY proposal clustering, Hungarian matched to actor ids; not native repository result",
+      "iou_object_category": 0.20303756631044456,
+      "iou_granularity": 0.2158812114997286,
+      "iou_part": 0.23833848833578036,
+      "cross_view_consistency_acc": 0.9537994707826313,
+      "source": "final_results/baselines/partslip2_cops_visual_adapters/partslip2/summary.json"
+    },
+    {
+      "method": "COPS 2D adapter",
+      "protocol": "global cross-view foreground RGB+XY+view clustering, Hungarian matched to actor ids; not native repository result",
+      "iou_object_category": 0.29965049163232044,
+      "iou_granularity": 0.31571577947169205,
+      "iou_part": 0.34487732132237825,
+      "cross_view_consistency_acc": 0.9669931759990928,
+      "source": "final_results/baselines/partslip2_cops_visual_adapters/cops/summary.json"
+    },
+    {
       "method": "Original Cross View Transformers",
       "protocol": "not directly applicable; BEV map segmentation output",
       "iou_object_category": null,

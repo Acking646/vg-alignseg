@@ -109,12 +109,55 @@ Training selected the best checkpoint at step 900 by test-subset mIoU.
 Output:
 `final_results/baselines/cross_view_transformers/image_space_adapter/`
 
+### PartSLIP2 And COPS
+
+The official repositories are checked out at:
+
+- PartSLIP2: `/home/lyx/curriculum/computer_vision/PartSLIP2`
+- COPS: `/home/lyx/curriculum/computer_vision/COPS`
+
+Both native methods are 3D part segmentation systems, while the VG-AlignSeg
+test split used in this repository is an 8-view 2D rendered-image benchmark.
+PartSLIP2/PartSLIP++ requires PartNetE-style point-cloud/projection assets,
+category checkpoints, GLIP, and SAM. COPS requires point clouds/meshes and
+geometric feature aggregation. Therefore the native repositories are not
+directly runnable on the VG-AlignSeg final test set without changing the
+benchmark input/output contract.
+
+To still provide visual diagnostic comparisons, I added
+`scripts/evaluate_partslip_cops_adapters.py`, which implements two explicitly
+labeled 2D proxies:
+
+- `PartSLIP2 2D adapter`: per-view foreground RGB+XY proposal clustering.
+- `COPS 2D adapter`: global cross-view foreground RGB+XY+view clustering.
+
+Both adapters predict class-agnostic segment ids from the input RGBA images.
+Hungarian matching assigns predicted segment ids to GT actor ids for scoring
+and mapped visualization only; no GT mask geometry is copied into predictions.
+These results should be reported as task-compatible adapters/proxies, not as
+native PartSLIP2 or COPS numbers.
+
+Command:
+
+```bash
+PYTHONUNBUFFERED=1 /home/lyx/miniconda3/envs/mova/bin/python \
+  scripts/evaluate_partslip_cops_adapters.py \
+  --output-dir final_results/baselines/partslip2_cops_visual_adapters \
+  --viz-samples 10 \
+  --log-every 10
+```
+
+Output:
+`final_results/baselines/partslip2_cops_visual_adapters/`
+
 ## Final Metrics
 
 | Method | Protocol | iou-object-category | iou-granularity | iou-part | cross-view consistency acc |
 | --- | --- | ---: | ---: | ---: | ---: |
 | VG-AlignSeg V4 | source-guided top-4, strict target-only | 0.5614 | 0.5344 | 0.6171 | 0.9975 |
 | CVT image-space adapter | task-compatible CVT modification | 0.2698 | 0.2951 | 0.3207 | 0.9743 |
+| COPS 2D adapter | cross-view RGB+XY clustering proxy | 0.2997 | 0.3157 | 0.3449 | 0.9670 |
+| PartSLIP2 2D adapter | per-view RGB+XY proposal proxy | 0.2030 | 0.2159 | 0.2383 | 0.9538 |
 | PanSt3R | panoptic segment oracle matching | 0.1674 | 0.1853 | 0.2043 | 0.8975 |
 | Original Cross View Transformers | native BEV output, not directly applicable | N/A | N/A | N/A | N/A |
 
@@ -127,3 +170,9 @@ Output:
   `final_results/baselines/cross_view_transformers/image_space_adapter/test_eval/visualizations/`
 - CVT adapter training log:
   `final_results/baselines/cross_view_transformers/image_space_adapter/metrics.jsonl`
+- PartSLIP2/COPS raw outputs:
+  `final_results/baselines/partslip2_cops_visual_adapters/*/raw_outputs/`
+- PartSLIP2/COPS individual visualizations:
+  `final_results/baselines/partslip2_cops_visual_adapters/*/visualizations/`
+- PartSLIP2/COPS paper comparison figures:
+  `final_results/baselines/partslip2_cops_visual_adapters/paper_figures/`
