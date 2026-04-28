@@ -16,11 +16,21 @@ views and actor masks, then uses lexicographic order with no shuffle:
 
 The reported table uses the same four metrics as the final VG-AlignSeg result:
 
-- `iou-object-category`: macro average over object categories.
-- `iou-granularity`: macro average over actor-count buckets
-  (`coarse_1_2_parts`, `medium_3_4_parts`, `fine_5plus_parts`).
-- `iou-part`: mean actor/part IoU over test objects.
-- `cross-view consistency acc`: pixel accuracy over all evaluated views.
+- `iou-object-category`: category-balanced macro average. For each object
+  category, average object-level actor mIoU over all test objects in that
+  category; then average those category means.
+- `iou-granularity`: granularity-balanced macro average. Objects are bucketed by
+  actor count into `coarse_1_2_parts`, `medium_3_4_parts`, and
+  `fine_5plus_parts`; average object-level actor mIoU inside each bucket, then
+  average the bucket means.
+- `iou-part`: mean object-level actor/part IoU. For each object, compute IoU
+  for every foreground actor/part and average actors; then average objects.
+- `cross-view consistency acc`: pixel accuracy on the evaluated views/pixels.
+  For full-view baselines this is multiclass pixel accuracy over all 8 views.
+  For strict source-guided VG-AlignSeg V4 this is per-actor binary pixel
+  accuracy on non-source target views only.
+
+Detailed formulas are in `docs/METRICS.md`.
 
 ## Methods
 

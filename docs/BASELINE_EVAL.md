@@ -15,12 +15,17 @@ remaining 187 objects for testing.
 
 The four reported metrics follow the final VG-AlignSeg table:
 
-- `iou-object-category`: macro average of object-level mIoU over object
-  categories.
-- `iou-granularity`: macro average of object-level mIoU over actor-count
+- `iou-object-category`: category-balanced macro average of object-level
+  actor/part IoU.
+- `iou-granularity`: granularity-balanced macro average over actor-count
   buckets: `coarse_1_2_parts`, `medium_3_4_parts`, and `fine_5plus_parts`.
-- `iou-part`: mean object-level part/actor IoU.
-- `cross-view consistency acc`: pixel accuracy over all evaluated views.
+- `iou-part`: mean object-level actor/part IoU.
+- `cross-view consistency acc`: pixel accuracy over the evaluated pixel domain.
+  For source-guided V4 this is actor-wise binary accuracy on non-source target
+  views; for full-view baselines it is multiclass pixel accuracy over all 8
+  views.
+
+See `docs/METRICS.md` for exact formulas.
 
 ## PanSt3R Protocol
 

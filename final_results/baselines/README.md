@@ -3,6 +3,8 @@
 This directory stores external baseline checks on the VG-AlignSeg test split
 (`train_count=2000`, `val_count=0`, remaining `187` objects as test).
 
+Metric definitions and formulas are documented in `docs/METRICS.md`.
+
 ## VG-AlignSeg V4 Target-Only Reference
 
 Source: `final_results/evaluations/v4_target_only_top4_best4500/summary.json`

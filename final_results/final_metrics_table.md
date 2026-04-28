@@ -25,12 +25,17 @@ Raw values:
 Definitions:
 
 - `iou-object-category`: macro average over object categories recovered from
-  `luyu1021/vg-alignseg/category_models_list.txt`.
+  `luyu1021/vg-alignseg/category_models_list.txt`. For each category, average
+  object-level part mIoU, then average category means.
 - `iou-granularity`: macro average over actor-count buckets:
-  `coarse_1_2_parts`, `medium_3_4_parts`, and `fine_5plus_parts`.
-- `iou-part`: actor-wise IoU on non-source target views only.
-- `cross-view consistency acc`: pixel accuracy over the same target-only actor
-  masks.
+  `coarse_1_2_parts`, `medium_3_4_parts`, and `fine_5plus_parts`. For each
+  bucket, average object-level part mIoU, then average bucket means.
+- `iou-part`: object-level mean actor IoU on non-source target views only,
+  averaged over the test objects.
+- `cross-view consistency acc`: per-actor binary pixel accuracy over the same
+  non-source target-view masks.
+
+Full formulas and baseline metric notes are in `docs/METRICS.md`.
 
 Auxiliary reference:
 
@@ -38,4 +43,3 @@ Auxiliary reference:
 source-copy full-view reference result: 92.42 category IoU, 95.88 granularity
 IoU, 95.78 part mIoU, and 99.84 pixel accuracy. It copies source masks into
 source views and is not the main strict target-only metric.
-

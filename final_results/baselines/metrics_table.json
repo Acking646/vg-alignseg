@@ -7,6 +7,12 @@
     "shuffle_split": false,
     "split_seed": 42
   },
+  "metric_definitions": {
+    "iou_object_category": "For each object category, average object-level actor/part mIoU over test objects in that category, then macro-average category means.",
+    "iou_granularity": "Bucket objects by foreground actor count: coarse_1_2_parts, medium_3_4_parts, fine_5plus_parts. Average object-level actor/part mIoU inside each bucket, then macro-average bucket means.",
+    "iou_part": "For each object, compute foreground actor IoU values and average them; then average object-level mIoU over the test split.",
+    "cross_view_consistency_acc": "Pixel accuracy on the evaluated pixel domain. VG-AlignSeg V4 strict target-only uses per-actor binary accuracy on non-source target views; full-view baselines use multiclass pixel accuracy over all 8 views."
+  },
   "metrics": [
     {
       "method": "VG-AlignSeg V4",
