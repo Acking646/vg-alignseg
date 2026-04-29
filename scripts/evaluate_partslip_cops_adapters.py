@@ -55,6 +55,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--split-seed", type=int, default=42)
     parser.add_argument("--max-objects", type=int, default=None)
     parser.add_argument("--viz-samples", type=int, default=10)
+    parser.add_argument("--viz-random", action="store_true", help="Randomly choose visualization objects from the evaluated split.")
+    parser.add_argument("--viz-seed", type=int, default=20260429)
     parser.add_argument("--paper-views", type=str, default="0,2,4,6")
     parser.add_argument("--seed", type=int, default=31)
     parser.add_argument("--log-every", type=int, default=25)
@@ -302,6 +304,55 @@ def make_paper_figure(
     canvas.save(out_path)
 
 
+def make_method_figure(
+    out_path: Path,
+    method_name: str,
+    object_id: str,
+    rgbs: np.ndarray,
+    target: torch.Tensor,
+    raw: np.ndarray,
+    mapped: torch.Tensor,
+    view_names: Sequence[str],
+) -> None:
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    target_np = target.cpu().numpy().astype(np.int64)
+    mapped_np = mapped.cpu().numpy().astype(np.int64)
+    tile = rgbs.shape[1]
+    label_h = 26
+    title_h = 34
+    gap = 8
+    columns = ["RGB", "GT overlay", "raw segments", f"{method_name} mapped"]
+    width = len(columns) * tile + (len(columns) + 1) * gap
+    height = title_h + len(view_names) * (tile + label_h + gap) + gap
+    canvas = Image.new("RGB", (width, height), (255, 255, 255))
+    draw = ImageDraw.Draw(canvas)
+    try:
+        font = ImageFont.truetype("DejaVuSans.ttf", 13)
+        title_font = ImageFont.truetype("DejaVuSans.ttf", 15)
+    except Exception:
+        font = ImageFont.load_default()
+        title_font = ImageFont.load_default()
+
+    draw.text((gap, 8), f"{method_name} adapter visualization: object {object_id}", fill=(0, 0, 0), font=title_font)
+    for col, label in enumerate(columns):
+        x = gap + col * (tile + gap)
+        draw.text((x + 4, title_h), label, fill=(30, 30, 30), font=font)
+    for view_idx, name in enumerate(view_names):
+        y = title_h + label_h + view_idx * (tile + label_h + gap)
+        panels = [
+            Image.fromarray(rgbs[view_idx], mode="RGB"),
+            overlay_mask(rgbs[view_idx], target_np[view_idx]),
+            mask_image(raw[view_idx]),
+            overlay_mask(rgbs[view_idx], mapped_np[view_idx]),
+        ]
+        for col, panel in enumerate(panels):
+            x = gap + col * (tile + gap)
+            canvas.paste(panel, (x, y))
+            draw.rectangle((x, y, x + tile - 1, y + tile - 1), outline=(220, 220, 220))
+        draw.text((gap, y + tile + 4), name.replace(".png", ""), fill=(70, 70, 70), font=font)
+    canvas.save(out_path)
+
+
 def write_native_status(args: argparse.Namespace, out_dir: Path) -> None:
     statuses = {
         "partslip2": {
@@ -412,9 +463,19 @@ def main() -> None:
         "partslip2": args.output_dir / "partslip2" / "raw_outputs",
         "cops": args.output_dir / "cops" / "raw_outputs",
     }
+    method_viz_dirs = {
+        "partslip2": args.output_dir / "partslip2" / "visualizations",
+        "cops": args.output_dir / "cops" / "visualizations",
+    }
     paper_dir = args.output_dir / "paper_figures"
 
     total = len(dataset) if args.max_objects is None else min(len(dataset), args.max_objects)
+    if args.viz_random:
+        rng = np.random.default_rng(args.viz_seed)
+        viz_indices = set(int(x) for x in rng.choice(total, size=min(args.viz_samples, total), replace=False).tolist())
+    else:
+        viz_indices = set(range(min(args.viz_samples, total)))
+    viz_indices_sorted = sorted(viz_indices)
     for idx in range(total):
         item = dataset[idx]
         obj = dataset.objects[idx]
@@ -457,10 +518,30 @@ def main() -> None:
                 row, pixel_errors[name], pixel_count[name], mean_iou_sum[name], len(per_object[name])
             )
 
-        if idx < args.viz_samples:
+        if idx in viz_indices:
             object_tag = f"{idx:04d}_{object_id}"
             save_mask_set(raw_dirs["partslip2"], object_tag, raw_part, mapped_part, view_names)
             save_mask_set(raw_dirs["cops"], object_tag, raw_cops, mapped_cops, view_names)
+            make_method_figure(
+                method_viz_dirs["partslip2"] / f"{object_tag}.png",
+                "PartSLIP2",
+                object_id,
+                rgbs,
+                target,
+                raw_part,
+                mapped_part,
+                view_names,
+            )
+            make_method_figure(
+                method_viz_dirs["cops"] / f"{object_tag}.png",
+                "COPS",
+                object_id,
+                rgbs,
+                target,
+                raw_cops,
+                mapped_cops,
+                view_names,
+            )
             v4_viz = find_v4_viz(args.v4_viz_dir, idx, object_id)
             make_paper_figure(
                 paper_dir / f"{object_tag}.png",
@@ -508,6 +589,10 @@ def main() -> None:
         ),
         "output_dir": str(args.output_dir),
         "paper_figures": str(paper_dir),
+        "viz_random": args.viz_random,
+        "viz_seed": args.viz_seed,
+        "viz_indices": viz_indices_sorted,
+        "viz_samples": len(viz_indices_sorted),
         "methods": summaries,
     }
     (args.output_dir / "summary.json").write_text(json.dumps(combined, indent=2), encoding="utf-8")

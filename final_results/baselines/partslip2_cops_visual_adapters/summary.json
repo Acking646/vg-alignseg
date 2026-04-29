@@ -2,6 +2,21 @@
   "note": "These are transparent 2D VG-AlignSeg adapters for visualization/comparison. The native PartSLIP2 and COPS repositories are 3D part segmentation methods and are not directly runnable on the 2D-only VG-AlignSeg final test split.",
   "output_dir": "final_results/baselines/partslip2_cops_visual_adapters",
   "paper_figures": "final_results/baselines/partslip2_cops_visual_adapters/paper_figures",
+  "viz_random": true,
+  "viz_seed": 20260429,
+  "viz_indices": [
+    8,
+    10,
+    44,
+    59,
+    62,
+    73,
+    79,
+    84,
+    119,
+    162
+  ],
+  "viz_samples": 10,
   "methods": {
     "partslip2": {
       "baseline": "PartSLIP2 2D adapter",

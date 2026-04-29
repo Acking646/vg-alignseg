@@ -144,6 +144,8 @@ PYTHONUNBUFFERED=1 /home/lyx/miniconda3/envs/mova/bin/python \
   scripts/evaluate_partslip_cops_adapters.py \
   --output-dir final_results/baselines/partslip2_cops_visual_adapters \
   --viz-samples 10 \
+  --viz-random \
+  --viz-seed 20260429 \
   --log-every 10
 ```
 
