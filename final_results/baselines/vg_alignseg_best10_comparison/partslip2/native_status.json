@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/zyc00/PartSLIP2",
+  "local_path": "/mnt/16T_2/home_user/lyx/curriculum/computer_vision/PartSLIP2",
+  "commit": "7f85a28",
+  "native_status": "not_directly_runnable_on_vg_alignseg_2d_only",
+  "reason": "PartSLIP2/PartSLIP++ expects 3D point-cloud/PartNetE-style inputs, category checkpoints, GLIP/SAM dependencies, and 3D-to-2D projection assets. VG-AlignSeg final test data provides object-centric 8-view RGBA images and 2D part masks.",
+  "reported_adapter": "PartSLIP2 2D proposal adapter; not a native PartSLIP2 result."
+}

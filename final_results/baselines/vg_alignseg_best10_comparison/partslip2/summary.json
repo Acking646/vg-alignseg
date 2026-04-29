@@ -1,0 +1,88 @@
+{
+  "baseline": "PartSLIP2 2D adapter",
+  "protocol": "per-view foreground RGB+XY proposal clustering, Hungarian matched to actor ids",
+  "metric_note": "Adapter predictions are class-agnostic segment ids. Hungarian matching assigns segment ids to VG-AlignSeg actor ids for evaluation and mapped visualization only; GT masks are not copied.",
+  "split": "test",
+  "shuffle_split": false,
+  "split_seed": 42,
+  "train_count": 2000,
+  "val_count": 0,
+  "test_count": 187,
+  "image_size": 224,
+  "views": 8,
+  "eval_mean_iou": 0.23833848833578036,
+  "eval_pixel_accuracy": 0.9537994707826313,
+  "eval_pixel_errors": 3467964,
+  "eval_pixel_count": 75063296,
+  "eval_batches": 187,
+  "table_metrics": {
+    "iou_object_category": 0.20303756631044456,
+    "iou_granularity": 0.2158812114997286,
+    "iou_part": 0.23833848833578036,
+    "cross_view_consistency_acc": 0.9537994707826313
+  },
+  "per_category": {
+    "Bottle": {
+      "objects": 16,
+      "mean_iou": 0.35386764610699906
+    },
+    "Box": {
+      "objects": 1,
+      "mean_iou": 0.08306269657533256
+    },
+    "Chair": {
+      "objects": 2,
+      "mean_iou": 0.025330963272746955
+    },
+    "Clock": {
+      "objects": 31,
+      "mean_iou": 0.2774170462362615
+    },
+    "Display": {
+      "objects": 7,
+      "mean_iou": 0.24547708356046938
+    },
+    "Door": {
+      "objects": 35,
+      "mean_iou": 0.24771851906243175
+    },
+    "Faucet": {
+      "objects": 14,
+      "mean_iou": 0.24046168979355806
+    },
+    "Keyboard": {
+      "objects": 1,
+      "mean_iou": 0.028592041186443585
+    },
+    "Laptop": {
+      "objects": 5,
+      "mean_iou": 0.33659584316362695
+    },
+    "Microwave": {
+      "objects": 12,
+      "mean_iou": 0.17124147407919843
+    },
+    "Oven": {
+      "objects": 7,
+      "mean_iou": 0.22942985349147071
+    },
+    "StorageFurniture": {
+      "objects": 56,
+      "mean_iou": 0.197255939196796
+    }
+  },
+  "per_granularity": {
+    "coarse_1_2_parts": {
+      "objects": 65,
+      "mean_iou": 0.38658697670087966
+    },
+    "fine_5plus_parts": {
+      "objects": 24,
+      "mean_iou": 0.08300552204054357
+    },
+    "medium_3_4_parts": {
+      "objects": 98,
+      "mean_iou": 0.17805113575776257
+    }
+  }
+}

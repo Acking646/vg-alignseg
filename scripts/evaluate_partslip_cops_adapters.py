@@ -57,6 +57,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--viz-samples", type=int, default=10)
     parser.add_argument("--viz-random", action="store_true", help="Randomly choose visualization objects from the evaluated split.")
     parser.add_argument("--viz-seed", type=int, default=20260429)
+    parser.add_argument(
+        "--viz-indices",
+        type=str,
+        default="",
+        help="Comma-separated evaluated object indices to visualize. Overrides --viz-random and --viz-samples.",
+    )
     parser.add_argument("--paper-views", type=str, default="0,2,4,6")
     parser.add_argument("--seed", type=int, default=31)
     parser.add_argument("--log-every", type=int, default=25)
@@ -245,6 +251,21 @@ def parse_paper_views(value: str, views: int) -> list[int]:
         if 0 <= idx < views:
             out.append(idx)
     return out or list(range(min(4, views)))
+
+
+def parse_viz_indices(value: str, total: int) -> set[int] | None:
+    if not value.strip():
+        return None
+    indices = set()
+    for part in value.split(","):
+        part = part.strip()
+        if not part:
+            continue
+        idx = int(part)
+        if idx < 0 or idx >= total:
+            raise ValueError(f"Visualization index {idx} is outside evaluated range [0, {total}).")
+        indices.add(idx)
+    return indices
 
 
 def make_paper_figure(
@@ -470,7 +491,10 @@ def main() -> None:
     paper_dir = args.output_dir / "paper_figures"
 
     total = len(dataset) if args.max_objects is None else min(len(dataset), args.max_objects)
-    if args.viz_random:
+    explicit_viz_indices = parse_viz_indices(args.viz_indices, total)
+    if explicit_viz_indices is not None:
+        viz_indices = explicit_viz_indices
+    elif args.viz_random:
         rng = np.random.default_rng(args.viz_seed)
         viz_indices = set(int(x) for x in rng.choice(total, size=min(args.viz_samples, total), replace=False).tolist())
     else:
@@ -591,6 +615,7 @@ def main() -> None:
         "paper_figures": str(paper_dir),
         "viz_random": args.viz_random,
         "viz_seed": args.viz_seed,
+        "viz_indices_arg": args.viz_indices,
         "viz_indices": viz_indices_sorted,
         "viz_samples": len(viz_indices_sorted),
         "methods": summaries,
